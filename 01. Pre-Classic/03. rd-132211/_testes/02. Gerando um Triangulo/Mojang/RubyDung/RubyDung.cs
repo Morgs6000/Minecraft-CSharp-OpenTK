@@ -24,24 +24,37 @@ using OpenTK.Windowing.GraphicsLibraryFramework;
 namespace com.Mojang.RubyDung {
     //public class RubyDung implements Runnable {
     public class RubyDung : GameWindow {
-    //    private static final boolean FULLSCREEN_MODE = false;
-    //    private int width;
-    //    private int height;
-    //    private FloatBuffer fogColor = BufferUtils.createFloatBuffer(4);
-    //    private Timer timer = new Timer(60.0F);
-    //    private Level level;
-    //    private LevelRenderer levelRenderer;
-    //    private Player player;
-    //    private IntBuffer viewportBuffer = BufferUtils.createIntBuffer(16);
-    //    private IntBuffer selectBuffer = BufferUtils.createIntBuffer(2000);
-    //    private HitResult hitResult = null;
+        //    private static final boolean FULLSCREEN_MODE = false;
+        //    private int width;
+            //private static int width;
+        //    private int height;
+            //private static int height;
+        //    private FloatBuffer fogColor = BufferUtils.createFloatBuffer(4);
+        //    private Timer timer = new Timer(60.0F);
+        //    private Level level;
+        //    private LevelRenderer levelRenderer;
+        //    private Player player;
+        //    private IntBuffer viewportBuffer = BufferUtils.createIntBuffer(16);
+        //    private IntBuffer selectBuffer = BufferUtils.createIntBuffer(2000);
+        //    private HitResult hitResult = null;
+
+        private static NativeWindowSettings nativeWindowSettings = new NativeWindowSettings() {
+            ClientSize = (1024, 768),
+            Title = "Game"
+        };
+
+        private float[] vertices = {
+            -0.5f, -0.5f, 0.0f, //Bottom-left vertex
+             0.0f,  0.5f, 0.0f, //Top vertex
+             0.5f, -0.5f, 0.0f  //Bottom-right vertex
+        };
+
+        private int VertexBufferObject; // VBO
+        private int VertexArrayObject;  // VAO
 
     //    public RubyDung() {
-        public RubyDung() 
-            : base(GameWindowSettings.Default, new NativeWindowSettings() { 
-                ClientSize = (1024, 768), 
-                Title = "Game" 
-            }) {
+        public RubyDung()
+            : base(GameWindowSettings.Default, nativeWindowSettings) {
 
             CenterWindow();
     //    }
@@ -80,6 +93,16 @@ namespace com.Mojang.RubyDung {
     //        this.levelRenderer = new LevelRenderer(this.level);
     //        this.player = new Player(this.level);
     //        Mouse.setGrabbed(true);
+
+            VertexBufferObject = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
+            GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
+
+            VertexArrayObject = GL.GenVertexArray();
+            GL.BindVertexArray(VertexArrayObject);
+
+            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+            GL.EnableVertexAttribArray(0);
     //    }
         }
 
@@ -135,14 +158,6 @@ namespace com.Mojang.RubyDung {
     //    public void tick() {
     //        this.player.tick();
     //    }
-
-        protected override void OnUpdateFrame(FrameEventArgs args) {
-            base.OnUpdateFrame(args);
-
-            if(KeyboardState.IsKeyDown(Keys.Escape)) {
-                Close();
-            }
-        }
 
     //    private void moveCameraToPlayer(float a) {
     //        GL11.glTranslatef(0.0F, 0.0F, -0.3F);
@@ -292,18 +307,27 @@ namespace com.Mojang.RubyDung {
     //        GL11.glDisable(2912);
     //        Display.update();
 
+            //shader.Use();
+            GL.BindVertexArray(VertexArrayObject);
+            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+
             SwapBuffers();
     //    }
         }
 
-        /*
-        // Não sei para que deveria servir isto
+        protected override void OnUpdateFrame(FrameEventArgs args) {
+            base.OnUpdateFrame(args);
+
+            if(KeyboardState.IsKeyDown(Keys.Escape)) {
+                Close();
+            }
+        }
+
         protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
             base.OnFramebufferResize(e);
 
             GL.Viewport(0, 0, e.Width, e.Height);
         }
-        */
 
     //    public static void checkError() {
     //        int e = GL11.glGetError();

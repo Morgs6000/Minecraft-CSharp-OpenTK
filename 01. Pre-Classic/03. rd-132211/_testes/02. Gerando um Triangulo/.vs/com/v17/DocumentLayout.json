@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OneDrive\\Documentos\\Minecraft\\CSharp OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\",
+  "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\onedrive\\documentos\\minecraft\\csharp opentk\\01. pre-classic\\03. rd-132211\\_testes\\02. gerando um triangulo\\mojang\\rubydung\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_testes\\02. gerando um triangulo\\mojang\\rubydung\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:mojang\\rubydung\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\onedrive\\documentos\\minecraft\\csharp opentk\\01. pre-classic\\03. rd-132211\\_testes\\02. gerando um triangulo\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_testes\\02. gerando um triangulo\\mojang\\rubydung\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:mojang\\rubydung\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_testes\\02. gerando um triangulo\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FileName.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Documentos\\Minecraft\\CSharp OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\FileName.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\FileName.cs",
               "RelativeDocumentMoniker": "FileName.cs",
-              "ToolTip": "D:\\OneDrive\\Documentos\\Minecraft\\CSharp OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\FileName.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\FileName.cs",
               "RelativeToolTip": "FileName.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAIAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T10:44:12.178Z",
+              "WhenOpened": "2024-05-26T12:44:21.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tesselator.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\Mojang\\RubyDung\\Level\\Tesselator.cs",
+              "RelativeDocumentMoniker": "Mojang\\RubyDung\\Level\\Tesselator.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\Mojang\\RubyDung\\Level\\Tesselator.cs",
+              "RelativeToolTip": "Mojang\\RubyDung\\Level\\Tesselator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T11:22:11.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "RubyDung.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Documentos\\Minecraft\\CSharp OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\Mojang\\RubyDung\\RubyDung.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\Mojang\\RubyDung\\RubyDung.cs",
               "RelativeDocumentMoniker": "Mojang\\RubyDung\\RubyDung.cs",
-              "ToolTip": "D:\\OneDrive\\Documentos\\Minecraft\\CSharp OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\Mojang\\RubyDung\\RubyDung.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_testes\\02. Gerando um Triangulo\\Mojang\\RubyDung\\RubyDung.cs",
               "RelativeToolTip": "Mojang\\RubyDung\\RubyDung.cs",
-              "ViewState": "AQIAACABAAAAAAAAAAAAACoBAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T10:11:12.723Z",
               "EditorCaption": ""
