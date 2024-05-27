@@ -1,7 +1,10 @@
-﻿using OpenTK.Graphics.OpenGL4;
+﻿using System;
+using System.Runtime.InteropServices;
+using OpenTK.Graphics.OpenGL4;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
+
 
 namespace LearnOpenTK {
     internal class Game : GameWindow {
@@ -21,7 +24,8 @@ namespace LearnOpenTK {
         public Game(int width, int height, string title)
             : base(GameWindowSettings.Default, new NativeWindowSettings() {
                 Size = (width, height),
-                Title = title
+                Title = title,
+                Flags = ContextFlags.Debug
             }) {
 
             CenterWindow();
@@ -85,6 +89,15 @@ namespace LearnOpenTK {
             base.OnFramebufferResize(e);
 
             GL.Viewport(0, 0, e.Width, e.Height);
+        }
+
+        private static void OnDebugMessage(DebugSource source, DebugType type, int id, DebugSeverity severity, int length, IntPtr pMessage, IntPtr pUserParam) {
+            string message = Marshal.PtrToStringAnsi(pMessage, length);
+            Console.WriteLine("[{0} source={1} type={2} id={3}] {4}", severity, source, type, id, message);
+
+            if(type == DebugType.DebugTypeError) {
+                throw new Exception(message);
+            }
         }
     }
 }
