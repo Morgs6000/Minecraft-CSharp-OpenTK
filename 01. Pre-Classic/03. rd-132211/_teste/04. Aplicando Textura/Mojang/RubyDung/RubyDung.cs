@@ -148,7 +148,6 @@ namespace com.Mojang.RubyDung {
             GL.BindBuffer(BufferTarget.ArrayBuffer, this.VertexBufferObject);
             GL.BufferData(BufferTarget.ArrayBuffer, this.vertices.Length * sizeof(float), this.vertices, BufferUsageHint.StaticDraw);
             //GL.BufferData(BufferTarget.ArrayBuffer, this.t.GetVertices().Count * Vector3.SizeInBytes, this.t.GetVertices().ToArray(), BufferUsageHint.StaticDraw);
-            //GL.BufferData(BufferTarget.ArrayBuffer, this.colors.Length * sizeof(float), this.colors, BufferUsageHint.StaticDraw);
 
             this.VertexArrayObject = GL.GenVertexArray();
             GL.BindVertexArray(this.VertexArrayObject);
@@ -158,7 +157,6 @@ namespace com.Mojang.RubyDung {
             GL.EnableVertexAttribArray(0);
 
             GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 3 * sizeof(float));
-            //GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(1);
 
             this.shader = new Shader("shader.vert", "shader.frag");
@@ -168,9 +166,6 @@ namespace com.Mojang.RubyDung {
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, this.ElementBufferObject);
             //GL.BufferData(BufferTarget.ElementArrayBuffer, this.indices.Length * sizeof(uint), this.indices, BufferUsageHint.StaticDraw);
             GL.BufferData(BufferTarget.ElementArrayBuffer, this.t.GetTriangles().Count * sizeof(int), this.t.GetTriangles().ToArray(), BufferUsageHint.StaticDraw);
-
-            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapS, (int)TextureWrapMode.Repeat);
-            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapT, (int)TextureWrapMode.Repeat);
     //    }
         }
 
