@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:mojang\\rubydung\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\shaders\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:shaders\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\mojang\\shaders\\shader.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:mojang\\shaders\\shader.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\shaders\\shader.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:shaders\\shader.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\mojang\\shaders\\shader.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:mojang\\shaders\\shader.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\mojang\\shaders\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:mojang\\shaders\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\mojang\\rubydung\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:mojang\\rubydung\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\shaders\\shader.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:shaders\\shader.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|solutionrelative:filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36B87611-106A-4FDE-AF10-29250E3E9E8E}|com.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste\\04. aplicando textura\\mojang\\rubydung\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,19 +42,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "shader.vert",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Shaders\\shader.vert",
-              "RelativeDocumentMoniker": "Shaders\\shader.vert",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Shaders\\shader.vert",
-              "RelativeToolTip": "Shaders\\shader.vert",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\Shaders\\shader.vert",
+              "RelativeDocumentMoniker": "Mojang\\Shaders\\shader.vert",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\Shaders\\shader.vert",
+              "RelativeToolTip": "Mojang\\Shaders\\shader.vert",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-26T23:39:28.47Z"
+              "WhenOpened": "2024-05-26T23:39:28.47Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FileName.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\FileName.cs",
               "RelativeDocumentMoniker": "FileName.cs",
@@ -73,33 +74,33 @@
               "RelativeDocumentMoniker": "Mojang\\RubyDung\\RubyDung.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\RubyDung\\RubyDung.cs",
               "RelativeToolTip": "Mojang\\RubyDung\\RubyDung.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAAAIwAAAA+AAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAQwD0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T10:11:12.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Shader.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Shaders\\Shader.cs",
-              "RelativeDocumentMoniker": "Shaders\\Shader.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Shaders\\Shader.cs",
-              "RelativeToolTip": "Shaders\\Shader.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\Shaders\\Shader.cs",
+              "RelativeDocumentMoniker": "Mojang\\Shaders\\Shader.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\Shaders\\Shader.cs",
+              "RelativeToolTip": "Mojang\\Shaders\\Shader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T23:51:28.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "shader.frag",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Shaders\\shader.frag",
-              "RelativeDocumentMoniker": "Shaders\\shader.frag",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Shaders\\shader.frag",
-              "RelativeToolTip": "Shaders\\shader.frag",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAARAAAA",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\Shaders\\shader.frag",
+              "RelativeDocumentMoniker": "Mojang\\Shaders\\shader.frag",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\Shaders\\shader.frag",
+              "RelativeToolTip": "Mojang\\Shaders\\shader.frag",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-26T23:39:52.224Z",
               "EditorCaption": ""
@@ -112,7 +113,7 @@
               "RelativeDocumentMoniker": "Mojang\\RubyDung\\Level\\Tile.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\RubyDung\\Level\\Tile.cs",
               "RelativeToolTip": "Mojang\\RubyDung\\Level\\Tile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T13:57:08.042Z",
               "EditorCaption": ""
@@ -125,9 +126,10 @@
               "RelativeDocumentMoniker": "Mojang\\RubyDung\\Level\\Tesselator.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\04. Aplicando Textura\\Mojang\\RubyDung\\Level\\Tesselator.cs",
               "RelativeToolTip": "Mojang\\RubyDung\\Level\\Tesselator.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAAAH0AAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T11:22:11.247Z"
+              "WhenOpened": "2024-05-26T11:22:11.247Z",
+              "EditorCaption": ""
             }
           ]
         }

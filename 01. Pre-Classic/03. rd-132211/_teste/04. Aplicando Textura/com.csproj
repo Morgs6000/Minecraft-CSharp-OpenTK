@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Textures\" />
+    <Folder Include="Mojang\Textures\" />
   </ItemGroup>
 
 </Project>

@@ -1,41 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenTK.Graphics.OpenGL4;
+﻿using OpenTK.Graphics.OpenGL4;
 
-namespace com.Shaders {
+namespace com.Mojang.Shaders {
     internal class Shader {
         int Handle;
 
         public Shader(string vertexPath, string fragmentPath) {
-            //public Shader() {
-            string path = "../../../Shaders/";
+            string path = "../../../Mojang/Shaders/";
 
-            //*
             string VertexShaderSource = File.ReadAllText(path + vertexPath);
             string FragmentShaderSource = File.ReadAllText(path + fragmentPath);
-            //*/
-
-            /*
-            string VertexShaderSource = @"
-                #version 330 core
-                layout(location = 0) in vec3 aPosition;
-
-                void main() {
-                    gl_Position = vec4(aPosition, 1.0);
-                }
-            ";
-            string FragmentShaderSource = @"
-                #version 330 core
-                out vec4 FragColor;
-
-                void main() {
-                    FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);
-                }
-            ";
-            //*/
 
             var VertexShader = GL.CreateShader(ShaderType.VertexShader);
             GL.ShaderSource(VertexShader, VertexShaderSource);
