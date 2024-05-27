@@ -9,11 +9,16 @@ namespace com.Shaders {
     internal class Shader {
         int Handle;
 
-        //public Shader(string vertexPath, string fragmentPath) {
-        public Shader() {
-            //string VertexShaderSource = File.ReadAllText(vertexPath);
-            //string FragmentShaderSource = File.ReadAllText(fragmentPath);
+        public Shader(string vertexPath, string fragmentPath) {
+            //public Shader() {
+            string path = "../../../Shaders/";
 
+            //*
+            string VertexShaderSource = File.ReadAllText(path + vertexPath);
+            string FragmentShaderSource = File.ReadAllText(path + fragmentPath);
+            //*/
+
+            /*
             string VertexShaderSource = @"
                 #version 330 core
                 layout(location = 0) in vec3 aPosition;
@@ -30,25 +35,7 @@ namespace com.Shaders {
                     FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);
                 }
             ";
-
-            /*
-            string VertexShaderSource;
-            string FragmentShaderSource;
-
-            if(!File.Exists(vertexPath)) {
-                throw new FileNotFoundException($"Vertex shader file not found at path: {vertexPath}");
-            }
-            else {
-                VertexShaderSource = File.ReadAllText(vertexPath);
-            }
-
-            if(!File.Exists(fragmentPath)) {
-                throw new FileNotFoundException($"Fragment shader file not found at path: {fragmentPath}");
-            }
-            else {
-                FragmentShaderSource = File.ReadAllText(fragmentPath);
-            }
-            */
+            //*/
 
             var VertexShader = GL.CreateShader(ShaderType.VertexShader);
             GL.ShaderSource(VertexShader, VertexShaderSource);
@@ -72,6 +59,8 @@ namespace com.Shaders {
                 Console.WriteLine($"Erro de compilação no Fragment Shader:\n{infoLog}");
             }
 
+            Handle = GL.CreateProgram();
+
             GL.AttachShader(Handle, VertexShader);
             GL.AttachShader(Handle, FragmentShader);
 
@@ -83,10 +72,12 @@ namespace com.Shaders {
                 Console.WriteLine($"Erro de linkagem do programa:\n{infoLog}");
             }
 
+            //*
             GL.DetachShader(Handle, VertexShader);
             GL.DetachShader(Handle, FragmentShader);
             GL.DeleteShader(FragmentShader);
             GL.DeleteShader(VertexShader);
+            //*/
         }
 
         public void Use() {

@@ -138,8 +138,8 @@ namespace com.Mojang.RubyDung {
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            //shader = new Shader("shader.vert", "shader.frag");
-            shader = new Shader();
+            shader = new Shader("shader.vert", "shader.frag");
+            //shader.Use();
 
             this.ElementBufferObject = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, this.ElementBufferObject);
@@ -358,7 +358,7 @@ namespace com.Mojang.RubyDung {
     //        GL11.glDisable(2912);
     //        Display.update();
 
-            //shader.Use();
+            shader.Use();
             GL.BindVertexArray(this.VertexArrayObject);
             //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
             //GL.DrawElements(PrimitiveType.Triangles, indices.Length, DrawElementsType.UnsignedInt, 0);
