@@ -17,6 +17,7 @@
 //import org.lwjgl.opengl.GL11;
 //import org.lwjgl.util.glu.GLU;
 using com.Mojang.RubyDung.Level;
+using com.Shaders;
 using OpenTK.Graphics.OpenGL4;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
@@ -28,9 +29,9 @@ namespace com.Mojang.RubyDung {
     public class RubyDung : GameWindow {
         //    private static final boolean FULLSCREEN_MODE = false;
         //    private int width;
-            //private static int width;
+            //private int width;
         //    private int height;
-            //private static int height;
+            //private int height;
         //    private FloatBuffer fogColor = BufferUtils.createFloatBuffer(4);
         //    private Timer timer = new Timer(60.0F);
         //    private Level level;
@@ -40,10 +41,12 @@ namespace com.Mojang.RubyDung {
         //    private IntBuffer selectBuffer = BufferUtils.createIntBuffer(2000);
         //    private HitResult hitResult = null;
 
+        /*
         private static NativeWindowSettings nativeWindowSettings = new NativeWindowSettings() {
             ClientSize = (1024, 768),
             Title = "Game"
         };
+        */
 
         /*
         private float[] vertices = {
@@ -54,6 +57,8 @@ namespace com.Mojang.RubyDung {
         };
         */
 
+        private Shader shader;
+
         /*
         private uint[] indices = {
             0, 1, 2,   // first triangle
@@ -61,14 +66,14 @@ namespace com.Mojang.RubyDung {
         };
         */
 
-        /*
+        //*
         private float[] texCoords = {
             0.0f, 0.0f,  // lower-left corner
             0.0f, 1.0f,  // top-left corner
             1.0f, 1.0f,  // top-right corner
             1.0f, 0.0f   // lower-right corner
         };
-        */
+        //*/
 
         private int VertexBufferObject;  // VBO
         private int VertexArrayObject;   // VAO
@@ -78,13 +83,15 @@ namespace com.Mojang.RubyDung {
 
     //    public RubyDung() {
         public RubyDung()
-            : base(GameWindowSettings.Default, nativeWindowSettings) {
+            : base(GameWindowSettings.Default, NativeWindowSettings.Default) {
 
+            Title = "Game";
+            Size = (1024, 768);
             CenterWindow();
     //    }
         }
 
-    //    public void init() throws LWJGLException, IOException {
+        //    public void init() throws LWJGLException, IOException {
         protected override void OnLoad() {
             base.OnLoad();
 
@@ -120,25 +127,34 @@ namespace com.Mojang.RubyDung {
 
             Tile.rock.render(this.t, 0, 0, 0);
 
-            VertexBufferObject = GL.GenBuffer();
-            GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
+            this.VertexBufferObject = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, this.VertexBufferObject);
             //GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
             GL.BufferData(BufferTarget.ArrayBuffer, t.GetVertices().Count * Vector3.SizeInBytes, t.GetVertices().ToArray(), BufferUsageHint.StaticDraw);
 
-            VertexArrayObject = GL.GenVertexArray();
-            GL.BindVertexArray(VertexArrayObject);
+            this.VertexArrayObject = GL.GenVertexArray();
+            GL.BindVertexArray(this.VertexArrayObject);
 
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
-            ElementBufferObject = GL.GenBuffer();
-            GL.BindBuffer(BufferTarget.ElementArrayBuffer, ElementBufferObject);
+            //shader = new Shader("shader.vert", "shader.frag");
+            shader = new Shader();
+
+            this.ElementBufferObject = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer, this.ElementBufferObject);
             //GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Length * sizeof(uint), indices, BufferUsageHint.StaticDraw);
             GL.BufferData(BufferTarget.ElementArrayBuffer, t.GetTriangles().Count * sizeof(int), t.GetTriangles().ToArray(), BufferUsageHint.StaticDraw);
 
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapS, (int)TextureWrapMode.Repeat);
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapT, (int)TextureWrapMode.Repeat);
     //    }
+        }
+
+        protected override void OnUnload() {
+            base.OnUnload();
+
+            shader.Dispose();
         }
 
     //    public void destroy() {
@@ -343,7 +359,7 @@ namespace com.Mojang.RubyDung {
     //        Display.update();
 
             //shader.Use();
-            GL.BindVertexArray(VertexArrayObject);
+            GL.BindVertexArray(this.VertexArrayObject);
             //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
             //GL.DrawElements(PrimitiveType.Triangles, indices.Length, DrawElementsType.UnsignedInt, 0);
             GL.DrawElements(PrimitiveType.Triangles, t.GetTriangles().Count, DrawElementsType.UnsignedInt, 0);

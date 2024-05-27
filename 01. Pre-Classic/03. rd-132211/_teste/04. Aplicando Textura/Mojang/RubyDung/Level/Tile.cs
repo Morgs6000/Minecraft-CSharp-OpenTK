@@ -22,7 +22,7 @@ namespace com.Mojang.RubyDung.Level {
     //        float u1 = u0 + 0.0624375F;
             float u1 = u0 + (1.0f / 16.0f);
     //        float v0 = 0.0F;
-            float v0 = 0.0F;
+            float v0 = 0.0f;
     //        float v1 = v0 + 0.0624375F;
             float v1 = v0 + (1.0f / 16.0f);
     //        float c1 = 1.0F;

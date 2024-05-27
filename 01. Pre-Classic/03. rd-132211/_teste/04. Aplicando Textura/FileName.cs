@@ -36,5 +36,9 @@ namespace com {
         protected override void OnResize(ResizeEventArgs e) {
             base.OnResize(e);
         }
+
+        protected override void OnUnload() {
+            base.OnUnload();
+        }
     }
 }

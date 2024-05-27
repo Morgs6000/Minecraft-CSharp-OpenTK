@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Textures\" />
-    <Folder Include="Shaders\" />
   </ItemGroup>
 
 </Project>
