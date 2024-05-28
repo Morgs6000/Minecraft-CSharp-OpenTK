@@ -24,6 +24,8 @@ namespace LearnOpenTK {
 
         Shader shader;
 
+        Texture texture;
+
         public Game(int width, int height, string title)
             : base(GameWindowSettings.Default, new NativeWindowSettings() {
                 Size = (width, height),
@@ -47,30 +49,31 @@ namespace LearnOpenTK {
 
             GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
+            VertexArrayObject = GL.GenVertexArray();
+            GL.BindVertexArray(VertexArrayObject);
+
             VertexBufferObject = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
             GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
 
-            shader = new Shader("shader.vert", "shader.frag");
-
-            VertexArrayObject = GL.GenVertexArray();
-            GL.BindVertexArray(VertexArrayObject);
-
-            GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
-            GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
-
-            var vertexLocation;
+            var vertexLocation = shader.GetAttribLocation("aPosition");
             //GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.VertexAttribPointer(vertexLocation, 3, VertexAttribPointerType.Float, false, 5 * sizeof(float), 0);
-            GL.EnableVertexAttribArray(0);
+            GL.EnableVertexAttribArray(vertexLocation);
+
+            var texCoordLocation = shader.GetAttribLocation("aTexCoord");
+            GL.VertexAttribPointer(texCoordLocation, 2, VertexAttribPointerType.Float, false, 5 * sizeof(float), 3 * sizeof(float));
+            GL.EnableVertexAttribArray(texCoordLocation);
 
             ElementBufferObject = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, ElementBufferObject);
             GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Length * sizeof(uint), indices, BufferUsageHint.StaticDraw);
 
-            int texCoordLocation = shader.GetAttribLocation("aTexCoord");
-            GL.EnableVertexAttribArray(texCoordLocation);
-            GL.VertexAttribPointer(texCoordLocation, 2, VertexAttribPointerType.Float, false, 5 * sizeof(float), 3 * sizeof(float));
+            shader = new Shader("shader.vert", "shader.frag");
+            shader.Use();
+
+            texture = Texture.LoadFromFile("container.jpg");
+            texture.Use(TextureUnit.Texture0);
         }
 
         protected override void OnUnload() {
@@ -85,7 +88,10 @@ namespace LearnOpenTK {
             GL.Clear(ClearBufferMask.ColorBufferBit);
 
             shader.Use();
+            texture.Use(TextureUnit.Texture0);
+
             GL.BindVertexArray(VertexArrayObject);
+
             //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
             GL.DrawElements(PrimitiveType.Triangles, indices.Length, DrawElementsType.UnsignedInt, 0);
 
