@@ -1,10 +1,7 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using OpenTK.Graphics.OpenGL4;
+﻿using OpenTK.Graphics.OpenGL4;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
-
 
 namespace LearnOpenTK {
     internal class Game : GameWindow {
@@ -16,16 +13,21 @@ namespace LearnOpenTK {
             -0.5f,  0.5f, 0.0f, 0.0f, 1.0f  // top left
         };
 
-        int VertexBufferObject; // VBO
-        int VertexArrayObject;  // VAO
+        uint[] indices = {  // note that we start from 0!
+            0, 1, 3,   // first triangle
+            1, 2, 3    // second triangle
+        };
+
+        int VertexBufferObject;  // VBO
+        int VertexArrayObject;   // VAO
+        int ElementBufferObject; // EBO
 
         Shader shader;
 
         public Game(int width, int height, string title)
             : base(GameWindowSettings.Default, new NativeWindowSettings() {
                 Size = (width, height),
-                Title = title,
-                Flags = ContextFlags.Debug
+                Title = title
             }) {
 
             CenterWindow();
@@ -57,10 +59,14 @@ namespace LearnOpenTK {
             GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
             GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
 
-            var vertexLocation = shader.GetAttribLocation("aPosition");
+            var vertexLocation;
             //GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.VertexAttribPointer(vertexLocation, 3, VertexAttribPointerType.Float, false, 5 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
+
+            ElementBufferObject = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer, ElementBufferObject);
+            GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Length * sizeof(uint), indices, BufferUsageHint.StaticDraw);
 
             int texCoordLocation = shader.GetAttribLocation("aTexCoord");
             GL.EnableVertexAttribArray(texCoordLocation);
@@ -80,7 +86,8 @@ namespace LearnOpenTK {
 
             shader.Use();
             GL.BindVertexArray(VertexArrayObject);
-            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+            //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+            GL.DrawElements(PrimitiveType.Triangles, indices.Length, DrawElementsType.UnsignedInt, 0);
 
             SwapBuffers();
         }
@@ -89,15 +96,6 @@ namespace LearnOpenTK {
             base.OnFramebufferResize(e);
 
             GL.Viewport(0, 0, e.Width, e.Height);
-        }
-
-        private static void OnDebugMessage(DebugSource source, DebugType type, int id, DebugSeverity severity, int length, IntPtr pMessage, IntPtr pUserParam) {
-            string message = Marshal.PtrToStringAnsi(pMessage, length);
-            Console.WriteLine("[{0} source={1} type={2} id={3}] {4}", severity, source, type, id, message);
-
-            if(type == DebugType.DebugTypeError) {
-                throw new Exception(message);
-            }
         }
     }
 }
