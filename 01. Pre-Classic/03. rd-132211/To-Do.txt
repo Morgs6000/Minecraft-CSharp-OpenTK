@@ -1,0 +1,29 @@
+- Gerar uma Janela
+- Gerar um triangulo
+	- shader
+- Adicionar uma textura
+- Gerar um quadrado
+	- Wireframe?
+- Movimento da Camera
+	- camera não subir se o jogador estiver olhando para baixo
+	- subir e descer apenas com Space e LShift
+	- W S apenas para frente e para tras, não subir
+	- altura da camera 1.62f?
+- Não gerar a face de tras do quadrado
+- Gerar um bloco
+- Gerar uma chunk
+	- 16 x 16
+- Apagando faces entre blocos
+- gerando camadas de blocos
+- gerando um mundo
+	- 256 x 64 x 256
+- colisor
+	- AABB (Axis-Aling Bound Box)
+- Pressionar R da um respawn aleatório
+- Quebrar blocos
+- Colocar blocos
+- Os jogadores podem colocar blocos no espaço que estão ocupando
+	- Mas na Unity isso fazia o jogador cair para fora do mundo
+	- Teria que ter um colisor mesmo para blocos não visiveis?
+- Highlight
+- Save game
