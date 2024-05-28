@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Shaders\\Default.frag",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\04. Creating a 2D Dirt Block!\\Shaders\\Default.frag",
               "RelativeToolTip": "Shaders\\Default.frag",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-28T10:42:21.898Z",
               "EditorCaption": ""
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Shaders\\Default.vert",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\04. Creating a 2D Dirt Block!\\Shaders\\Default.vert",
               "RelativeToolTip": "Shaders\\Default.vert",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-28T10:42:15.342Z",
               "EditorCaption": ""
@@ -64,8 +64,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T10:10:00.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T10:10:00.992Z"
             },
             {
               "$type": "Document",
@@ -75,7 +74,7 @@
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\04. Creating a 2D Dirt Block!\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAHQAAAAAAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T10:14:43.644Z",
               "EditorCaption": ""

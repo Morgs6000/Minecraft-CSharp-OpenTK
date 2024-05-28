@@ -16,8 +16,15 @@ namespace openTk_Minecraft_Clone_Tutorial_Series {
         float[] vertices = {
             -0.5f,  0.5f, 0.0f, // top left vertex  - 0
              0.5f,  0.5f, 0.0f, // top right vertex - 1
-             0.5f, -0.5f, 0.0f  // bottom right     - 2
+             0.5f, -0.5f, 0.0f, // bottom right     - 2
             -0.5f, -0.5f, 0.0f  // bottom left      - 3
+        };
+
+        float[] texCoords = {
+            0.0f, 1.0f,
+            1.0f, 1.0f,
+            1.0f, 0.0f,
+            0.0f, 0.0f
         };
 
         uint[] indices = {
@@ -30,8 +37,9 @@ namespace openTk_Minecraft_Clone_Tutorial_Series {
         // Render Pipeline vars
         int vao;
         int shaderProgram;
-        int vbo;
+        int textureVBO;
         int ebo;
+        int textureID;
 
         // width and height of screen
         int width;
@@ -63,12 +71,29 @@ namespace openTk_Minecraft_Clone_Tutorial_Series {
             // bind the vao
             GL.BindVertexArray(vao);
 
-            vbo = GL.GenBuffer();
+            // --- Vertices VBO ---
+
+            int vbo = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ArrayBuffer, vbo);
             GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
 
+            // put the vertex VBO in slot 0 of our VAO
+
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 0, 0);
             GL.EnableVertexArrayAttrib(vao, 0);
+
+            GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
+
+            // --- Texture VBO ---
+
+            textureVBO = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, textureVBO);
+            GL.BufferData(BufferTarget.ArrayBuffer, texCoords.Length * sizeof(float), texCoords, BufferUsageHint.StaticDraw);
+
+            // put the texture VBO in slot 1 of our VAO
+
+            GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 0, 0);
+            GL.EnableVertexArrayAttrib(vao, 1);
 
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0); // unbinding the vbo
 
@@ -98,14 +123,34 @@ namespace openTk_Minecraft_Clone_Tutorial_Series {
             // delete the shaders
             GL.DeleteShader(vertexShader);
             GL.DeleteShader(fragmentShader);
+
+            // --- TEXTURES ---
+            textureID = GL.GenTexture();
+            // activate the texture in the unit
+            GL.ActiveTexture(TextureUnit.Texture0);
+            GL.BindTexture(TextureTarget.Texture2D, textureID);
+
+            // texture parameters
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapS, (int)TextureWrapMode.Repeat);
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapT, (int)TextureWrapMode.Repeat);
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter, (int)TextureMagFilter.Nearest);
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter, (int)TextureMagFilter.Nearest);
+
+            // load image
+            StbImage.stbi_set_flip_vertically_on_load(1);
+            ImageResult dirtTexture = ImageResult.FromStream(File.OpenRead("../../../Textures/dirt.png"), ColorComponents.RedGreenBlueAlpha);
+
+            GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, dirtTexture.Width, dirtTexture.Height, 0, PixelFormat.Rgba, PixelType.UnsignedByte, dirtTexture.Data);
+            // unbind the texture
+            GL.BindTexture(TextureTarget.Texture2D, 0);
         }
 
         protected override void OnUnload() {
             base.OnUnload();
 
             GL.DeleteVertexArray(vao);
-            GL.DeleteBuffer(vbo);
             GL.DeleteBuffer(ebo);
+            GL.DeleteTexture(textureID);
             GL.DeleteProgram(shaderProgram);
         }
 
@@ -117,6 +162,9 @@ namespace openTk_Minecraft_Clone_Tutorial_Series {
 
             // draw our triangle
             GL.UseProgram(shaderProgram);
+
+            GL.BindTexture(TextureTarget.Texture2D, textureID);
+
             GL.BindVertexArray(vao);
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, ebo);
             //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
