@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj": {}
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj": {
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj",
+        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj",
         "projectName": "LearnOpenTK",
-        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj",
+        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj",
         "packagesPath": "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\1.4.1. Shaders - Entradas e saídas\\obj\\",
+        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0\\1.4.1. Shaders - Entradas e saídas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\07. The Block Class Part 1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\07. the block class part 1\\graphics\\shaderprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\shaderprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\07. the block class part 1\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\07. the block class part 1\\graphics\\vao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\vao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\07. the block class part 1\\graphics\\shaderprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\shaderprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\07. the block class part 1\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VAO.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\07. The Block Class Part 1\\Graphics\\VAO.cs",
               "RelativeDocumentMoniker": "Graphics\\VAO.cs",
@@ -50,18 +50,17 @@
               "RelativeToolTip": "Graphics\\VAO.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T00:47:48.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T00:47:48.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ShaderProgram.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\07. The Block Class Part 1\\Graphics\\ShaderProgram.cs",
               "RelativeDocumentMoniker": "Graphics\\ShaderProgram.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\07. The Block Class Part 1\\Graphics\\ShaderProgram.cs",
               "RelativeToolTip": "Graphics\\ShaderProgram.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAATAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T00:41:58.215Z",
               "EditorCaption": ""
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Camera.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAADIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T14:10:52.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T14:10:52.978Z"
             },
             {
               "$type": "Document",
@@ -117,13 +115,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\07. The Block Class Part 1\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\07. The Block Class Part 1\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAAAAAMkAAAA8AAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAANMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T10:14:43.644Z",
               "EditorCaption": ""

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LearnOpenTK
-build_property.ProjectDir = D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\00. LearnOpenTK\1.4.1. Shaders - Entradas e saídas\
+build_property.ProjectDir = D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\00. LearnOpenTK\_0\1.4.1. Shaders - Entradas e saídas\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5rkgNC+tvumFT5/ll7TP8H7gH0Skx4/BTB1bNR94VpxEKnoFV8eZhRhQHpWia76jAQRloEs6sc3kVGpEwCcqpg==",
+  "dgSpecHash": "0OgF28yG1P1eN0YIRP1aM2n/vfQW3mPU7L9C86IiIlw4ky8C3tw3JZUJQn2Jj6/BP0Izxuj0h3bwxQTy9LnalQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0\\1.4.1. Shaders - Entradas e saídas\\LearnOpenTK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",
