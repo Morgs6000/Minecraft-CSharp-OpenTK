@@ -443,11 +443,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.7. Transformations\\LearnOpenTK.csproj",
+      "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.8. Coordinate Systems\\LearnOpenTK.csproj",
       "projectName": "LearnOpenTK",
-      "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.7. Transformations\\LearnOpenTK.csproj",
+      "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.8. Coordinate Systems\\LearnOpenTK.csproj",
       "packagesPath": "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.7. Transformations\\obj\\",
+      "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.8. Coordinate Systems\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

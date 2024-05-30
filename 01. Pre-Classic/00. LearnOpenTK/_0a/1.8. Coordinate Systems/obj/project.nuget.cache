@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GKZjRoY4fkUm7ZWqq9qg8sjzAVOAd9lM5qCBkxOvSbfW+K6KbK7Y9tkvx2IrggOBqpIW621x4Fnf3jqo01zjZA==",
+  "dgSpecHash": "sbH3TRVc/okjnqbkx9VJ+yoKKLeiaFkctVjkDzj9pY4HF+K1AoWgJiwuG3KHVMudKbWhzcqmHxL2TLTMWn51WQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.7. Transformations\\LearnOpenTK.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\_0a\\1.8. Coordinate Systems\\LearnOpenTK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",
