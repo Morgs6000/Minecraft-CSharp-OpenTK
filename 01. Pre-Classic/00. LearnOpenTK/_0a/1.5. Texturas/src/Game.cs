@@ -2,15 +2,16 @@
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
-using System.Reflection.Metadata;
+using StbImageSharp;
 
 namespace LearnOpenTK.src {
     internal class Game : GameWindow {
         float[] vertices = {
-            -0.5f, -0.5f, 0.0f,  // bottom left
-            -0.5f,  0.5f, 0.0f,  // top left 
-             0.5f,  0.5f, 0.0f,  // top right
-             0.5f, -0.5f, 0.0f   // bottom right
+            // positions          // colors           // texture coords
+            -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,  // bottom left
+            -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f,  // top left 
+             0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,  // top right
+             0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f   // bottom right
         };
 
         int[] indices = {  // note that we start from 0!
@@ -22,9 +23,9 @@ namespace LearnOpenTK.src {
         int VBO; // Vertex Buffer Object
         int EBO; // Element Buffer Object
 
-        //int shaderProgram;
-        //Shader ourShader = new Shader("shader.vert", "shader.frag");
         Shader ourShader;
+
+        int texture;
 
         public Game(int width, int height, string title) 
             : base(GameWindowSettings.Default, new NativeWindowSettings() {
@@ -41,45 +42,42 @@ namespace LearnOpenTK.src {
 
             GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
-            /*
             // ..:: Shader ::..
 
-            // Vertex Shader
-
-            string vertexPath = "../../../src/Shaders/shader.vert";
-
-            string vertexShaderSource = File.ReadAllText(vertexPath);
-
-            int vertexShader;
-            vertexShader = GL.CreateShader(ShaderType.VertexShader);
-
-            GL.ShaderSource(vertexShader, vertexShaderSource);
-            GL.CompileShader(vertexShader);
-
-            // Fragment Shader
-
-            string fragmentPath = "../../../src/Shaders/shader.frag";
-
-            string fragmentShaderSource = File.ReadAllText(fragmentPath);
-
-            int fragmentShader;
-            fragmentShader = GL.CreateShader(ShaderType.FragmentShader);
-            GL.ShaderSource (fragmentShader, fragmentShaderSource);
-            GL.CompileShader(fragmentShader);
-
-            // Shader Program
-
-            shaderProgram = GL.CreateProgram();
-
-            GL.AttachShader(shaderProgram, vertexShader);
-            GL.AttachShader(shaderProgram, fragmentShader);
-            GL.LinkProgram(shaderProgram);
-
-            GL.DeleteShader(vertexShader);
-            GL.DeleteShader(fragmentShader);
-            */
-
             ourShader = new Shader("shader.vert", "shader.frag");
+
+            // ..:: Texture ::..
+
+            //int texture;
+            texture = GL.GenTexture();
+            GL.BindTexture(TextureTarget.Texture2D, texture);
+
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapS, (int)TextureWrapMode.Repeat);
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapS, (int)TextureWrapMode.Repeat);
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter, (int)TextureMinFilter.LinearMipmapLinear);
+            GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter, (int)TextureMagFilter.Linear);
+
+            string texturePath = "../../../src/Textures/container.jpg";
+
+            int width;
+            int height;
+            int nrChannels;
+            byte[] data;
+            StbImage.stbi_set_flip_vertically_on_load(1);
+            ImageResult image = ImageResult.FromStream(File.OpenRead(texturePath), ColorComponents.RedGreenBlueAlpha);
+
+            width = image.Width;
+            height = image.Height;
+            //nrChannels = image.CompPerPixel;
+            data = image.Data;
+
+            if(data != null) {
+                GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, width, height, 0, PixelFormat.Rgba, PixelType.UnsignedByte, data);
+                GL.GenerateMipmap(GenerateMipmapTarget.Texture2D);
+            }
+            else {
+                Console.WriteLine("Failed to load texture");
+            }
 
             // ..:: Vertex Array Object ::..
 
@@ -98,8 +96,14 @@ namespace LearnOpenTK.src {
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, EBO);
             GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Length * sizeof(float), indices, BufferUsageHint.StaticDraw);
 
-            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 8 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
+
+            GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, 8 * sizeof(float), 3 * sizeof(float));
+            GL.EnableVertexAttribArray(1);
+
+            GL.VertexAttribPointer(2, 2, VertexAttribPointerType.Float, false, 8 * sizeof(float), 6 * sizeof(float));
+            GL.EnableVertexAttribArray(2);
         }
 
         protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
@@ -130,12 +134,9 @@ namespace LearnOpenTK.src {
 
             GL.Clear(ClearBufferMask.ColorBufferBit);
 
-            // ..:: Código de desenho (em loop de renderização) :: ..
-            // 4. desenhe o objeto
-            //GL.UseProgram(shaderProgram);
             ourShader.use();
+            GL.BindTexture(TextureTarget.Texture2D, texture);
             GL.BindVertexArray(VAO);
-            //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
             GL.DrawElements(PrimitiveType.Triangles, indices.Length, DrawElementsType.UnsignedInt, 0);
             GL.BindVertexArray(0);
 
