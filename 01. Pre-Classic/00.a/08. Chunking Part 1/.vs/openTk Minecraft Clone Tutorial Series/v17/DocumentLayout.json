@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\world\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\world\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +11,24 @@
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\world\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\08. chunking part 1\\shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -42,24 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Chunk.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\World\\Chunk.cs",
               "RelativeDocumentMoniker": "World\\Chunk.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\World\\Chunk.cs",
               "RelativeToolTip": "World\\Chunk.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwFEAAAAkAAAA",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAAHMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T17:45:02.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Block.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\World\\Block.cs",
               "RelativeDocumentMoniker": "World\\Block.cs",
@@ -67,25 +67,24 @@
               "RelativeToolTip": "World\\Block.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAADwv0kAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T17:28:57.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T17:28:57.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BlockData.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\World\\BlockData.cs",
               "RelativeDocumentMoniker": "World\\BlockData.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\World\\BlockData.cs",
               "RelativeToolTip": "World\\BlockData.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwEUAAAAvAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwC8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T17:13:54.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Camera.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\Camera.cs",
               "RelativeDocumentMoniker": "Camera.cs",
@@ -93,8 +92,7 @@
               "RelativeToolTip": "Camera.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAADMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T14:10:52.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T14:10:52.978Z"
             },
             {
               "$type": "Document",
@@ -110,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Default.vert",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\Shaders\\Default.vert",
               "RelativeDocumentMoniker": "Shaders\\Default.vert",
@@ -118,11 +116,12 @@
               "RelativeToolTip": "Shaders\\Default.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-28T10:42:15.342Z"
+              "WhenOpened": "2024-05-28T10:42:15.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -134,13 +133,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\08. Chunking Part 1\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADQAAAA0AAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAFUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T10:14:43.644Z",
               "EditorCaption": ""
