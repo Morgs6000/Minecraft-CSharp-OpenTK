@@ -1,16 +1,8 @@
-- Gerar uma Janela
-- Gerar um triangulo
-	- shader
-- Adicionar uma textura
-- Gerar um quadrado
-	- Wireframe?
+Para Fazer:
 - Movimento da Camera
-	- camera não subir se o jogador estiver olhando para baixo
-	- subir e descer apenas com Space e LShift
-	- W S apenas para frente e para tras, não subir
 	- altura da camera 1.62f?
+- não zuar quando redimensionar a tela
 - Não gerar a face de tras do quadrado
-- Gerar um bloco
 - Gerar uma chunk
 	- 16 x 16
 - Apagando faces entre blocos
@@ -27,3 +19,16 @@
 	- Teria que ter um colisor mesmo para blocos não visiveis?
 - Highlight
 - Save game
+
+Feito:
+- Gerar uma Janela
+- Gerar um triangulo
+	- shader
+- Adicionar uma textura
+- Gerar um quadrado
+	- Wireframe?
+- Movimento da Camera
+	- camera não subir se o jogador estiver olhando para baixo
+	- subir e descer apenas com Space e LShift
+	- W S apenas para frente e para tras, não subir	
+- Gerar um bloco

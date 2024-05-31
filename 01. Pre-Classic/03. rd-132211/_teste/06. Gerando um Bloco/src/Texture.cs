@@ -15,7 +15,7 @@ namespace RubyDung.src {
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter, (int)TextureMinFilter.Nearest);
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter, (int)TextureMagFilter.Nearest);
 
-            string texturePath = "../../../src/Textures/terrain3.png";
+            string texturePath = "../../../src/Textures/terrain2.png";
 
             StbImage.stbi_set_flip_vertically_on_load(1);
             ImageResult image = ImageResult.FromStream(File.OpenRead(texturePath), ColorComponents.RedGreenBlueAlpha);

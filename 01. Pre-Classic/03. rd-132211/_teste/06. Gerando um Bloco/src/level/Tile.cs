@@ -7,8 +7,8 @@ namespace RubyDung.src.level {
         public int texX = 0;
         public int texY = 0;
 
-        private int col = 3;
-        private int row = 3;
+        private int col = 1;
+        private int row = 1;
 
         /*
         protected Tile() {
@@ -53,10 +53,10 @@ namespace RubyDung.src.level {
 
             // ..:: Positive X ::..
             if(face == 0) {
-                t.vertex(x1, y0, z0);
                 t.vertex(x1, y1, z0);
                 t.vertex(x1, y1, z1);
                 t.vertex(x1, y0, z1);
+                t.vertex(x1, y0, z0);
 
                 t.triangle();
 
@@ -70,10 +70,10 @@ namespace RubyDung.src.level {
 
             // ..:: Negative X ::..
             if(face == 1) {
-                t.vertex(x0, y0, z1);
                 t.vertex(x0, y1, z1);
                 t.vertex(x0, y1, z0);
                 t.vertex(x0, y0, z0);
+                t.vertex(x0, y0, z1);
 
                 t.triangle();
 
@@ -87,10 +87,10 @@ namespace RubyDung.src.level {
 
             // ..:: Positive Y ::..
             if(face == 2) {
+                t.vertex(x1, y1, z0);
                 t.vertex(x0, y1, z0);
                 t.vertex(x0, y1, z1);
                 t.vertex(x1, y1, z1);
-                t.vertex(x1, y1, z0);
 
                 t.triangle();
 
@@ -104,10 +104,10 @@ namespace RubyDung.src.level {
 
             // ..:: Negative Y ::..
             if(face == 3) {
-                t.vertex(x1, y0, z0);
                 t.vertex(x1, y0, z1);
                 t.vertex(x0, y0, z1);
                 t.vertex(x0, y0, z0);
+                t.vertex(x1, y0, z0);
 
                 t.triangle();
 
@@ -121,10 +121,10 @@ namespace RubyDung.src.level {
 
             // ..:: Positive Z ::..
             if(face == 4) {
-                t.vertex(x1, y0, z1);
                 t.vertex(x1, y1, z1);
                 t.vertex(x0, y1, z1);
                 t.vertex(x0, y0, z1);
+                t.vertex(x1, y0, z1);
 
                 t.triangle();
 
@@ -138,10 +138,10 @@ namespace RubyDung.src.level {
 
             // ..:: Negative Z ::..
             if(face == 5) {
-                t.vertex(x0, y0, z0);
                 t.vertex(x0, y1, z0);
                 t.vertex(x1, y1, z0);
                 t.vertex(x1, y0, z0);
+                t.vertex(x0, y0, z0);
 
                 t.triangle();
 

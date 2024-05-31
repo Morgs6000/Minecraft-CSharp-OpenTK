@@ -11,10 +11,10 @@
             float v0 = ((row - 1.0f) - texY) / row;
             float v1 = v0 + (1.0f / row);
 
-            t.vertex(-0.5f, -0.5f, 0.0f);
-            t.vertex(-0.5f,  0.5f, 0.0f);
-            t.vertex( 0.5f,  0.5f, 0.0f);
-            t.vertex( 0.5f, -0.5f, 0.0f);
+            t.vertex(-0.5f, -0.5f,  0.0f);
+            t.vertex(-0.5f,  0.5f,  0.0f);
+            t.vertex( 0.5f,  0.5f,  0.0f);
+            t.vertex( 0.5f, -0.5f,  0.0f);
 
             t.triangle();
 

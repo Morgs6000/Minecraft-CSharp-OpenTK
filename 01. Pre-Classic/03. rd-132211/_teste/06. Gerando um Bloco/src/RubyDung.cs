@@ -61,7 +61,7 @@ namespace RubyDung.src {
                 Close();
             }
 
-            //Wireframe mode = new Wireframe(input);
+            Wireframe mode = new Wireframe(input);
 
             this.camera.processInput(input);
             //this.camera.mouse_callback(MouseState.X, MouseState.Y);
