@@ -96,7 +96,7 @@ namespace openTk_Minecraft_Clone_Tutorial_Series {
                 pitch -= deltaY * SENSITIVITY * (float)e.Time;
             }
 
-            UpdateVectors();
+            //UpdateVectors();
         }
 
         public void Update(KeyboardState input, MouseState mouse, FrameEventArgs e) {

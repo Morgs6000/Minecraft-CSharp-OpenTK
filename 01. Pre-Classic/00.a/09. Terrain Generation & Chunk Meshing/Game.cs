@@ -61,7 +61,7 @@ namespace openTk_Minecraft_Clone_Tutorial_Series {
             GL.CullFace(CullFaceMode.Back);
 
             camera = new Camera(width, height, Vector3.Zero);
-            CursorState = CursorState.Grabbed;
+            //CursorState = CursorState.Grabbed;
         }
 
         protected override void OnUnload() {

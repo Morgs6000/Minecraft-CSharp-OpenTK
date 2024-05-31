@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\world\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\graphics\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\graphics\\vao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\vao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +31,8 @@
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\vbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\graphics\\ibo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\ibo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\10. block types\\graphics\\shaderprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,37 +46,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Game.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAABMAAAAdAAAA",
+              "DocumentIndex": 0,
+              "Title": "Block.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\World\\Block.cs",
+              "RelativeDocumentMoniker": "World\\Block.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\World\\Block.cs",
+              "RelativeToolTip": "World\\Block.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAASwCYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:49:42.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShaderProgram.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\ShaderProgram.cs",
-              "RelativeDocumentMoniker": "Graphics\\ShaderProgram.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\ShaderProgram.cs",
-              "RelativeToolTip": "Graphics\\ShaderProgram.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABAAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:40:58.859Z",
+              "WhenOpened": "2024-05-31T18:16:07.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Camera.cs",
+              "RelativeDocumentMoniker": "Camera.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Camera.cs",
+              "RelativeToolTip": "Camera.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T14:53:14.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBO.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\IBO.cs",
+              "RelativeDocumentMoniker": "Graphics\\IBO.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\IBO.cs",
+              "RelativeToolTip": "Graphics\\IBO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T14:31:07.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Chunk.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\World\\Chunk.cs",
+              "RelativeDocumentMoniker": "World\\Chunk.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\World\\Chunk.cs",
+              "RelativeToolTip": "World\\Chunk.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAK8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T14:28:48.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Texture.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\Texture.cs",
+              "RelativeDocumentMoniker": "Graphics\\Texture.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\Texture.cs",
+              "RelativeToolTip": "Graphics\\Texture.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T13:36:29.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAD4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T00:49:42.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShaderProgram.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\ShaderProgram.cs",
+              "RelativeDocumentMoniker": "Graphics\\ShaderProgram.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\ShaderProgram.cs",
+              "RelativeToolTip": "Graphics\\ShaderProgram.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABAAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T00:40:58.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "VBO.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\VBO.cs",
               "RelativeDocumentMoniker": "Graphics\\VBO.cs",
@@ -64,21 +144,19 @@
               "RelativeToolTip": "Graphics\\VBO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:31:36.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T00:31:36.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "VAO.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\VAO.cs",
               "RelativeDocumentMoniker": "Graphics\\VAO.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\10. Block Types\\Graphics\\VAO.cs",
               "RelativeToolTip": "Graphics\\VAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:31:22.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T00:31:22.522Z"
             }
           ]
         }
