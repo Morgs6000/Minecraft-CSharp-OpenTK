@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("openTk Minecraft Clone Tutorial Series")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80cb720aba0a721ea19fadd39d5f0b0d4aed2659")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8732fb4aaa53a84e63440d70e10c70c0e86ad432")]
 [assembly: System.Reflection.AssemblyProductAttribute("openTk Minecraft Clone Tutorial Series")]
 [assembly: System.Reflection.AssemblyTitleAttribute("openTk Minecraft Clone Tutorial Series")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

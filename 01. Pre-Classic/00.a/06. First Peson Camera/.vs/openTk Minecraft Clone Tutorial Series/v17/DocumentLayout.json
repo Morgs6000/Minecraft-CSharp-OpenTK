@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\06. first peson camera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\06. first peson camera\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\06. first peson camera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\06. first peson camera\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Camera.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\06. First Peson Camera\\Camera.cs",
               "RelativeToolTip": "Camera.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADMAAAANAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAE4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T14:10:52.978Z",
               "EditorCaption": ""
@@ -71,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\06. First Peson Camera\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -79,18 +79,17 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T10:10:00.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T10:10:00.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\06. First Peson Camera\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\06. First Peson Camera\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAANIAAAAAAAAAAAAAAN4AAAAuAAAA",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAAABQBAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T10:14:43.644Z",
               "EditorCaption": ""

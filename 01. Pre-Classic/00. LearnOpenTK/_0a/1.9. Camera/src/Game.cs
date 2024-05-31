@@ -4,7 +4,6 @@ using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
 using StbImageSharp;
-using System.Security.Principal;
 
 namespace LearnOpenTK.src {
     internal class Game : GameWindow {
@@ -91,6 +90,8 @@ namespace LearnOpenTK.src {
         int texture0;
         int texture1;
 
+        Camera camera = new Camera();
+
         public Game(int width, int height, string title) 
             : base(GameWindowSettings.Default, new NativeWindowSettings() {
                 Size = (width, height),
@@ -144,6 +145,8 @@ namespace LearnOpenTK.src {
             ourShader.setInt("texture1", 1);
 
             GL.Enable(EnableCap.DepthTest);
+
+            CursorState = CursorState.Grabbed;
         }
 
         private int LeadTexture(string path) {
@@ -191,6 +194,17 @@ namespace LearnOpenTK.src {
             if(KeyboardState.IsKeyPressed(Keys.Down)) {
                 GL.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Fill);
             }
+
+            //processInput();
+            camera.processInput(KeyboardState);
+            //mouse_callback(MouseState.X, MouseState.Y);
+            camera.mouse_callback(MouseState.X, MouseState.Y);
+        }
+
+        protected override void OnMouseWheel(MouseWheelEventArgs e) {
+            base.OnMouseWheel(e);
+
+            camera.scrool_callback(e.OffsetX, e.OffsetY);
         }
 
         protected override void OnRenderFrame(FrameEventArgs args) {
@@ -204,11 +218,12 @@ namespace LearnOpenTK.src {
             model *= Matrix4.CreateRotationY(MathHelper.DegreesToRadians((float)GLFW.GetTime() * 50.0f * 1.0f));
             */
 
+            /*
             Matrix4 view = Matrix4.Identity;
             view = Matrix4.CreateTranslation(0.0f, 0.0f, -3.0f);
+            */
 
-            Matrix4 projection;
-            projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+            camera.uma_funcao_a_e(ourShader);
 
             ourShader.use();
 
@@ -216,12 +231,6 @@ namespace LearnOpenTK.src {
             int modelLoc = GL.GetUniformLocation(ourShader.ID, "model");
             GL.UniformMatrix4(modelLoc, false, ref model);
             */
-
-            int viewLoc = GL.GetUniformLocation(ourShader.ID, "view");
-            GL.UniformMatrix4(viewLoc, false, ref view);
-
-            int projectionLoc = GL.GetUniformLocation(ourShader.ID, "projection");
-            GL.UniformMatrix4(projectionLoc, false, ref projection);
 
             GL.ActiveTexture(TextureUnit.Texture0);
             GL.BindTexture(TextureTarget.Texture2D, texture0);
