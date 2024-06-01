@@ -65,8 +65,16 @@ namespace RubyDung.src.level {
             vertices += 4;
         }
 
+        /*
         public void tex(float u, float v) {
             this.texCoordList.Add(new Vector2(u, v));
+        }
+        */
+        public void tex(float u0, float u1, float v0, float v1) {
+            this.texCoordList.Add(new Vector2(u0, v0));
+            this.texCoordList.Add(new Vector2(u0, v1));
+            this.texCoordList.Add(new Vector2(u1, v1));
+            this.texCoordList.Add(new Vector2(u1, v0));
         }
     }
 }

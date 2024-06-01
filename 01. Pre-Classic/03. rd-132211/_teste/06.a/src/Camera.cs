@@ -58,8 +58,8 @@ namespace RubyDung.src {
 
         public void zBuffer() {
             GL.Enable(EnableCap.DepthTest);
-            //GL.Enable(EnableCap.CullFace);
-            //GL.CullFace(CullFaceMode.Front);
+            GL.Enable(EnableCap.CullFace);
+            GL.CullFace(CullFaceMode.Front);
         }
 
         public void processInput(KeyboardState input) {

@@ -42,8 +42,7 @@
               "RelativeToolTip": "src\\shaders\\shader.frag",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-31T12:45:56.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T12:45:56.982Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "src\\Shader.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T12:32:02.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T12:32:02.707Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "src\\shaders\\shader.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-31T12:31:25.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T12:31:25.893Z"
             },
             {
               "$type": "Document",
@@ -79,7 +76,7 @@
               "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste\\02. Gerando um Triangulo\\src\\level\\Tesselator.cs",
               "RelativeToolTip": "src\\level\\Tesselator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T12:26:37.908Z",
               "EditorCaption": ""
