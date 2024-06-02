@@ -2,7 +2,6 @@ Para Fazer:
 - Movimento da Camera
 	- altura da camera 1.62f?
 - não zuar quando redimensionar a tela
-- Não gerar a face de tras do quadrado
 - Gerar uma chunk
 	- 16 x 16
 - Apagando faces entre blocos
@@ -32,3 +31,4 @@ Feito:
 	- subir e descer apenas com Space e LShift
 	- W S apenas para frente e para tras, não subir	
 - Gerar um bloco
+- Não gerar a face de tras do quadrado
