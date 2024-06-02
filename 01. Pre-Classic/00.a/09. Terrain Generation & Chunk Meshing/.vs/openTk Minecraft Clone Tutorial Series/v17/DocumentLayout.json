@@ -7,12 +7,36 @@
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\graphics\\vao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\vao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\graphics\\shaderprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\shaderprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\graphics\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\graphics\\vbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:graphics\\vbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\world\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:world\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|solutionrelative:shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC383B8-E4D6-4719-A155-ACD6821060B2}|openTk Minecraft Clone Tutorial Series.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\00.a\\09. terrain generation \u0026 chunk meshing\\shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -42,8 +58,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShaderProgram.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\ShaderProgram.cs",
+              "RelativeDocumentMoniker": "Graphics\\ShaderProgram.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\ShaderProgram.cs",
+              "RelativeToolTip": "Graphics\\ShaderProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:56:10.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Texture.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\Texture.cs",
+              "RelativeDocumentMoniker": "Graphics\\Texture.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\Texture.cs",
+              "RelativeToolTip": "Graphics\\Texture.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:54:50.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VBO.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\VBO.cs",
+              "RelativeDocumentMoniker": "Graphics\\VBO.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\VBO.cs",
+              "RelativeToolTip": "Graphics\\VBO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:53:37.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VAO.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\VAO.cs",
+              "RelativeDocumentMoniker": "Graphics\\VAO.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Graphics\\VAO.cs",
+              "RelativeToolTip": "Graphics\\VAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:53:13.019Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -52,14 +116,14 @@
               "RelativeDocumentMoniker": "World\\Chunk.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\World\\Chunk.cs",
               "RelativeToolTip": "World\\Chunk.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAwwI4AAAAZAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T17:45:02.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Block.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\World\\Block.cs",
               "RelativeDocumentMoniker": "World\\Block.cs",
@@ -67,12 +131,11 @@
               "RelativeToolTip": "World\\Block.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T17:28:57.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T17:28:57.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "BlockData.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\World\\BlockData.cs",
               "RelativeDocumentMoniker": "World\\BlockData.cs",
@@ -84,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Camera.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Camera.cs",
               "RelativeDocumentMoniker": "Camera.cs",
@@ -96,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Default.frag",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Shaders\\Default.frag",
               "RelativeDocumentMoniker": "Shaders\\Default.frag",
@@ -108,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Default.vert",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Shaders\\Default.vert",
               "RelativeDocumentMoniker": "Shaders\\Default.vert",
@@ -120,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -132,13 +195,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00.a\\09. Terrain Generation \u0026 Chunk Meshing\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAEQAAAAJAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T10:14:43.644Z"
             }

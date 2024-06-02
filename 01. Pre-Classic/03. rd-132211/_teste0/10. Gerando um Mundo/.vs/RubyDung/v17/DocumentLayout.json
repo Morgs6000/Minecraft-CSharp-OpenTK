@@ -66,8 +66,7 @@
               "RelativeToolTip": "src\\Wireframe .cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T00:21:57.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T00:21:57.238Z"
             },
             {
               "$type": "Document",
@@ -77,7 +76,7 @@
               "RelativeDocumentMoniker": "src\\level\\LevelRenderer.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste0\\10. Gerando um Mundo\\src\\level\\LevelRenderer.cs",
               "RelativeToolTip": "src\\level\\LevelRenderer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAA5AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-02T00:11:40.651Z",
               "EditorCaption": ""
@@ -92,8 +91,7 @@
               "RelativeToolTip": "src\\level\\Level.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T21:22:35.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T21:22:35.884Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "src\\Textures.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T21:08:33.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T21:08:33.533Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "src\\level\\Chunk.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAAABwAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T20:53:06.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T20:53:06.218Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "src\\level\\Tesselator.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAgwKkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:58:32.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T16:58:32.231Z"
             },
             {
               "$type": "Document",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "src\\level\\Tile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:55:33.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T16:55:33.9Z"
             },
             {
               "$type": "Document",
@@ -179,7 +173,7 @@
               "RelativeDocumentMoniker": "src\\RubyDung.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste0\\10. Gerando um Mundo\\src\\RubyDung.cs",
               "RelativeToolTip": "src\\RubyDung.cs",
-              "ViewState": "AQIAADEBAAAAAAAAAAAAAEIBAAAMAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAHEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T15:21:15.052Z",
               "EditorCaption": ""
@@ -194,8 +188,7 @@
               "RelativeToolTip": "src\\Player.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAgwGEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T15:21:04.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T15:21:04.293Z"
             }
           ]
         }

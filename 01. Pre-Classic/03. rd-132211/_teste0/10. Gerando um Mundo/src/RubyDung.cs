@@ -111,7 +111,7 @@ namespace RubyDung.src {
     //        GL11.glLoadIdentity();
     //        GL11.glMatrixMode(5888);
     //        this.level = new Level(256, 256, 64);
-            this.level = new Level(256, 256, 64);
+            this.level = new Level(16, 16, 32);
     //        this.levelRenderer = new LevelRenderer(this.level);
             this.levelRenderer = new LevelRenderer(this.level);
     //        this.player = new Player(this.level);
