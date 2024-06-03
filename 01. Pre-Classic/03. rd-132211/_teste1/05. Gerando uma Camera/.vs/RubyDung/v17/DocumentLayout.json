@@ -103,8 +103,7 @@
               "RelativeToolTip": "src\\level\\LevelRenderer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:40:37.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:40:37.659Z"
             },
             {
               "$type": "Document",
@@ -116,8 +115,7 @@
               "RelativeToolTip": "src\\level\\Chunk.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:38:33.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:38:33.029Z"
             },
             {
               "$type": "Document",
@@ -129,8 +127,7 @@
               "RelativeToolTip": "src\\Shader.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:33:55.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:33:55.738Z"
             },
             {
               "$type": "Document",
@@ -142,8 +139,7 @@
               "RelativeToolTip": "src\\shaders\\shader.frag",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-02T11:34:53.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:34:53.204Z"
             },
             {
               "$type": "Document",
@@ -155,8 +151,7 @@
               "RelativeToolTip": "src\\shaders\\shader.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-02T11:33:37.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:33:37.737Z"
             },
             {
               "$type": "Document",
@@ -180,8 +175,7 @@
               "RelativeToolTip": "src\\level\\Tesselator.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAAADIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:29:24.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:29:24.845Z"
             },
             {
               "$type": "Document",
@@ -193,8 +187,7 @@
               "RelativeToolTip": "src\\RubyDung.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAqwDoAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:19:38.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T11:19:38.079Z"
             }
           ]
         }
