@@ -22,7 +22,7 @@ namespace RubyDung.src {
         public void use(Shader shader, int width, int height) {
             // ..:: Model ::..
             Matrix4 model = Matrix4.Identity;
-            model = Matrix4.CreateTranslation(0.0f, 0.0f, -32.0f);
+            model = Matrix4.CreateTranslation(0.0f, -64.0f, -32.0f);
 
             int modelLoc = GL.GetUniformLocation(shader.ID, "model");
             GL.UniformMatrix4(modelLoc, false, ref model);

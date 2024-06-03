@@ -22,7 +22,7 @@ namespace RubyDung.src {
         public void loadCamera(Shader shader, int width, int height) {
             // ..:: Model ::..
             Matrix4 model = Matrix4.Identity;
-            model = Matrix4.CreateTranslation(0.0f, 0.0f, -2.0f);
+            model = Matrix4.CreateTranslation(-0.5f, -0.5f, -2.0f);
 
             int modelLoc = GL.GetUniformLocation(shader.shaderProgram, "model");
             GL.UniformMatrix4(modelLoc, false, ref model);
