@@ -14,11 +14,12 @@ public class RubyDung : GameWindow {
     private Level level;
     private LevelRenderer levelRenderer;
 
-    private DrawItem drawItem = new DrawItem();
-
+    private Shader shader = new Shader();
     private Wireframe wireframe = new Wireframe();
-    
+    private Texture texture = new Texture();
     private Camera camera = new Camera();
+
+    private DrawItem drawItem = new DrawItem();
 
     public RubyDung(int width, int height, string title)
         : base(GameWindowSettings.Default, new NativeWindowSettings() {
@@ -59,10 +60,12 @@ public class RubyDung : GameWindow {
         this.level = new Level(256, 64, 256);
         this.levelRenderer = new LevelRenderer(this.level);
 
-        this.drawItem.loadSquare();
-        
+        this.shader.load();
+        this.texture.load();
         this.camera.zBuffer();
         CursorState = CursorState.Grabbed;
+
+        this.drawItem.loadSquare();
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
@@ -70,9 +73,13 @@ public class RubyDung : GameWindow {
 
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
-        this.levelRenderer.render(this.camera, this.width, this.height);
+        this.levelRenderer.render();
 
-        this.drawItem.render();        
+        this.shader.render();
+        this.texture.render();
+        this.camera.render(this.shader, this.width, this.height);
+
+        this.drawItem.render();
 
         SwapBuffers();
     }

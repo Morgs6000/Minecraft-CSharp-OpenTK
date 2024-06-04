@@ -1,0 +1,3 @@
+https://opentk.net/learn/index.html
+
+https://learnopengl.com/

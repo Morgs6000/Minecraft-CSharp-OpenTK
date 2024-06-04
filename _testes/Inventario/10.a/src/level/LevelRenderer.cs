@@ -14,9 +14,6 @@ public class LevelRenderer {
     private int yChunks;
     private int zChunks;
 
-    private Shader shader = new Shader();
-    private Texture texture = new Texture();
-
     public LevelRenderer(Level level) {
         this.level = level;
 
@@ -42,19 +39,11 @@ public class LevelRenderer {
                 }
             }
         }
-
-        this.shader.load("shader.vert", "shader.frag");
-        this.texture.load("terrain.png");
     }
 
-    public void render(Camera camera, int width, int height) {
+    public void render() {
         for(int i = 0; i < this.chunks.Length; i++) {
             this.chunks[i].render();
         }
-
-        this.shader.render();
-        this.texture.render();
-
-        camera.render(this.shader, width, height);
     }
 }

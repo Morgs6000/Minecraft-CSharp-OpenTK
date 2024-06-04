@@ -29,9 +29,6 @@ public class DrawItem {
     private int TBO; // Texture Buffer Object
     private int EBO; // Element Buffer Object
 
-    private Shader shader = new Shader();
-    private Texture texture = new Texture();
-
     public void loadSquare() {
         this.tex();
 
@@ -44,8 +41,8 @@ public class DrawItem {
         GL.BindBuffer(BufferTarget.ArrayBuffer, this.VBO);
         GL.BufferData(BufferTarget.ArrayBuffer, this.vertices.Count * Vector3.SizeInBytes, this.vertices.ToArray(), BufferUsageHint.StaticDraw);
 
-        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
-        GL.EnableVertexAttribArray(0);
+        GL.VertexAttribPointer(3, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+        GL.EnableVertexAttribArray(3);
 
         // ..:: Texture Array Object ::..
         this.TBO = GL.GenBuffer();
@@ -60,18 +57,12 @@ public class DrawItem {
 
         GL.BindBuffer(BufferTarget.ElementArrayBuffer, this.EBO);
         GL.BufferData(BufferTarget.ElementArrayBuffer, this.indices.Count * sizeof(int), this.indices.ToArray(), BufferUsageHint.StaticDraw);
-
-        //this.shader.load("itemShader.vert", "shader.frag");
-        //this.texture.load("gui/items.png");
     }
 
     public void render() {
         GL.BindVertexArray(this.VAO);
         //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
         GL.DrawElements(PrimitiveType.Triangles, this.indices.Count, DrawElementsType.UnsignedInt, 0);
-
-        //this.shader.render();
-        //this.texture.render();
     }
 
     public void tex() {

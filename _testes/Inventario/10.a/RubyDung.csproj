@@ -12,4 +12,8 @@
     <PackageReference Include="StbImageSharp" Version="2.27.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="src\textures\gui\" />
+  </ItemGroup>
+
 </Project>
