@@ -1,0 +1,84 @@
+﻿using OpenTK.Graphics.OpenGL4;
+using OpenTK.Mathematics;
+
+namespace RubyDung.src.level;
+
+public class Tesselator {
+    private List<Vector3> vertexBuffer = new List<Vector3>();
+    private List<int> triangleBuffer = new List<int>();
+    private List<Vector2> texCoordBuffer = new List<Vector2>();
+
+    private int VAO; // Vertex Array Object
+    private int VBO; // Vertex Buffer Object
+    private int TBO; // Texture Buffer Object
+    private int EBO; // Element Buffer Object
+
+    private int vertices;
+
+    public void flush() {
+        // ..:: Vertex Array Object ::..
+        VAO = GL.GenVertexArray();
+        GL.BindVertexArray(VAO);
+
+        // ..:: Vertex Array Object ::..
+        VBO = GL.GenBuffer();
+        GL.BindBuffer(BufferTarget.ArrayBuffer, VBO);
+        GL.BufferData(BufferTarget.ArrayBuffer, vertexBuffer.Count * Vector3.SizeInBytes, vertexBuffer.ToArray(), BufferUsageHint.StaticDraw);
+
+        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+        GL.EnableVertexAttribArray(0);
+
+        // ..:: Texture Array Object ::..
+        TBO = GL.GenBuffer();
+        GL.BindBuffer(BufferTarget.ArrayBuffer, TBO);
+        GL.BufferData(BufferTarget.ArrayBuffer, texCoordBuffer.Count * Vector2.SizeInBytes, texCoordBuffer.ToArray(), BufferUsageHint.StaticDraw);
+
+        GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 2 * sizeof(float), 0);
+        GL.EnableVertexAttribArray(1);
+
+        // ..:: Element Buffer Object ::..
+        EBO = GL.GenBuffer();
+
+        GL.BindBuffer(BufferTarget.ElementArrayBuffer, EBO);
+        GL.BufferData(BufferTarget.ElementArrayBuffer, triangleBuffer.Count * sizeof(int), triangleBuffer.ToArray(), BufferUsageHint.StaticDraw);
+    }
+
+    public void render() {
+        GL.BindVertexArray(VAO);
+        //GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+        GL.DrawElements(PrimitiveType.Triangles, triangleBuffer.Count, DrawElementsType.UnsignedInt, 0);
+    }
+
+    public void vertex(float x, float y, float z) {
+        vertexBuffer.Add(new Vector3(x, y, z));
+    }
+
+    public void triangle() {
+        // first triangle
+        triangleBuffer.Add(0 + vertices);
+        triangleBuffer.Add(1 + vertices);
+        triangleBuffer.Add(2 + vertices);
+
+        // second triangle
+        triangleBuffer.Add(0 + vertices);
+        triangleBuffer.Add(2 + vertices);
+        triangleBuffer.Add(3 + vertices);
+
+        vertices += 4;
+    }
+
+    public void tex(float texX, float texY) {
+        float col = 16.0f;
+        float row = 16.0f;
+
+        float u0 = texX / col;
+        float u1 = u0 + 1.0f / col;
+        float v0 = (row - 1.0f - texY) / row;
+        float v1 = v0 + 1.0f / row;
+
+        texCoordBuffer.Add(new Vector2(u0, v0));
+        texCoordBuffer.Add(new Vector2(u0, v1));
+        texCoordBuffer.Add(new Vector2(u1, v1));
+        texCoordBuffer.Add(new Vector2(u1, v0));
+    }
+}
