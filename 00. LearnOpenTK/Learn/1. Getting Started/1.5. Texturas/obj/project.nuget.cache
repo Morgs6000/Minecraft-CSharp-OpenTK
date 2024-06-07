@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eu+xwvSgyWhbN7lmJ/6sWn2R/WLsdQjfga7JVuKWK6P9FC6Kv6JCweoEayNcKFpfHuYUk/HmPjvCgJm7YAnSew==",
+  "dgSpecHash": "0QMxyKYY9H4M3jHvowbsnA3oHhGHbu9Y0H7/ZttM92Dhitf+D35PEgFBxSX0daHRe5aPV2R0e5oh28dLT3QWgQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\Learn\\1. Getting Started\\1.5. Texturas\\LearnOpenTK.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\1. Getting Started\\1.5. Texturas\\LearnOpenTK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",

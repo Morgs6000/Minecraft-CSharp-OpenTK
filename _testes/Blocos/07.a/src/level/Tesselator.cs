@@ -7,10 +7,12 @@ public class Tesselator {
     private List<Vector3> vertexBuffer = new List<Vector3>();
     private List<int> triangleBuffer = new List<int>();
     private List<Vector2> texCoordBuffer = new List<Vector2>();
+    private List<Vector3> colorBuffer = new List<Vector3>();
 
     private int VAO; // Vertex Array Object
     private int VBO; // Vertex Buffer Object
     private int TBO; // Texture Buffer Object
+    private int CBO; // Color Buffer Object
     private int EBO; // Element Buffer Object
 
     private int vertices;
@@ -28,13 +30,21 @@ public class Tesselator {
         GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
         GL.EnableVertexAttribArray(0);
 
-        // ..:: Texture Array Object ::..
+        // ..:: Texture Buffer Object ::..
         TBO = GL.GenBuffer();
         GL.BindBuffer(BufferTarget.ArrayBuffer, TBO);
         GL.BufferData(BufferTarget.ArrayBuffer, texCoordBuffer.Count * Vector2.SizeInBytes, texCoordBuffer.ToArray(), BufferUsageHint.StaticDraw);
 
         GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 2 * sizeof(float), 0);
         GL.EnableVertexAttribArray(1);
+
+        // ..:: Color Buffer Object ::..
+        CBO = GL.GenBuffer();
+        GL.BindBuffer(BufferTarget.ArrayBuffer, CBO);
+        GL.BufferData(BufferTarget.ArrayBuffer, colorBuffer.Count * Vector3.SizeInBytes, colorBuffer.ToArray(), BufferUsageHint.StaticDraw);
+
+        GL.VertexAttribPointer(2, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+        GL.EnableVertexAttribArray(2);
 
         // ..:: Element Buffer Object ::..
         EBO = GL.GenBuffer();
@@ -80,5 +90,16 @@ public class Tesselator {
         texCoordBuffer.Add(new Vector2(u0, v1));
         texCoordBuffer.Add(new Vector2(u1, v1));
         texCoordBuffer.Add(new Vector2(u1, v0));
+    }
+
+    public void tex2(float u, float v) {
+        texCoordBuffer.Add(new Vector2(u, v));
+    }
+
+    public void color(float r, float g, float b) {
+        colorBuffer.Add(new Vector3(r, g, b));
+        colorBuffer.Add(new Vector3(r, g, b));
+        colorBuffer.Add(new Vector3(r, g, b));
+        colorBuffer.Add(new Vector3(r, g, b));
     }
 }

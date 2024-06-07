@@ -1,0 +1,159 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0 (Sun Microsystems Inc.)
+
+Name: com/mojang/minecraft/a/d.class
+SHA1-Digest: phz798u/ZIzskKu+DGrIOQEDdrY=
+
+Name: com/mojang/minecraft/b.class
+SHA1-Digest: NBZvSvbNaIWRScD64RhZJTMdOmA=
+
+Name: com/mojang/minecraft/e.class
+SHA1-Digest: fF2e7sncTBlUQoXJo3Sc/ZvG1yE=
+
+Name: com/mojang/minecraft/c/d.class
+SHA1-Digest: ckIlukuqajym1eoyBS70HXKxPrQ=
+
+Name: com/mojang/minecraft/a/a/f.class
+SHA1-Digest: vaOgsKXndqwgVD91iYRtH4ahcpI=
+
+Name: com/mojang/minecraft/a/a/d.class
+SHA1-Digest: FIxgR4acWRiETvh2gbrxATZgDW8=
+
+Name: com/mojang/minecraft/a/b/a.class
+SHA1-Digest: 2BTFEDc7G7v9APTNQwpKlS4a4Cs=
+
+Name: rock.png
+SHA1-Digest: UoVeRazJGD0QR2OtuiGYwAGXzj0=
+
+Name: com/mojang/minecraft/e/e.class
+SHA1-Digest: bTBD2M4fwvG31Nr3RGckQz1E0Jg=
+
+Name: com/mojang/minecraft/d/b.class
+SHA1-Digest: HtOQwcmr1bjQZ4+85uUMPfrs92M=
+
+Name: com/mojang/minecraft/MinecraftApplet.class
+SHA1-Digest: b7F6MrMIhCSUX29givLU7HdWGhg=
+
+Name: com/mojang/minecraft/f.class
+SHA1-Digest: b+0h/ufPAYNTxevlgMpuDcx/XbM=
+
+Name: com/mojang/minecraft/a/e.class
+SHA1-Digest: +nMTQdZmi4qP7/kUEAOFa2I2S4M=
+
+Name: com/mojang/minecraft/a/b/a/a.class
+SHA1-Digest: WCtsHx1YIzxsm8RPAnXT8zu2DU0=
+
+Name: com/mojang/minecraft/c/a.class
+SHA1-Digest: HuRHPNaqFt4RV+iyyjetBXOl3NI=
+
+Name: dirt.png
+SHA1-Digest: Tj5g6xm/Asnn8FmrzIyNN26+r8w=
+
+Name: terrain.png
+SHA1-Digest: wm4iOyzqbf32Tj/OwPvQbNJ2Sgw=
+
+Name: char.png
+SHA1-Digest: oNVzyI7RpK8RwF/wzVrhgKl4+No=
+
+Name: com/mojang/minecraft/c/f.class
+SHA1-Digest: BgDLTjk6Y3Pb0YOULf97+corwJo=
+
+Name: com/mojang/minecraft/a/b.class
+SHA1-Digest: 5rPFala2y8eIyd95A776p9fHAQc=
+
+Name: com/mojang/minecraft/a/a.class
+SHA1-Digest: nXdUo4RkGs/YvhpZvA7YJ6BagF8=
+
+Name: com/mojang/minecraft/a/f.class
+SHA1-Digest: MY+qy0Rxz+6pBNyVpx6i9NsspHg=
+
+Name: com/mojang/minecraft/e/a.class
+SHA1-Digest: y7ZgOSVIb6qmqMHdEWZWJHIpuZc=
+
+Name: default.gif
+SHA1-Digest: PzOSbc68P9QHU9hZnyf9SKXEedI=
+
+Name: com/mojang/minecraft/c/c.class
+SHA1-Digest: GSn7+HoYhUTK0dhL/2NrUgNIsaY=
+
+Name: com/mojang/minecraft/a.class
+SHA1-Digest: TWn7aUyJ5xlAQmSkJuVyRLO2aPc=
+
+Name: com/mojang/minecraft/e/c.class
+SHA1-Digest: q7uPUrwTva8jfEiepvSTW4V8rM4=
+
+Name: com/mojang/minecraft/a/a/a.class
+SHA1-Digest: dgl4xYJRCMKg3bnz9HGWjLVEK0Y=
+
+Name: com/mojang/minecraft/b/a.class
+SHA1-Digest: lubSE7/bv1J8RnkMFznuWMtogIc=
+
+Name: com/mojang/minecraft/a/b/a/b.class
+SHA1-Digest: CnlJS2XPcvQ7K8k4o2fhqCaPyvw=
+
+Name: com/mojang/minecraft/d/a.class
+SHA1-Digest: zsa5Ou2hieOltJB0kURGJ0vQr7E=
+
+Name: com/mojang/minecraft/a/b/a/d.class
+SHA1-Digest: lrAkKp9s2mSEXst6/HO3eez194o=
+
+Name: com/mojang/minecraft/e/b.class
+SHA1-Digest: xZ1WwE/7DwIBEBBiytthPBPNMho=
+
+Name: water.png
+SHA1-Digest: Vhq7UdiyZLnQqLLJ4yxoNYXxRGA=
+
+Name: null
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: com/mojang/minecraft/c/e.class
+SHA1-Digest: lhXVYCO6eWK/SPKP2A380DUstO4=
+
+Name: com/mojang/minecraft/e/d.class
+SHA1-Digest: IFCkzqoKvBuNA30pi72NjNl53o0=
+
+Name: grass.png
+SHA1-Digest: /jLq3jqQxu3wZJcVd9gY24N60pU=
+
+Name: com/mojang/minecraft/a/c.class
+SHA1-Digest: 1QM/zLPFV0URjKrEeoxstTahnGs=
+
+Name: com/mojang/minecraft/a/a/e.class
+SHA1-Digest: jXwtXCdTzOhUOy1xfMLt1beJSZo=
+
+Name: com/mojang/minecraft/a/b/a/c.class
+SHA1-Digest: S/1RwK67mFIJg7hABvH8a09xqqs=
+
+Name: com/mojang/minecraft/b/b.class
+SHA1-Digest: ULUv4xmEydq2X5Zl9W7Bo+WwzIc=
+
+Name: com/mojang/minecraft/f/a.class
+SHA1-Digest: A9AixC9aONIBttG3xnEKM1eJ/tE=
+
+Name: com/mojang/minecraft/b/c.class
+SHA1-Digest: 1MLVLbJHocso4czZPj9k/FYlc3M=
+
+Name: com/mojang/minecraft/c.class
+SHA1-Digest: 40oWw1gMcXqWYuc9o9N630anoKM=
+
+Name: com/mojang/minecraft/d.class
+SHA1-Digest: HHdSaZ5473QMqgyBSg9KqopaHKs=
+
+Name: com/mojang/minecraft/g.class
+SHA1-Digest: LYlHqgmlPugZkr961vdpnYysLvs=
+
+Name: com/mojang/minecraft/e/f.class
+SHA1-Digest: 8V6ykxmUVsZ0v944X1YyoBb5qSM=
+
+Name: com/mojang/minecraft/a/a/c.class
+SHA1-Digest: 80dwuJjNvrIy40bzljxi9y/8pPQ=
+
+Name: com/mojang/minecraft/c/g.class
+SHA1-Digest: fv9uH9yD26a2ddOIVU20ljK1aXc=
+
+Name: com/mojang/minecraft/c/b.class
+SHA1-Digest: sA9WMh9tx4oqGSMw1luG6e1rh2k=
+
+Name: com/mojang/minecraft/a/a/b.class
+SHA1-Digest: VRZaq39g+H8oNw94L61GvGL//z0=
+

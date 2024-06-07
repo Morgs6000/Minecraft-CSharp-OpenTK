@@ -26,6 +26,9 @@ namespace RubyDung.src {
             else {
                 Console.WriteLine("Failed to load texture");
             }
+
+            GL.Enable(EnableCap.Blend);
+            GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
         }
 
         public void bind() {

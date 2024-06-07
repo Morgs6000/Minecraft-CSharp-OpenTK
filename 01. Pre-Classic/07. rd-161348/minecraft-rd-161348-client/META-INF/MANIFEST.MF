@@ -1,0 +1,93 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_33 (Sun Microsystems Inc.)
+
+Name: com/mojang/minecraft/level/tile/Tile.class
+SHA1-Digest: FNWneWCav8KG7W+iEBvs6JUEjXo=
+
+Name: com/mojang/minecraft/character/Cube.class
+SHA1-Digest: q7xgqKfvjj65T2iYXGP6DGxSKCo=
+
+Name: com/mojang/minecraft/Entity.class
+SHA1-Digest: 6dAOLK8mx2OdOugIupYLrpgNb6Q=
+
+Name: com/mojang/minecraft/particle/ParticleEngine.class
+SHA1-Digest: 5IPKhE1LnBwhTs6sP1tDP9hLQE0=
+
+Name: com/mojang/minecraft/level/LevelListener.class
+SHA1-Digest: DWNrpGhqZ0MOnp0UW7AShXc7tLg=
+
+Name: com/mojang/minecraft/HitResult.class
+SHA1-Digest: 7tnYUSUzjj/NtwbG1xawnh2DLHE=
+
+Name: com/mojang/minecraft/MinecraftApplet.class
+SHA1-Digest: KSkRRX4LYSTrZ6i8k7pLwCq5XmI=
+
+Name: com/mojang/minecraft/character/Vertex.class
+SHA1-Digest: ciwZoQV3rKjIzNtdi2xG6cxka5M=
+
+Name: com/mojang/minecraft/level/PerlinNoiseFilter.class
+SHA1-Digest: XzEVCrj8PSQ7RqnGSm8qyqQFoTk=
+
+Name: com/mojang/minecraft/RubyDung.class
+SHA1-Digest: XEEtopkZaeDXquZT1XQkB3uRafM=
+
+Name: com/mojang/minecraft/level/Tesselator.class
+SHA1-Digest: hUQCCjqCQmIxLw6/teBAmFGCb0I=
+
+Name: com/mojang/minecraft/character/Vec3.class
+SHA1-Digest: 0WlABbutwWWIyTuQd5gcD8eW6wg=
+
+Name: com/mojang/minecraft/character/Zombie.class
+SHA1-Digest: TU44ebcEcctYJmfW1xRruuBqrdg=
+
+Name: com/mojang/minecraft/level/LevelRenderer.class
+SHA1-Digest: HFbRluaJJrnClDM58EbHJcbllrs=
+
+Name: com/mojang/minecraft/particle/Particle.class
+SHA1-Digest: lKn+ERSPRGw0FnV1uW9IgVmr2+s=
+
+Name: com/mojang/minecraft/level/Chunk.class
+SHA1-Digest: uL35u6IBcM7/+9gOm6Nf6baNpEE=
+
+Name: terrain.png
+SHA1-Digest: wm4iOyzqbf32Tj/OwPvQbNJ2Sgw=
+
+Name: com/mojang/minecraft/level/Level.class
+SHA1-Digest: Jf2gYGrcXwM/x3HpYq6vgO78yIY=
+
+Name: com/mojang/minecraft/level/DirtyChunkSorter.class
+SHA1-Digest: 6jTDtLIp1vRgZKjWnXJWEaWprh0=
+
+Name: com/mojang/minecraft/phys/AABB.class
+SHA1-Digest: 8j6Xnq2wemisgQVzU+VB80/dqY4=
+
+Name: com/mojang/minecraft/level/Frustum.class
+SHA1-Digest: apUs7U4AwoGY2ApuukkLt2m24yg=
+
+Name: char.png
+SHA1-Digest: oNVzyI7RpK8RwF/wzVrhgKl4+No=
+
+Name: com/mojang/minecraft/character/ZombieModel.class
+SHA1-Digest: Ma06hX1WPMBxEVXATpFXyFXDDs8=
+
+Name: com/mojang/minecraft/Timer.class
+SHA1-Digest: WT6iT55oPyVK8qprBTtahO66RWI=
+
+Name: com/mojang/minecraft/level/tile/Bush.class
+SHA1-Digest: RFwhqkwU2gKxbL+B+F7O3g0msB8=
+
+Name: com/mojang/minecraft/character/Polygon.class
+SHA1-Digest: IwX8vC8GVfMRSRVu/P+mia4iOnE=
+
+Name: com/mojang/minecraft/level/tile/GrassTile.class
+SHA1-Digest: YsbdUOriOh5zHnWwC7uGOsqOJw0=
+
+Name: com/mojang/minecraft/Textures.class
+SHA1-Digest: ESK2WZK9ErN/oKzbkkL07ltPE8Y=
+
+Name: com/mojang/minecraft/Player.class
+SHA1-Digest: qo6cO3HKkMtZ6arMEa2cZIZdKp8=
+
+Name: com/mojang/minecraft/level/tile/DirtTile.class
+SHA1-Digest: hoYIR+W1PVd8TkYU38X2cMimLyU=
+
