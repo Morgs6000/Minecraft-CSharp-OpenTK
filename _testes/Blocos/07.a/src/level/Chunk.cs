@@ -43,7 +43,7 @@ public class Chunk {
         Block.cobblestoneMossy.render(this.t, (4 * 2), 0, (2 * 2));
         Block.obsidian.render(this.t, (5 * 2), 0, (2 * 2));
         Block.tallGrass.render(this.t, (7 * 2), 0, (2 * 2));
-        //Block.beacon.render(this.t, (9 * 2), 0, (2 * 2));
+        Block.beacon.render(this.t, (9 * 2), 0, (2 * 2));
         Block.workbench.render(this.t, (11 * 2), 0, (2 * 2));
         Block.stoneOvenIdle.render(this.t, (12 * 2), 0, (2 * 2));
         Block.dispenser.render(this.t, (14 * 2), 0, (2 * 2));

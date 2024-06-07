@@ -4,11 +4,11 @@ namespace RubyDung.src.level.block;
 
 public class BlockBeacon : Block {
     public BlockBeacon() {
-
+        //this.tex = new Vector2(5, 2);
     }
 
-    protected virtual void renderFace(Tesselator t, int x, int y, int z, int face) {
-        this.renderGlass(t, x, y, z);
+    protected override void renderFace(Tesselator t, int x, int y, int z, int face) {
+        //this.renderGlass(t, x, y, z);
         this.renderObsidian(t, x, y, z);
         this.renderBeacon(t, x, y, z);
     }
@@ -67,7 +67,7 @@ public class BlockBeacon : Block {
         t.vertex(x0, y0, z0);
 
         t.triangle();
-        t.tex(1, 3);
+        t.tex(tex.X, tex.Y);
 
         // ..:: Positive Z ::..
         t.vertex(x0, y0, z1);
