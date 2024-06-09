@@ -16,8 +16,10 @@ public class BlockLog : Block {
 
     private logType type;
 
-    protected override Vector2 getTexture(int face) {
-        if(face == 3 || face == 2) {
+    protected override Vector2 getTexture(faceType face) {
+        if(face == faceType.positiveY || 
+           face == faceType.negativeY
+        ) {
             return new Vector2(5, 1);
         }
 

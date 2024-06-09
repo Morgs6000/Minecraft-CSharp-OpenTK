@@ -37,7 +37,7 @@ public class Block {
     public static Block obsidian = new Block().setTexture(5, 2);
     public static Block tallGrass = new BlockTallGrass(BlockTallGrass.grassType.tall_grass);
     public static Block beacon = new BlockBeacon();
-    public static Block stoneOvenIdle = new BlockFurnace(new Vector2(12, 2));
+    public static Block stoneOvenIdle = new BlockFurnace(BlockFurnace.furnaceType.idle);
     public static Block dispenser = new BlockDispenser();
 
     public static Block sponge = new Block().setTexture(0, 3);
@@ -50,7 +50,7 @@ public class Block {
     public static Block deadBush = new BlockTallGrass(BlockTallGrass.grassType.dead_bush);
     public static Block fern = new BlockTallGrass(BlockTallGrass.grassType.fern);
     public static Block workbench = new BlockWorkbench();
-    public static Block stoneOvenActive = new BlockFurnace(new Vector2(13, 3));
+    public static Block stoneOvenActive = new BlockFurnace(BlockFurnace.furnaceType.active);
     public static Block sapling_spruce = new BlockSapling(BlockSapling.saplingType.spruce);
 
     public static Block cloth = new Block().setTexture(0, 4);
@@ -62,14 +62,14 @@ public class Block {
     public static Block blockClay = new Block().setTexture(8, 4);
     public static Block reed = new BlockReed();
     public static Block music = new Block().setTexture(10, 4);
-    public static Block jukebox = new Block().setTexture(11, 4);
-    public static Block waterlily = new Block().setTexture(12, 4);
-    public static Block mycelium = new Block().setTexture(13, 4);
+    public static Block jukebox = new BlockJukeBox();
+    public static Block waterlily = new BlockLilyPad();
+    public static Block mycelium = new BlockMycelium();
     public static Block sapling_birch = new BlockSapling(BlockSapling.saplingType.birch);
 
-    public static Block torchWood = new Block().setTexture(0, 5);
-    public static Block stairCompactPlanks = new Block().setTexture(3, 5);
-    public static Block trapdoor = new Block().setTexture(4, 5);
+    public static Block torchWood = new BlockTorch();
+    public static Block stairCompactPlanks = new BlockStairs();
+    public static Block trapdoor = new BlockTrapDoor();
     public static Block fenceIron = new Block().setTexture(5, 5);
     public static Block tilledField = new Block().setTexture(6, 5);
     public static Block tilledField_dry = new Block().setTexture(7, 5);
@@ -213,33 +213,42 @@ public class Block {
 
     public void render(Tesselator t, int x, int y, int z) {
         // ..:: Negative X ::..
-        this.renderFace(t, x, y, z, 0);
+        this.renderFace(t, x, y, z, faceType.negativeX);
 
         // ..:: Positive X ::..
-        this.renderFace(t, x, y, z, 1);
+        this.renderFace(t, x, y, z, faceType.positiveX);
 
         // ..:: Negative Y ::..
-        this.renderFace(t, x, y, z, 2);
+        this.renderFace(t, x, y, z, faceType.negativeY);
 
         // ..:: Positive Y ::..
-        this.renderFace(t, x, y, z, 3);
+        this.renderFace(t, x, y, z, faceType.positiveY);
 
         // ..:: Negative Z ::..
-        this.renderFace(t, x, y, z, 4);
+        this.renderFace(t, x, y, z, faceType.negativeZ);
 
         // ..:: Positive Z ::..
-        this.renderFace(t, x, y, z, 5);
+        this.renderFace(t, x, y, z, faceType.positiveZ);
     }
 
-    protected virtual Vector2 getTexture(int face) {
+    protected virtual Vector2 getTexture(faceType face) {
         return this.tex;
     }
 
-    protected virtual Vector3 getColor(int face) {
+    protected virtual Vector3 getColor(faceType face) {
         return this.color;
     }
 
-    protected virtual void renderFace(Tesselator t, int x, int y, int z, int face) {
+    public enum faceType {
+        negativeX,
+        positiveX,
+        negativeY,
+        positiveY,
+        negativeZ,
+        positiveZ
+    }
+
+    protected virtual void renderFace(Tesselator t, int x, int y, int z, faceType face) {
         float x0 = x + 0.0f;
         float y0 = y + 0.0f;
         float z0 = z + 0.0f;
@@ -252,7 +261,7 @@ public class Block {
         Vector3 color = this.getColor(face);
 
         // ..:: Negative X ::..
-        if(face == 0) {
+        if(face == faceType.negativeX) {
             t.vertex(x0, y0, z0);
             t.vertex(x0, y1, z0);
             t.vertex(x0, y1, z1);
@@ -264,7 +273,7 @@ public class Block {
         }
 
         // ..:: Positive X ::..
-        if(face == 1) {
+        if(face == faceType.positiveX) {
             t.vertex(x1, y0, z1);
             t.vertex(x1, y1, z1);
             t.vertex(x1, y1, z0);
@@ -276,7 +285,7 @@ public class Block {
         }
 
         // ..:: Negative Y ::..
-        if(face == 2) {
+        if(face == faceType.negativeY) {
             t.vertex(x0, y0, z0);
             t.vertex(x0, y0, z1);
             t.vertex(x1, y0, z1);
@@ -288,7 +297,7 @@ public class Block {
         }
 
         // ..:: Positive Y ::..
-        if(face == 3) {
+        if(face == faceType.positiveY) {
             t.vertex(x0, y1, z1);
             t.vertex(x0, y1, z0);
             t.vertex(x1, y1, z0);
@@ -300,7 +309,7 @@ public class Block {
         }
 
         // ..:: Negative Z ::..
-        if(face == 4) {
+        if(face == faceType.negativeZ) {
             t.vertex(x1, y0, z0);
             t.vertex(x1, y1, z0);
             t.vertex(x0, y1, z0);
@@ -312,7 +321,7 @@ public class Block {
         }
 
         // ..:: Positive Z ::..
-        if(face == 5) {
+        if(face == faceType.positiveZ) {
             t.vertex(x0, y0, z1);
             t.vertex(x0, y1, z1);
             t.vertex(x1, y1, z1);

@@ -7,11 +7,14 @@ public class BlockDispenser : Block {
         
     }
 
-    protected override Vector2 getTexture(int face) {
-        if(face == 0 || face == 1 || face == 4) {
+    protected override Vector2 getTexture(faceType face) {
+        if(face == faceType.negativeX || 
+           face == faceType.positiveX || 
+           face == faceType.negativeZ
+        ) {
             return new Vector2(13, 2);
         }
-        if(face == 5) {
+        if(face == faceType.positiveZ) {
             return new Vector2(14, 2);
         }
         else {

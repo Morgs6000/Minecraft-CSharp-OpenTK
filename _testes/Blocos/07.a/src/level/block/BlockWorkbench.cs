@@ -7,21 +7,19 @@ public class BlockWorkbench : Block {
         
     }
 
-    protected override Vector2 getTexture(int face) {
-        if(face == 0) {
+    protected override Vector2 getTexture(faceType face) {
+        if(face == faceType.negativeX ||
+           face == faceType.negativeZ
+        ) {
             return new Vector2(12, 3);
         }
-        if(face == 1) {
+        if(face == faceType.positiveX ||
+           face == faceType.positiveZ
+        ) {
             return new Vector2(11, 3);
         }
-        if(face == 3) {
+        if(face == faceType.positiveY) {
             return new Vector2(11, 2);
-        }
-        if(face == 4) {
-            return new Vector2(12, 3);
-        }
-        if(face == 5) {
-            return new Vector2(11, 3);
         }
         else {
             return new Vector2(4, 0);

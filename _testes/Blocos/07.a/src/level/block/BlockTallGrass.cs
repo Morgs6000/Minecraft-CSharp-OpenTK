@@ -15,7 +15,7 @@ public class BlockTallGrass : Block {
 
     private grassType type;
 
-    protected override Vector2 getTexture(int face) {
+    protected override Vector2 getTexture(faceType face) {
         if(type == grassType.fern) {
             return new Vector2(8, 3);
         }
@@ -38,7 +38,7 @@ public class BlockTallGrass : Block {
     }
     */
 
-    protected override void renderFace(Tesselator t, int x, int y, int z, int face) {
+    protected override void renderFace(Tesselator t, int x, int y, int z, faceType face) {
         float x0 = x + 0.0f;
         float y0 = y + 0.0f;
         float z0 = z + 0.0f;
@@ -50,48 +50,44 @@ public class BlockTallGrass : Block {
         Vector2 tex = this.getTexture(face);
         Vector3 color = this.getColor(face);
 
-        if(face == 0) {
-            t.vertex(x0, y0, z0);
-            t.vertex(x0, y1, z0);
-            t.vertex(x1, y1, z1);
-            t.vertex(x1, y0, z1);
+        // ..:: ::..
+        t.vertex(x0, y0, z0);
+        t.vertex(x0, y1, z0);
+        t.vertex(x1, y1, z1);
+        t.vertex(x1, y0, z1);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        }
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
-        if(face == 1) {
-            t.vertex(x1, y0, z0);
-            t.vertex(x1, y1, z0);
-            t.vertex(x0, y1, z1);
-            t.vertex(x0, y0, z1);
+        // ..:: ::..
+        t.vertex(x1, y0, z0);
+        t.vertex(x1, y1, z0);
+        t.vertex(x0, y1, z1);
+        t.vertex(x0, y0, z1);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        }
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
-        if(face == 2) {
-            t.vertex(x1, y0, z1);
-            t.vertex(x1, y1, z1);
-            t.vertex(x0, y1, z0);
-            t.vertex(x0, y0, z0);
+        // ..:: ::..
+        t.vertex(x1, y0, z1);
+        t.vertex(x1, y1, z1);
+        t.vertex(x0, y1, z0);
+        t.vertex(x0, y0, z0);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        }
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
-        if(face == 3) {
-            t.vertex(x0, y0, z1);
-            t.vertex(x0, y1, z1);
-            t.vertex(x1, y1, z0);
-            t.vertex(x1, y0, z0);
+        // ..:: ::..
+        t.vertex(x0, y0, z1);
+        t.vertex(x0, y1, z1);
+        t.vertex(x1, y1, z0);
+        t.vertex(x1, y0, z0);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        }
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
     }
 }

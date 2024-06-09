@@ -14,31 +14,31 @@ public class BlockGrass : Block {
 
     private grassType type;
 
-    protected override Vector2 getTexture(int face) {
+    protected override Vector2 getTexture(faceType face) {
         if(type == grassType.snow) {
-                if(face == 3) {
+                if(face == faceType.positiveY) {
                 return new Vector2(2, 4);
             }
             else {
-                return face == 2 ? new Vector2(2, 0) : new Vector2(4, 4);
+                return face == faceType.negativeY ? new Vector2(2, 0) : new Vector2(4, 4);
             }
         }
         else {
-            if(face == 3) {
+            if(face == faceType.positiveY) {
                 return new Vector2(0, 0);
             }
             else {
-                return face == 2 ? new Vector2(2, 0) : new Vector2(3, 0);
+                return face == faceType.negativeY ? new Vector2(2, 0) : new Vector2(3, 0);
             }
         }
     }
 
-    protected override Vector3 getColor(int face) {
+    protected override Vector3 getColor(faceType face) {
         if(type == grassType.snow) {
                 return new Vector3(1.0f, 1.0f, 1.0f);
         }
         else {
-            if(face == 3) {
+            if(face == faceType.positiveY) {
                 return new Vector3(0.0f, 1.0f, 0.0f);
             }
             else {

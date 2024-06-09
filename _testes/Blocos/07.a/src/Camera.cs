@@ -9,6 +9,8 @@ public class Camera {
     Vector3 cameraFront = new Vector3(0.0f, 0.0f, -1.0f);
     Vector3 cameraUp = new Vector3(0.0f, 1.0f, 0.0f);
 
+    float fov = 60.0f;
+
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
 
@@ -37,7 +39,7 @@ public class Camera {
 
         // ..:: Projection ::..
         Matrix4 projection;
-        projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), width / height, 0.1f, 100.0f);
+        projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(fov), (float)width / (float)height, 0.1f, 100.0f);
 
         int projectionLoc = GL.GetUniformLocation(shader.shaderProgram, "projection");
         GL.UniformMatrix4(projectionLoc, false, ref projection);

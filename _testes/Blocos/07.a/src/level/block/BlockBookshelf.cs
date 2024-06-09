@@ -7,8 +7,8 @@ public class BlockBookshelf : Block {
 
     }
 
-    protected override Vector2 getTexture(int face) {
-        if(face == 3 || face == 2) {
+    protected override Vector2 getTexture(faceType face) {
+        if(face == faceType.positiveY || face == faceType.negativeY) {
             return new Vector2(4, 0);
         }
         else {
@@ -16,7 +16,7 @@ public class BlockBookshelf : Block {
         }
     }
 
-    protected virtual void renderFace(Tesselator t, int x, int y, int z, int face) {
+    protected virtual void renderFace(Tesselator t, int x, int y, int z, faceType face) {
         float x0 = x + 0.0f;
         float y0 = y + 0.0f;
         float z0 = z + 0.0f;

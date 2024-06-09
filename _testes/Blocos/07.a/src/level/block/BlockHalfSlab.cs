@@ -7,8 +7,10 @@ public class BlockHalfSlab : Block {
         
     }
 
-    protected override Vector2 getTexture(int face) {
-        if(face == 2 || face == 3) {
+    protected override Vector2 getTexture(faceType face) {
+        if(face == faceType.negativeY || 
+           face == faceType.positiveY
+        ) {
             return new Vector2(6, 0);
         }
         else {

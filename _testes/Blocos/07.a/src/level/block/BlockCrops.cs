@@ -27,7 +27,7 @@ public class BlockCrops : Block {
 
     private cropType type;
 
-    protected override Vector2 getTexture(int face) {
+    protected override Vector2 getTexture(faceType face) {
         if(type == cropType.nether_wart_2) {
             return new Vector2(4, 14);
         }
@@ -78,7 +78,7 @@ public class BlockCrops : Block {
         }
     }
 
-    protected override void renderFace(Tesselator t, int x, int y, int z, int face) {
+    protected override void renderFace(Tesselator t, int x, int y, int z, faceType face) {
         float x0 = x + 0.0f;
         float y0 = y + 0.0f;
         float z0 = z + 0.0f;
@@ -93,99 +93,83 @@ public class BlockCrops : Block {
         float pixel = (1.0f / 16.0f);
 
         // ..:: Negative X ::..
-        //if(face == 0) {
-            t.vertex(x0 + (pixel * 4.0f), y0, z0);
-            t.vertex(x0 + (pixel * 4.0f), y1, z0);
-            t.vertex(x0 + (pixel * 4.0f), y1, z1);
-            t.vertex(x0 + (pixel * 4.0f), y0, z1);
+        t.vertex(x0 + (pixel * 4.0f), y0, z0);
+        t.vertex(x0 + (pixel * 4.0f), y1, z0);
+        t.vertex(x0 + (pixel * 4.0f), y1, z1);
+        t.vertex(x0 + (pixel * 4.0f), y0, z1);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
         // ..:: Positive X ::..
-        //if(face == 1) {
-            t.vertex(x1 - (pixel * 12.0f), y0, z1);
-            t.vertex(x1 - (pixel * 12.0f), y1, z1);
-            t.vertex(x1 - (pixel * 12.0f), y1, z0);
-            t.vertex(x1 - (pixel * 12.0f), y0, z0);
+        t.vertex(x1 - (pixel * 12.0f), y0, z1);
+        t.vertex(x1 - (pixel * 12.0f), y1, z1);
+        t.vertex(x1 - (pixel * 12.0f), y1, z0);
+        t.vertex(x1 - (pixel * 12.0f), y0, z0);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
         // ..:: Negative X ::..
-        //if(face == 0) {
-            t.vertex(x0 + (pixel * 12.0f), y0, z0);
-            t.vertex(x0 + (pixel * 12.0f), y1, z0);
-            t.vertex(x0 + (pixel * 12.0f), y1, z1);
-            t.vertex(x0 + (pixel * 12.0f), y0, z1);
+        t.vertex(x0 + (pixel * 12.0f), y0, z0);
+        t.vertex(x0 + (pixel * 12.0f), y1, z0);
+        t.vertex(x0 + (pixel * 12.0f), y1, z1);
+        t.vertex(x0 + (pixel * 12.0f), y0, z1);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
         // ..:: Positive X ::..
-        //if(face == 1) {
-            t.vertex(x1 - (pixel * 4.0f), y0, z1);
-            t.vertex(x1 - (pixel * 4.0f), y1, z1);
-            t.vertex(x1 - (pixel * 4.0f), y1, z0);
-            t.vertex(x1 - (pixel * 4.0f), y0, z0);
+        t.vertex(x1 - (pixel * 4.0f), y0, z1);
+        t.vertex(x1 - (pixel * 4.0f), y1, z1);
+        t.vertex(x1 - (pixel * 4.0f), y1, z0);
+        t.vertex(x1 - (pixel * 4.0f), y0, z0);
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
         // ..:: Negative Z ::..
-        //if(face == 4) {
-            t.vertex(x1, y0, z0 + (pixel * 4.0f));
-            t.vertex(x1, y1, z0 + (pixel * 4.0f));
-            t.vertex(x0, y1, z0 + (pixel * 4.0f));
-            t.vertex(x0, y0, z0 + (pixel * 4.0f));
+        t.vertex(x1, y0, z0 + (pixel * 4.0f));
+        t.vertex(x1, y1, z0 + (pixel * 4.0f));
+        t.vertex(x0, y1, z0 + (pixel * 4.0f));
+        t.vertex(x0, y0, z0 + (pixel * 4.0f));
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
         // ..:: Positive Z ::..
-        //if(face == 5) {
-            t.vertex(x0, y0, z1 - (pixel * 12.0f));
-            t.vertex(x0, y1, z1 - (pixel * 12.0f));
-            t.vertex(x1, y1, z1 - (pixel * 12.0f));
-            t.vertex(x1, y0, z1 - (pixel * 12.0f));
+        t.vertex(x0, y0, z1 - (pixel * 12.0f));
+        t.vertex(x0, y1, z1 - (pixel * 12.0f));
+        t.vertex(x1, y1, z1 - (pixel * 12.0f));
+        t.vertex(x1, y0, z1 - (pixel * 12.0f));
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
         // ..:: Negative Z ::..
-        //if(face == 4) {
-            t.vertex(x1, y0, z0 + (pixel * 12.0f));
-            t.vertex(x1, y1, z0 + (pixel * 12.0f));
-            t.vertex(x0, y1, z0 + (pixel * 12.0f));
-            t.vertex(x0, y0, z0 + (pixel * 12.0f));
+        t.vertex(x1, y0, z0 + (pixel * 12.0f));
+        t.vertex(x1, y1, z0 + (pixel * 12.0f));
+        t.vertex(x0, y1, z0 + (pixel * 12.0f));
+        t.vertex(x0, y0, z0 + (pixel * 12.0f));
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
 
         // ..:: Positive Z ::..
-        //if(face == 5) {
-            t.vertex(x0, y0, z1 - (pixel * 4.0f));
-            t.vertex(x0, y1, z1 - (pixel * 4.0f));
-            t.vertex(x1, y1, z1 - (pixel * 4.0f));
-            t.vertex(x1, y0, z1 - (pixel * 4.0f));
+        t.vertex(x0, y0, z1 - (pixel * 4.0f));
+        t.vertex(x0, y1, z1 - (pixel * 4.0f));
+        t.vertex(x1, y1, z1 - (pixel * 4.0f));
+        t.vertex(x1, y0, z1 - (pixel * 4.0f));
 
-            t.triangle();
-            t.tex(tex.X, tex.Y);
-            t.color(color.X, color.Y, color.Z);
-        //}
+        t.triangle();
+        t.tex(tex.X, tex.Y);
+        t.color(color.X, color.Y, color.Z);
     }
 }

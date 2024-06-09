@@ -1,7 +1,6 @@
 Para Fazer:
 - Movimento da Camera
 	- altura da camera 1.62f?
-- não zuar quando redimensionar a tela
 - colisor
 	- AABB (Axis-Aling Bound Box)
 - Pressionar R da um respawn aleatório
@@ -12,6 +11,8 @@ Para Fazer:
 	- Teria que ter um colisor mesmo para blocos não visiveis?
 - Highlight
 - Save game
+
+
 
 Feito:
 - Gerar uma Janela
@@ -32,3 +33,5 @@ Feito:
 - gerando camadas de blocos
 - gerando um mundo
 	- 256 x 64 x 256
+
+- não zuar quando redimensionar a tela

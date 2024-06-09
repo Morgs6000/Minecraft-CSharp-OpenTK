@@ -8,13 +8,13 @@ public class BlockBeacon : Block {
         //this.tex = new Vector2(5, 2);
     }
 
-    protected override void renderFace(Tesselator t, int x, int y, int z, int face) {
-        this.renderGlass(t, x, y, z);
+    protected override void renderFace(Tesselator t, int x, int y, int z, faceType face) {
+        this.renderGlass(t, x, y, z, face);
         this.renderObsidian(t, x, y, z);
         this.renderBeacon(t, x, y, z);
     }
 
-    public void renderGlass(Tesselator t, int x, int y, int z) {
+    public void renderGlass(Tesselator t, int x, int y, int z, faceType face) {
         float x0 = x + 0.0f;
         float y0 = y + 0.0f;
         float z0 = z + 0.0f;
@@ -26,58 +26,70 @@ public class BlockBeacon : Block {
         Vector2 tex = new Vector2(1, 3);
 
         // ..:: Negative X ::..
-        t.vertex(x0, y0, z0);
-        t.vertex(x0, y1, z0);
-        t.vertex(x0, y1, z1);
-        t.vertex(x0, y0, z1);
+        if(face == faceType.negativeX) {
+            t.vertex(x0, y0, z0);
+            t.vertex(x0, y1, z0);
+            t.vertex(x0, y1, z1);
+            t.vertex(x0, y0, z1);
 
-        t.triangle();
-        t.tex(tex.X, tex.Y); 
+            t.triangle();
+            t.tex(tex.X, tex.Y);
+        }
 
         // ..:: Positive X ::..
-        t.vertex(x1, y0, z1);
-        t.vertex(x1, y1, z1);
-        t.vertex(x1, y1, z0);
-        t.vertex(x1, y0, z0);
+        if(face == faceType.positiveX) {
+            t.vertex(x1, y0, z1);
+            t.vertex(x1, y1, z1);
+            t.vertex(x1, y1, z0);
+            t.vertex(x1, y0, z0);
 
-        t.triangle();
-        t.tex(tex.X, tex.Y);
+            t.triangle();
+            t.tex(tex.X, tex.Y);
+        }
 
         // ..:: Negative Y ::..
-        t.vertex(x0, y0, z0);
-        t.vertex(x0, y0, z1);
-        t.vertex(x1, y0, z1);
-        t.vertex(x1, y0, z0);
+        if(face == faceType.negativeY) {
+            t.vertex(x0, y0, z0);
+            t.vertex(x0, y0, z1);
+            t.vertex(x1, y0, z1);
+            t.vertex(x1, y0, z0);
 
-        t.triangle();
-        t.tex(tex.X, tex.Y);
+            t.triangle();
+            t.tex(tex.X, tex.Y);
+        }
 
         // ..:: Positive Y ::..
-        t.vertex(x0, y1, z1);
-        t.vertex(x0, y1, z0);
-        t.vertex(x1, y1, z0);
-        t.vertex(x1, y1, z1);
+        if(face == faceType.positiveY) {
+            t.vertex(x0, y1, z1);
+            t.vertex(x0, y1, z0);
+            t.vertex(x1, y1, z0);
+            t.vertex(x1, y1, z1);
 
-        t.triangle();
-        t.tex(tex.X, tex.Y);
+            t.triangle();
+            t.tex(tex.X, tex.Y);
+        }
 
         // ..:: Negative Z ::..
-        t.vertex(x1, y0, z0);
-        t.vertex(x1, y1, z0);
-        t.vertex(x0, y1, z0);
-        t.vertex(x0, y0, z0);
+        if(face == faceType.negativeZ) {
+            t.vertex(x1, y0, z0);
+            t.vertex(x1, y1, z0);
+            t.vertex(x0, y1, z0);
+            t.vertex(x0, y0, z0);
 
-        t.triangle();
-        t.tex(tex.X, tex.Y);
+            t.triangle();
+            t.tex(tex.X, tex.Y);
+        }
 
         // ..:: Positive Z ::..
-        t.vertex(x0, y0, z1);
-        t.vertex(x0, y1, z1);
-        t.vertex(x1, y1, z1);
-        t.vertex(x1, y0, z1);
+        if(face == faceType.positiveZ) {
+            t.vertex(x0, y0, z1);
+            t.vertex(x0, y1, z1);
+            t.vertex(x1, y1, z1);
+            t.vertex(x1, y0, z1);
 
-        t.triangle();
-        t.tex(tex.X, tex.Y);
+            t.triangle();
+            t.tex(tex.X, tex.Y);
+        }
     }
 
     public void renderObsidian(Tesselator t, int x, int y, int z) {
