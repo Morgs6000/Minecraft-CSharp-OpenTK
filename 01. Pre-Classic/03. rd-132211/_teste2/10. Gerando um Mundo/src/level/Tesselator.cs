@@ -18,9 +18,6 @@ public class Tesselator {
     //private int texX;
     //private int texY;
 
-    private float col = 16.0f;
-    private float row = 16.0f;
-
     public void flush() {
         // ..:: Vertex Array Object ::..
         this.VAO = GL.GenVertexArray();
@@ -73,15 +70,7 @@ public class Tesselator {
         this.vertices += 4;
     }
 
-    public void tex(float texX, float texY) {
-        float u0 = texX / this.col;
-        float u1 = u0 + 1.0f / this.col;
-        float v0 = (this.row - 1.0f - texY) / this.row;
-        float v1 = v0 + 1.0f / this.row;
-
-        this.texCoordBuffer.Add(new Vector2(u0, v0));
-        this.texCoordBuffer.Add(new Vector2(u0, v1));
-        this.texCoordBuffer.Add(new Vector2(u1, v1));
-        this.texCoordBuffer.Add(new Vector2(u1, v0));
+    public void tex(float u, float v) {
+        this.texCoordBuffer.Add(new Vector2(u, v));
     }
 }

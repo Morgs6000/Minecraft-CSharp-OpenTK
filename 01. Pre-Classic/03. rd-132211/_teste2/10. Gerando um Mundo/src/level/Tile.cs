@@ -1,4 +1,5 @@
 ﻿using OpenTK.Mathematics;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace RubyDung.src.level;
 
@@ -21,6 +22,14 @@ public class Tile {
         float y1 = (float)y + 1.0f;
         float z1 = (float)z + 1.0f;
 
+        float col = 16.0f;
+        float row = 16.0f;
+
+        float u0 = tex.X / col;
+        float u1 = u0 + 1.0f / col;
+        float v0 = (row - 1.0f - tex.Y) / row;
+        float v1 = v0 + 1.0f / row;
+
         // ..:: Negative X ::..
         if(!level.isSolidTile(x - 1, y, z)) {
             t.vertex(x0, y0, z0);
@@ -29,7 +38,11 @@ public class Tile {
             t.vertex(x0, y0, z1);
 
             t.triangle();
-            t.tex(this.tex.X, this.tex.Y);
+
+            t.tex(u0, v0);
+            t.tex(u0, v1);
+            t.tex(u1, v1);
+            t.tex(u1, v0);
         }
 
         // ..:: Positive X ::..
@@ -40,7 +53,11 @@ public class Tile {
             t.vertex(x1, y0, z0);
 
             t.triangle();
-            t.tex(this.tex.X, this.tex.Y);
+
+            t.tex(u0, v0);
+            t.tex(u0, v1);
+            t.tex(u1, v1);
+            t.tex(u1, v0);
         }
 
         // ..:: Negative Y ::..
@@ -51,7 +68,11 @@ public class Tile {
             t.vertex(x1, y0, z0);
 
             t.triangle();
-            t.tex(this.tex.X, this.tex.Y);
+
+            t.tex(u0, v0);
+            t.tex(u0, v1);
+            t.tex(u1, v1);
+            t.tex(u1, v0);
         }
 
         // ..:: Positive Y ::..
@@ -62,7 +83,11 @@ public class Tile {
             t.vertex(x1, y1, z1);
 
             t.triangle();
-            t.tex(this.tex.X, this.tex.Y);
+
+            t.tex(u0, v0);
+            t.tex(u0, v1);
+            t.tex(u1, v1);
+            t.tex(u1, v0);
         }
 
         // ..:: Negative Z ::..
@@ -73,7 +98,11 @@ public class Tile {
             t.vertex(x0, y0, z0);
 
             t.triangle();
-            t.tex(this.tex.X, this.tex.Y);
+
+            t.tex(u0, v0);
+            t.tex(u0, v1);
+            t.tex(u1, v1);
+            t.tex(u1, v0);
         }
 
         // ..:: Positive Z ::..
@@ -84,7 +113,11 @@ public class Tile {
             t.vertex(x1, y0, z1);
 
             t.triangle();
-            t.tex(this.tex.X, this.tex.Y);
+
+            t.tex(u0, v0);
+            t.tex(u0, v1);
+            t.tex(u1, v1);
+            t.tex(u1, v0);
         }
     }
 }
