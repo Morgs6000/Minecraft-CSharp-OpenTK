@@ -9,10 +9,14 @@ public class Camera {
     Vector3 cameraFront = new Vector3(0.0f, 0.0f, -1.0f);
     Vector3 cameraUp = new Vector3(0.0f, 1.0f, 0.0f);
 
+    float fov = 60.0f;
+
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
 
     bool firstMouse;
+    bool rightMouseButtonPressed = false;
+    bool leftMouseButtonPressed = false;
 
     float lastX = 400.0f;
     float lastY = 300.0f;
@@ -23,7 +27,7 @@ public class Camera {
     public void render(Shader shader, int width, int height) {
         // ..:: Model ::..
         Matrix4 model = Matrix4.Identity;
-        model = Matrix4.CreateTranslation(0.0f, -64.0f, -32.0f);
+        model = Matrix4.CreateTranslation(0.0f, 0.0f, -256.0f -16.0f);
 
         int modelLoc = GL.GetUniformLocation(shader.shaderProgram, "model");
         GL.UniformMatrix4(modelLoc, false, ref model);
@@ -37,7 +41,7 @@ public class Camera {
 
         // ..:: Projection ::..
         Matrix4 projection;
-        projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), width / height, 0.1f, 100.0f);
+        projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(fov), (float)width / (float)height, 0.1f, 100.0f);
 
         int projectionLoc = GL.GetUniformLocation(shader.shaderProgram, "projection");
         GL.UniformMatrix4(projectionLoc, false, ref projection);
@@ -78,6 +82,40 @@ public class Camera {
         }
     }
 
+    public void mouse_processInput(MouseState mouseState) {
+        float scrollOffset = mouseState.ScrollDelta.Y; // Use ScrollDelta to get the scroll change
+        float scrollSensitivity = 2.0f; // Adjust this value to increase or decrease scroll sensitivity
+        if(scrollOffset != 0) {
+            cameraPos += cameraFront * scrollOffset * scrollSensitivity;
+        }
+
+        // Right mouse button to rotate
+        if(mouseState.IsButtonDown(MouseButton.Right)) {
+            if(!rightMouseButtonPressed) {
+                rightMouseButtonPressed = true;
+                firstMouse = true;
+            }
+
+            mouse_callback(mouseState.X, mouseState.Y);
+        }
+        else {
+            rightMouseButtonPressed = false;
+        }
+
+        // Left mouse button to move
+        if(mouseState.IsButtonDown(MouseButton.Left) || mouseState.IsButtonDown(MouseButton.Middle)) {
+            if(!leftMouseButtonPressed) {
+                leftMouseButtonPressed = true;
+                firstMouse = true;
+            }
+
+            move_camera(mouseState.X, mouseState.Y);
+        }
+        else {
+            leftMouseButtonPressed = false;
+        }
+    }
+
     public void mouse_callback(float xpos, float ypos) {
         if(firstMouse) {
             lastX = xpos;
@@ -109,6 +147,30 @@ public class Camera {
         direction.Y = (float)Math.Sin(MathHelper.DegreesToRadians(pitch));
         direction.Z = (float)Math.Sin(MathHelper.DegreesToRadians(yaw)) * (float)Math.Cos(MathHelper.DegreesToRadians(pitch));
         cameraFront = Vector3.Normalize(direction);
+    }
+
+    public void move_camera(float xpos, float ypos) {
+        if(firstMouse) {
+            lastX = xpos;
+            lastY = ypos;
+            firstMouse = false;
+        }
+
+        float xoffset = xpos - lastX;
+        float yoffset = ypos - lastY;
+        lastX = xpos;
+        lastY = ypos;
+
+        float sensitivity = 0.1f;
+        xoffset *= sensitivity;
+        yoffset *= sensitivity;
+
+        // Calculate right and up vectors based on current orientation
+        Vector3 right = Vector3.Normalize(Vector3.Cross(cameraFront, cameraUp));
+        Vector3 up = Vector3.Normalize(Vector3.Cross(right, cameraFront));
+
+        cameraPos -= right * xoffset;
+        cameraPos += up * yoffset;
     }
 
     public void zBuffer() {

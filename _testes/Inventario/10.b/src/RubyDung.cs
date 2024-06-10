@@ -30,42 +30,45 @@ public class RubyDung : GameWindow {
     }
 
     protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
-        base.OnFramebufferResize(e);
+        this.width = e.Width;
+        this.height = e.Height;
 
         GL.Viewport(0, 0, e.Width, e.Height);
+
+        base.OnFramebufferResize(e);
     }
 
     protected override void OnUpdateFrame(FrameEventArgs args) {
-        base.OnUpdateFrame(args);
-
         KeyboardState input = KeyboardState;
+        MouseState mouse = MouseState;
 
         if(input.IsKeyDown(Keys.Escape)) {
             Close();
         }
 
         this.wireframe.mode(input);
-        this.camera.processInput(input);
-        this.camera.mouse_callback(MouseState.X, MouseState.Y);
+        //this.camera.processInput(input);
+        this.camera.mouse_processInput(mouse);
+        //this.camera.mouse_callback(MouseState.X, MouseState.Y);
+
+        base.OnUpdateFrame(args);
     }
 
     protected override void OnLoad() {
-        base.OnLoad();
-
         GL.ClearColor(0.5f, 0.8f, 1.0f, 0.0f);
 
         this.level = new Level(256, 64, 256);
         this.levelRenderer = new LevelRenderer(this.level);
 
         this.shader.load();
-        this.texture.load();
+        this.texture.load("terrain.png");
         this.camera.zBuffer();
-        CursorState = CursorState.Grabbed;
+        //CursorState = CursorState.Grabbed;
+
+        base.OnLoad();
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
-        base.OnRenderFrame(args);
-
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
         this.levelRenderer.render();
@@ -75,6 +78,8 @@ public class RubyDung : GameWindow {
         this.camera.render(this.shader, this.width, this.height);
 
         SwapBuffers();
+
+        base.OnRenderFrame(args);
     }
 
     static void Main(string[] args) {
