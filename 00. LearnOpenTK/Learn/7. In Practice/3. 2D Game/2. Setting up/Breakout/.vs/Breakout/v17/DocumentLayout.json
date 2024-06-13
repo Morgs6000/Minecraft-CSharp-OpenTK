@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\00. learnopentk\\learn\\7. in practice\\3. 2d game\\2. setting up\\breakout\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\00. learnopentk\\learn\\7. in practice\\3. 2d game\\2. setting up\\breakout\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\00. learnopentk\\learn\\7. in practice\\3. 2d game\\2. setting up\\breakout\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|solutionrelative:shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\00. learnopentk\\learn\\7. in practice\\3. 2d game\\2. setting up\\breakout\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|solutionrelative:resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\00. learnopentk\\learn\\7. in practice\\3. 2d game\\2. setting up\\breakout\\texture2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FDC3CA-BE14-4024-82AF-E56A9A45F71D}|Breakout.csproj|solutionrelative:texture2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Texture2D.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Texture2D.cs",
+              "RelativeDocumentMoniker": "Texture2D.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Texture2D.cs",
+              "RelativeToolTip": "Texture2D.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T09:20:45.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shader.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Shader.cs",
+              "RelativeDocumentMoniker": "Shader.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Shader.cs",
+              "RelativeToolTip": "Shader.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABcAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T09:20:34.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAD8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T12:05:23.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResourceManager.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\ResourceManager.cs",
+              "RelativeDocumentMoniker": "ResourceManager.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\ResourceManager.cs",
+              "RelativeToolTip": "ResourceManager.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAcwDkAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T10:26:23.805Z",
               "EditorCaption": ""
             }
           ]

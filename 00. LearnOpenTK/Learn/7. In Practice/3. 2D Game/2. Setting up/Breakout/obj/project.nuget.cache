@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "De2ScwHiwbzX6qeJuDQJw9RqFinkGlolwbtR6LdmoIL0AIkg5jdzwZ1yRSIrBWpnw8Q2KWIEUXsql4yHXDT2BA==",
+  "dgSpecHash": "AlU0WSvUnEniTvfp/vUTQW0sW7XSDD0jKmIIp1kAEFCULLajH2v+sgwRpvjX83zlTSkKhQBhMzr3dA7hXNbsuw==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\7. In Practice\\3. 2D Game\\2. Setting up\\Breakout\\Breakout.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.windowing.common\\4.8.2\\opentk.windowing.common.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.windowing.desktop\\4.8.2\\opentk.windowing.desktop.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.windowing.graphicslibraryframework\\4.8.2\\opentk.windowing.graphicslibraryframework.4.8.2.nupkg.sha512",
+    "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\stbimagesharp\\2.27.14\\stbimagesharp.2.27.14.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []

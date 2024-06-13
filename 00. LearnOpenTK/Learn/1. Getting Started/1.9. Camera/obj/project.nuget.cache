@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NkPBr0Hhajr1ytYhpTqGSQ6CHFm4yxyglY0/bxQ07QuyR0WlQwBSjUKEnJ8WLXDfHN5LXMsewSZ+l7IrP/JXeg==",
+  "dgSpecHash": "ch7kJlDQPpSpgMtkymt2Ni1p/K0jY0L83PgMGoi3GtnAvSLACI7vquWa/pzIi7ChiMv5vHZpgerFQl/7ITLQHw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\00. LearnOpenTK\\Learn\\1. Getting Started\\1.9. Camera\\LearnOpenTK.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\1. Getting Started\\1.9. Camera\\LearnOpenTK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",
