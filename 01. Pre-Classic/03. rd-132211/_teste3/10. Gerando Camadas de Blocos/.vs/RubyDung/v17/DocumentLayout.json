@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\level\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\level\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\shaders\\shadervert.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\shaders\\shadervert.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste3\\10. gerando camadas de blocos\\src\\shaders\\shaderfrag.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{13D4CB13-C7E2-47B0-ADCA-340BD1A90F37}|RubyDung.csproj|solutionrelative:src\\shaders\\shaderfrag.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Level.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Level.cs",
+              "RelativeDocumentMoniker": "src\\level\\Level.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Level.cs",
+              "RelativeToolTip": "src\\level\\Level.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T21:10:28.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Chunk.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Chunk.cs",
+              "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Chunk.cs",
+              "RelativeToolTip": "src\\level\\Chunk.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T20:53:23.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Tile.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tile.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Tile.cs",
+              "RelativeToolTip": "src\\level\\Tile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T20:43:21.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RubyDung.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\RubyDung.cs",
+              "RelativeDocumentMoniker": "src\\RubyDung.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\RubyDung.cs",
+              "RelativeToolTip": "src\\RubyDung.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAgwDgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T13:43:15.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\Player.cs",
+              "RelativeDocumentMoniker": "src\\Player.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\Player.cs",
+              "RelativeToolTip": "src\\Player.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwD0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T19:59:30.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Texture.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\Texture.cs",
+              "RelativeDocumentMoniker": "src\\Texture.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\Texture.cs",
+              "RelativeToolTip": "src\\Texture.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T14:53:17.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tesselator.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Tesselator.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\level\\Tesselator.cs",
+              "RelativeToolTip": "src\\level\\Tesselator.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T14:13:20.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Shader.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\Shader.cs",
+              "RelativeDocumentMoniker": "src\\Shader.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\Shader.cs",
+              "RelativeToolTip": "src\\Shader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T14:11:10.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "shaderFrag.glsl",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\shaders\\shaderFrag.glsl",
+              "RelativeDocumentMoniker": "src\\shaders\\shaderFrag.glsl",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\shaders\\shaderFrag.glsl",
+              "RelativeToolTip": "src\\shaders\\shaderFrag.glsl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-24T14:09:29.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "shaderVert.glsl",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\shaders\\shaderVert.glsl",
+              "RelativeDocumentMoniker": "src\\shaders\\shaderVert.glsl",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste3\\10. Gerando Camadas de Blocos\\src\\shaders\\shaderVert.glsl",
+              "RelativeToolTip": "src\\shaders\\shaderVert.glsl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-24T14:09:18.541Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

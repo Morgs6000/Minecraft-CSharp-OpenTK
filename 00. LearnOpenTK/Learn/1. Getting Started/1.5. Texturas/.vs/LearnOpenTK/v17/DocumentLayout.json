@@ -50,8 +50,7 @@
               "RelativeToolTip": "src\\Shaders\\shader.frag",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-29T23:47:15.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T23:47:15.222Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "src\\Shaders\\shader.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-29T23:42:26.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T23:42:26.148Z"
             },
             {
               "$type": "Document",
@@ -74,7 +72,7 @@
               "RelativeDocumentMoniker": "src\\Game.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\00. LearnOpenTK\\Learn\\1. Getting Started\\1.5. Texturas\\src\\Game.cs",
               "RelativeToolTip": "src\\Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T22:11:29.755Z",
               "EditorCaption": ""

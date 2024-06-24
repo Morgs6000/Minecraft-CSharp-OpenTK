@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\level\\block\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\level\\block\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\level\\block\\blockwood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\level\\block\\blockwood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\level\\block\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\level\\block\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\wireframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\wireframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\shaders\\shaderfrag.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\shaders\\shaderfrag.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\shaders\\shadervert.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\shaders\\shadervert.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +46,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BlockWood.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\BlockWood.cs",
-              "RelativeDocumentMoniker": "src\\level\\block\\BlockWood.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\BlockWood.cs",
-              "RelativeToolTip": "src\\level\\block\\BlockWood.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T10:44:22.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Block.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\Block.cs",
-              "RelativeDocumentMoniker": "src\\level\\block\\Block.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\Block.cs",
-              "RelativeToolTip": "src\\level\\block\\Block.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIcAAAAAAAAA",
+              "Title": "Camera.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Camera.cs",
+              "RelativeDocumentMoniker": "src\\Camera.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Camera.cs",
+              "RelativeToolTip": "src\\Camera.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:39:08.521Z",
+              "WhenOpened": "2024-06-24T18:12:24.697Z",
               "EditorCaption": ""
             },
             {
@@ -58,10 +69,93 @@
               "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\Chunk.cs",
               "RelativeToolTip": "src\\level\\Chunk.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAAAL4AAABSAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:39:11.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T18:09:32.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Block.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\Block.cs",
+              "RelativeDocumentMoniker": "src\\level\\block\\Block.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\Block.cs",
+              "RelativeToolTip": "src\\level\\block\\Block.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAACgBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T18:08:22.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Texture.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Texture.cs",
+              "RelativeDocumentMoniker": "src\\Texture.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Texture.cs",
+              "RelativeToolTip": "src\\Texture.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T17:25:43.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tesselator.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\Tesselator.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\Tesselator.cs",
+              "RelativeToolTip": "src\\level\\Tesselator.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAABEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T17:25:24.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Shader.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Shader.cs",
+              "RelativeDocumentMoniker": "src\\Shader.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Shader.cs",
+              "RelativeToolTip": "src\\Shader.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T14:45:16.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "shaderFrag.glsl",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\shaders\\shaderFrag.glsl",
+              "RelativeDocumentMoniker": "src\\shaders\\shaderFrag.glsl",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\shaders\\shaderFrag.glsl",
+              "RelativeToolTip": "src\\shaders\\shaderFrag.glsl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-24T14:40:33.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "shaderVert.glsl",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\shaders\\shaderVert.glsl",
+              "RelativeDocumentMoniker": "src\\shaders\\shaderVert.glsl",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\shaders\\shaderVert.glsl",
+              "RelativeToolTip": "src\\shaders\\shaderVert.glsl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-24T14:40:32.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Wireframe.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Wireframe.cs",
+              "RelativeDocumentMoniker": "src\\Wireframe.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Wireframe.cs",
+              "RelativeToolTip": "src\\Wireframe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T14:40:30.157Z"
             }
           ]
         }
