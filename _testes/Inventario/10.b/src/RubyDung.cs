@@ -14,8 +14,12 @@ public class RubyDung : GameWindow {
     private LevelRenderer levelRenderer;
 
     private Shader shader = new Shader();
-    private Wireframe wireframe = new Wireframe();
     private Texture texture = new Texture();
+
+    private Shader shaderGUI = new Shader();
+    private Texture textureGUI = new Texture();
+
+    private Wireframe wireframe = new Wireframe();
     private Camera camera = new Camera();
 
     public RubyDung(int width, int height, string title)
@@ -60,8 +64,12 @@ public class RubyDung : GameWindow {
         this.level = new Level(256, 64, 256);
         this.levelRenderer = new LevelRenderer(this.level);
 
-        this.shader.load();
+        this.shader.load("shader.vert", "shader.frag");
         this.texture.load("terrain.png");
+
+        this.shaderGUI.load("gui.vert", "gui.frag");
+        this.textureGUI.load("gui/items.png");
+
         this.camera.zBuffer();
         //CursorState = CursorState.Grabbed;
 
@@ -75,6 +83,7 @@ public class RubyDung : GameWindow {
 
         this.shader.render();
         this.texture.render();
+
         this.camera.render(this.shader, this.width, this.height);
 
         SwapBuffers();

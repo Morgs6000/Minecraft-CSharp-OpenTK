@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ShWeXUokIkp+WwGgK6oUChthkBj66cv84CCRsI8LvqQpF0YWNp4jwTZ2uw/W0Thfo7GfDbBVybX/UMklF3+MUA==",
+  "dgSpecHash": "46lSO1TEi7VI63R6kvmCESjoYKXVHVnrdNygXY9scL7UneYUrNAurD5/M02YWEkzQ1PBiLiG5bbi/wv+Brnlgg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2\\03. Gerando um Quadrado\\RubyDung.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\03. Gerando um Quadrado\\RubyDung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",

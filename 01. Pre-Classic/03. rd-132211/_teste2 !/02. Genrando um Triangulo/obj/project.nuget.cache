@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dO9jujyjp41Hdx74SBHZk4+083OS8oQuHTX8h/LRWJ16QLiGfotFAMTkwPOMIkhssVMjp1aQJTmEa+gi3KC9BQ==",
+  "dgSpecHash": "sm4EWilMNCJCV0VHVwSUshBIpskV2SZl98VCbb+EpGVerpT142o0YvRw9i6QE8YAjsJS8wHgbCOxV940CbOo4Q==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2\\02. Genrando um Triangulo\\RubyDung.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\02. Genrando um Triangulo\\RubyDung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",

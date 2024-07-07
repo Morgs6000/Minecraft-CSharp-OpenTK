@@ -5,14 +5,14 @@ namespace RubyDung.src;
 public class Shader {
     public int shaderProgram;
 
-    public void load() {
+    public void load(string vertexPath, string fragmentPath) {
         int success;
         string infoLog;
 
         // ..:: Shader Vertex ::..
-        string vertexPath = "../../../src/shaders/shader.vert";
+        //string vertexPath = "../../../src/shaders/shader.vert";
 
-        string vertexShaderSource = File.ReadAllText(vertexPath);
+        string vertexShaderSource = File.ReadAllText("../../../src/shaders/" + vertexPath);
 
         int vertexShader;
         vertexShader = GL.CreateShader(ShaderType.VertexShader);
@@ -28,9 +28,9 @@ public class Shader {
         }
 
         // ..:: Shader Fragment ::..
-        string fragmentPath = "../../../src/shaders/shader.frag";
+        //string fragmentPath = "../../../src/shaders/shader.frag";
 
-        string fragmentShaderSource = File.ReadAllText(fragmentPath);
+        string fragmentShaderSource = File.ReadAllText("../../../src/shaders/" + fragmentPath);
 
         int fragmentShader;
         fragmentShader = GL.CreateShader(ShaderType.FragmentShader);
