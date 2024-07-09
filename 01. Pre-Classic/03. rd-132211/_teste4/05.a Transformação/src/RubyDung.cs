@@ -281,9 +281,9 @@ public class RubyDung : GameWindow {
 
         // cria transformações
         Matrix4 transform = Matrix4.Identity; // certifique-se de inicializar a matriz para a matriz identidade primeiro
-        transform *= Matrix4.CreateRotationX(20.705f);
-        transform *= Matrix4.CreateRotationY(49.107f);
-        transform *= Matrix4.CreateRotationZ(-22.208f);
+        transform *= Matrix4.CreateRotationX(45.0f);
+        transform *= Matrix4.CreateRotationY(45.0f);
+        transform *= Matrix4.CreateRotationZ(45.0f);
 
         // obtém a localização uniforme da matriz e define a matriz
         GL.UseProgram(this.shaderProgram);

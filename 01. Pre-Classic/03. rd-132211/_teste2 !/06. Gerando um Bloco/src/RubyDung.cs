@@ -32,6 +32,9 @@ namespace RubyDung.src
         protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
             base.OnFramebufferResize(e);
 
+            this.width = e.Width;
+            this.height = e.Height;
+
             GL.Viewport(0, 0, e.Width, e.Height);
         }
 

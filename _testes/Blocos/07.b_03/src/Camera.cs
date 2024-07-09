@@ -101,7 +101,7 @@ namespace RubyDung.src {
             }
 
             // Left mouse button to move
-            if(mouseState.IsButtonDown(MouseButton.Left)) {
+            if(mouseState.IsButtonDown(MouseButton.Left) || mouseState.IsButtonDown(MouseButton.Middle)) {
                 if(!leftMouseButtonPressed) {
                     leftMouseButtonPressed = true;
                     firstMouse = true;

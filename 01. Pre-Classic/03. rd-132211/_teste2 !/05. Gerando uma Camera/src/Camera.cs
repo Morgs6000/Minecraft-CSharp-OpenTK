@@ -36,7 +36,7 @@ namespace RubyDung.src {
 
             // ..:: Projection ::..
             Matrix4 projection;
-            projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), width / height, 0.1f, 100.0f);
+            projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), (float)width / (float)height, 0.1f, 100.0f);
 
             int projectionLoc = GL.GetUniformLocation(shader.shaderProgram, "projection");
             GL.UniformMatrix4(projectionLoc, false, ref projection);

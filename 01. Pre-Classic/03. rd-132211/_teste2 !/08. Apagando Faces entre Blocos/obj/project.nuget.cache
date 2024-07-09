@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HZfKFZaUxJnPQSgH/InbMp04kgwZWu8dY/Kw5qOTvpVB6Z6eR1MtTfG5HUwJn6d5k+CtP8zRwK3pxaQW/P1Pbw==",
+  "dgSpecHash": "wp18ELTyJNg22CyF1ETVaivoCaqHsSK2iNNHXAoMO47dY1hCbb2r0yREFWir0yYirno7xcnsvtfrbCpUunCVEQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2\\08. Apagando Faces entre Blocos\\RubyDung.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\08. Apagando Faces entre Blocos\\RubyDung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",

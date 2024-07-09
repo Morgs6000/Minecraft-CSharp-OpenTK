@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "llPNyvttYJjkGbZDi2he+BT8U96v1D76RDYnIpqhsoDYF1xyNZHyilvkS7etu5R90+nvC+CKdonIDIObnmSH9w==",
+  "dgSpecHash": "Q4QGjufyN0pzb64qPU1/hgtLl8yfHA0vXdBfVdvAVc7WyBEmzZFU1cbTxoprLDTQOXmdXiIc/pJk9vIxVXzFcw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste4\\05.a\\RubyDung.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste4\\05. Gerando uma Textura\\RubyDung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",
