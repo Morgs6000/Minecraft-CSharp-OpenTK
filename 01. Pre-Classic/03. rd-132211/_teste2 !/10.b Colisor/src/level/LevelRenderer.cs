@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RubyDung.src.phys;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ public class LevelRenderer {
     private int xChunks;
     private int yChunks;
     private int zChunks;
+
+    Tesselator t = new Tesselator();
 
     public LevelRenderer(Level level) {
         this.level = level;
@@ -44,6 +47,34 @@ public class LevelRenderer {
     public void render() {
         for(int i = 0; i < this.chunks.Length; i++) {
             this.chunks[i].render();
+        }
+    }
+
+    public void pick(Player player) {
+        float r = 3.0f;
+
+        AABB box = player.bb.grow(r, r, r);
+
+        int x0 = (int)box.x0;
+        int x1 = (int)(box.x1 + 1.0f);
+
+        int y0 = (int)box.y0;
+        int y1 = (int)(box.y1 + 1.0f);
+
+        int z0 = (int)box.z0;
+        int z1 = (int)(box.z1 + 1.0f);
+
+        for(int x = x0; x < x1; x++) {
+            for(int y = y0; x < y1; y++) {
+                for(int z = z0; z < z1; z++) {
+                    for(int i = 0; i < 6; i++) {
+                        this.t.init();
+                        Tile.rock.renderFace(this.t, x, y, z, i);
+                        this.t.flush();
+                        //this.t.render();
+                    }
+                }
+            }
         }
     }
 }

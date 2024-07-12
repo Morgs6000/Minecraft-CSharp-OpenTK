@@ -3,17 +3,15 @@ using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace RubyDung.src {
     public class Wireframe {
-        private PolygonMode polygon;
-
-        public void mode(KeyboardState input) {
-            if(input.IsKeyPressed(Keys.PageUp)) {
-                this.polygon = PolygonMode.Line;
+        public void mode(KeyboardState input, Shader shader) {
+            if(input.IsKeyDown(Keys.PageUp)) {
+                GL.Uniform1(GL.GetUniformLocation(shader.shaderProgram, "isWireframe"), 1);
+                GL.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Line);
             }
-            if(input.IsKeyPressed(Keys.PageDown)) {
-                this.polygon = PolygonMode.Fill;
+            if(input.IsKeyDown(Keys.PageDown)) {
+                GL.Uniform1(GL.GetUniformLocation(shader.shaderProgram, "isWireframe"), 0);
+                GL.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Fill);
             }
-
-            GL.PolygonMode(MaterialFace.FrontAndBack, this.polygon);
         }
     }
 }

@@ -55,6 +55,17 @@ public class Tesselator {
         GL.DrawElements(PrimitiveType.Triangles, this.triangleBuffer.Count, DrawElementsType.UnsignedInt, 0);
     }
 
+    private void clear() {
+        this.vertices = 0;
+        this.vertexBuffer.Clear();
+        this.triangleBuffer.Clear();
+        this.texCoordBuffer.Clear();
+    }
+
+    public void init() {
+        this.clear();
+    }
+
     public void vertex(float x, float y, float z) {
         this.vertexBuffer.Add(new Vector3(x, y, z));
     }

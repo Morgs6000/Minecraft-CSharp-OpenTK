@@ -9,6 +9,7 @@ public class AABB {
     public float x0;
     public float y0;
     public float z0;
+
     public float x1;
     public float y1;
     public float z1;
@@ -17,6 +18,7 @@ public class AABB {
         this.x0 = x0;
         this.y0 = y0;
         this.z0 = z0;
+
         this.x1 = x1;
         this.y1 = y1;
         this.z1 = z1;
@@ -26,13 +28,14 @@ public class AABB {
         float _x0 = this.x0;
         float _y0 = this.y0;
         float _z0 = this.z0;
+
         float _x1 = this.x1;
         float _y1 = this.y1;
         float _z1 = this.z1;
+
         if(xa < 0.0f) {
             _x0 += xa;
         }
-
         if(xa > 0.0f) {
             _x1 += xa;
         }
@@ -40,7 +43,6 @@ public class AABB {
         if(ya < 0.0f) {
             _y0 += ya;
         }
-
         if(ya > 0.0f) {
             _y1 += ya;
         }
@@ -48,7 +50,6 @@ public class AABB {
         if(za < 0.0f) {
             _z0 += za;
         }
-
         if(za > 0.0f) {
             _z1 += za;
         }
@@ -60,9 +61,11 @@ public class AABB {
         float _x0 = this.x0 - xa;
         float _y0 = this.y0 - ya;
         float _z0 = this.z0 - za;
+
         float _x1 = this.x1 + xa;
         float _y1 = this.y1 + ya;
         float _z1 = this.z1 + za;
+
         return new AABB(_x0, _y0, _z0, _x1, _y1, _z1);
     }
 
@@ -171,6 +174,7 @@ public class AABB {
         this.x0 += xa;
         this.y0 += ya;
         this.z0 += za;
+
         this.x1 += xa;
         this.y1 += ya;
         this.z1 += za;

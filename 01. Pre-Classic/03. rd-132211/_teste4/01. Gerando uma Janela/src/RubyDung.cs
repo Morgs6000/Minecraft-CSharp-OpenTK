@@ -10,37 +10,30 @@ public class RubyDung : GameWindow {
     private int height;
 
     private static void Main(string[] args) {
-        Console.WriteLine("Hello, World!");
+        GameWindowSettings gws = GameWindowSettings.Default;
 
-        new RubyDung(1024, 768, "Game").Run();
+        NativeWindowSettings nws = NativeWindowSettings.Default;
+        nws.ClientSize = (1024, 768);
+        nws.Title = "Game";
+
+        new RubyDung(gws, nws).Run();
     }
 
-    public RubyDung(int widht, int height, string title)
-        : base(GameWindowSettings.Default, new NativeWindowSettings() {
-            ClientSize = (widht, height),
-            Title = title
-        }) {
-        this.width = widht;
-        this.height = height;
+    public RubyDung(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws) {
+        this.width = ClientSize.X;
+        this.height = ClientSize.Y;
 
         CenterWindow();
     }
 
     protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
-        base.OnFramebufferResize(e);
-
-        this.width = e.Width;
-        this.height = e.Height;
-
-        GL.Viewport(0, 0, e.Width, e.Height);
+        GL.Viewport(0, 0, width, height);
     }
 
     // loop de renderização
     protected override void OnRenderFrame(FrameEventArgs args) {
-        base.OnRenderFrame(args);
-
         // entrada
-        this.processInput();
+        processInput();
 
         // renderizar
         GL.ClearColor(0.5f, 0.8f, 1.0f, 0.0f);

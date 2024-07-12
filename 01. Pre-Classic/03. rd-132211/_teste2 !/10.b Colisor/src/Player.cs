@@ -40,8 +40,8 @@ public class Player {
     float lastX = 400.0f;
     float lastY = 300.0f;
 
-    float yaw = -90.0f;
-    float pitch;
+    float yRot = -90.0f;
+    float xRot;
 
     public Player(Level level) {
         this.level = level;
@@ -102,7 +102,7 @@ public class Player {
         lastFrame = currentFrame;
     }
 
-    public void processInput(KeyboardState input) {
+    public void tick(KeyboardState input) {
         float cameraSpeed = 4.317f * deltaTime;
 
         this.xo = this.x;
@@ -149,6 +149,8 @@ public class Player {
         //    this.yd = 0.12f;
         //}
 
+        // ----------
+
         cameraRight = Vector3.Normalize(Vector3.Cross(cameraFront, cameraUp));
         cameraFront = Vector3.Normalize(new Vector3(cameraFront.X, 0, cameraFront.Z));
 
@@ -156,7 +158,22 @@ public class Player {
         cameraPos += ya * cameraUp * cameraSpeed;
         cameraPos += za * cameraFront * cameraSpeed;
 
+        // ----------
+
+        this.moveReleative(xa, za, this.onGround ? 0.02f : 0.005f);
+
+        //this.yd = (float)((double)this.yd - 0.005f);
+
         this.move(this.xd, this.yd, this.zd);
+
+        //this.xd *= 0.91f;
+        //this.yd *= 0.98f;
+        //this.zd *= 0.91f;
+
+        if(this.onGround) {
+            this.xd *= 0.8f;
+            this.zd *= 0.8f;
+        }
     }
 
     public void mouse_callback(float xpos, float ypos) {
@@ -175,20 +192,20 @@ public class Player {
         xoffset *= sensitivity;
         yoffset *= sensitivity;
 
-        yaw += xoffset;
-        pitch -= yoffset;
+        yRot += xoffset;
+        xRot -= yoffset;
 
-        if(pitch > 89.0f) {
-            pitch = 89.0f;
+        if(xRot > 89.0f) {
+            xRot = 89.0f;
         }
-        if(pitch < -89.0f) {
-            pitch = -89.0f;
+        if(xRot < -89.0f) {
+            xRot = -89.0f;
         }
 
         Vector3 direction;
-        direction.X = (float)Math.Cos(MathHelper.DegreesToRadians(yaw)) * (float)Math.Cos(MathHelper.DegreesToRadians(pitch));
-        direction.Y = (float)Math.Sin(MathHelper.DegreesToRadians(pitch));
-        direction.Z = (float)Math.Sin(MathHelper.DegreesToRadians(yaw)) * (float)Math.Cos(MathHelper.DegreesToRadians(pitch));
+        direction.X = (float)Math.Cos(MathHelper.DegreesToRadians(yRot)) * (float)Math.Cos(MathHelper.DegreesToRadians(xRot));
+        direction.Y = (float)Math.Sin(MathHelper.DegreesToRadians(xRot));
+        direction.Z = (float)Math.Sin(MathHelper.DegreesToRadians(yRot)) * (float)Math.Cos(MathHelper.DegreesToRadians(xRot));
         cameraFront = Vector3.Normalize(direction);
     }
 
@@ -203,9 +220,28 @@ public class Player {
         float xaOrg = xa;
         float yaOrg = ya;   
         float zaOrg = za;
+
         List<AABB> aABBs = this.level.getCubes(this.bb.expand(xa, ya, za));
 
+        /*
+        for(int j = 0; j < aABBs.Count; j++) {
+            Console.WriteLine(
+                aABBs[j].x0 + " " +
+                aABBs[j].y0 + " " +
+                aABBs[j].z0 + " " +
+
+                aABBs[j].x1 + " " +
+                aABBs[j].y1 + " " +
+                aABBs[j].z1
+            );
+        }
+        */
+
+        //Console.WriteLine(xa + " " + ya + " " + za);
+        Console.WriteLine((int)xa + " " + (int)ya + " " + (int)za);
+
         int i;
+
         for(i = 0; i < aABBs.Count; i++) {
             ya = aABBs[i].clipYCollide(this.bb, ya);
         }
@@ -222,8 +258,12 @@ public class Player {
             za = aABBs[i].clipZCollide(this.bb, za);
         }
 
+        //Console.WriteLine(xa + " " + ya + " " + za);
+
         this.bb.move(0.0f, 0.0f, za);
         this.onGround = yaOrg != ya && yaOrg < 0.0f;
+        //Console.WriteLine(this.onGround);
+
         if(xaOrg != xa) {
             this.xd = 0.0f;
         }
@@ -239,5 +279,22 @@ public class Player {
         this.x = (this.bb.x0 + this.bb.x1) / 2.0f;
         this.y = this.bb.y0 + 1.62f;
         this.z = (this.bb.z0 + this.bb.z1) / 2.0f;
+    }
+
+    public void moveReleative(float xa, float za, float speed) {
+        float dist = xa * xa + za * za;
+
+        if(!(dist < 0.01f)) {
+            dist = speed / (float)Math.Sqrt((double)dist);
+
+            xa *= dist;
+            za *= dist;
+
+            float sin = (float)Math.Sin((double)this.yRot * Math.PI / 180.0f);
+            float cos = (float)Math.Cos((double)this.yRot * Math.PI / 180.0f);
+
+            this.xd += xa * cos - za * sin;
+            this.zd += za * cos - xa * sin;
+        }
     }
 }

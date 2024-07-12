@@ -33,7 +33,7 @@ namespace RubyDung.src {
                 Close();
             }
 
-            this.wireframe.mode(input);
+            this.wireframe.mode(input, shader);
         }
 
         protected override void OnLoad() {

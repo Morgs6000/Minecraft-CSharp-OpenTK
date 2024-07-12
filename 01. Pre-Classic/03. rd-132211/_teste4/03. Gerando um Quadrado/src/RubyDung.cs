@@ -1,4 +1,5 @@
 ﻿using OpenTK.Graphics.OpenGL4;
+using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
@@ -82,23 +83,42 @@ public class RubyDung : GameWindow {
 
     // ..:: TRIANGLE ::..
     // --------------------------------------------------
+    // configura dados de vértice (e buffer(s)) e configura atributos de vértice
+    /*
+    private float[] vertices = {
+        -0.5f, -0.5f,  // bottom left
+         0.5f, -0.5f,  // bottom right
+         0.5f,  0.5f,  // top right
+        -0.5f,  0.5f   // top left
+    };
+    */
+    private float[] vertices = new float[300000];
+    //private Vector2[] vertices = new Vector2[300000];
+    //private List<Vector2> vertices = new List<Vector2>();
+
+    private int[] indices = { // observe que começamos do 0!
+        0, 1, 3,  // primeiro Triângulo
+        1, 2, 3   // segundo Triângulo
+    };
+
+    private int vertices_indices = 0;
+
     private int VAO; // Vertex Array Object;
     private int VBO; // Vertex Buffer Object
     private int EBO; // Element Buffer Object;
 
     private void Triangle() {
-        // configura dados de vértice (e buffer(s)) e configura atributos de vértice
-        float[] vertices = {
-             0.5f,  0.5f, 0.0f,  // top right
-             0.5f, -0.5f, 0.0f,  // bottom right
-            -0.5f, -0.5f, 0.0f,  // bottom left
-            -0.5f,  0.5f, 0.0f   // top left
-        };
+        float x0 = -0.5f;
+        float y0 = -0.5f;
 
-        int[] indices = { // observe que começamos do 0!
-            0, 1, 3,  // primeiro Triângulo
-            1, 2, 3   // segundo Triângulo
-        };
+        float x1 = 0.5f;
+        float y1 = 0.5f;
+
+        this.vertex(x0, y0); // bottom left
+        this.vertex(x1, y0); // bottom right
+        this.vertex(x1, y1); // top right
+        this.vertex(x0, y1); // top left
+        //this.vertex();
 
         GL.GenVertexArrays(1, out this.VAO);
         GL.GenBuffers(1, out this.VBO);
@@ -109,11 +129,12 @@ public class RubyDung : GameWindow {
 
         GL.BindBuffer(BufferTarget.ArrayBuffer, this.VBO);
         GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
+        //GL.BufferData(BufferTarget.ArrayBuffer, vertices.Count * Vector2.SizeInBytes, vertices.ToArray(), BufferUsageHint.StaticDraw);
 
         GL.BindBuffer(BufferTarget.ElementArrayBuffer, EBO);
         GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Length * sizeof(int), indices, BufferUsageHint.StaticDraw);
 
-        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+        GL.VertexAttribPointer(0, 2, VertexAttribPointerType.Float, false, 0, 0);
         GL.EnableVertexAttribArray(0);
 
         // observe que isso é permitido, a chamada para glVertexAttribPointer registrou VBO como o objeto de buffer de vértice vinculado do atributo de vértice para que depois possamos desvincular com segurança
@@ -125,6 +146,64 @@ public class RubyDung : GameWindow {
         // Você pode desvincular o VAO posteriormente para que outras chamadas VAO não modifiquem acidentalmente este VAO, mas isso raramente acontece. Modificar outros VAOs requer uma chamada para glBindVertexArray de qualquer maneira, então geralmente não desvinculamos VAOs (nem VBOs) quando não é diretamente necessário.
         GL.BindVertexArray(0);
     }
+
+    /*
+    private void vertex3(float x, float y, float z) {
+        int index = vertices_indices * 3;
+
+        vertices[index + 0] = x;
+        vertices[index + 1] = y;
+        vertices[index + 2] = z;
+
+        vertices_indices++;
+
+        Console.WriteLine($"Vertex added: X={x}, Y={y}, Z={z}. Total vertices: {vertices_indices}");
+    }
+    */
+
+    //*
+    private void vertex(float x, float y) {
+        vertices[vertices_indices * 2 + 0] = x;
+        vertices[vertices_indices * 2 + 1] = y;
+
+        vertices_indices++;
+
+        Console.WriteLine($"Vertex added: X={x}, Y={y}. Total vertices: {vertices_indices}");
+    }
+    //*/
+
+    /*
+    private void vertex() {
+        float x0 = -0.5f;
+        float x1 = 0.5f;
+
+        float y0 = -0.5f;
+        float y1 = 0.5f;
+
+        
+        //vertices[0] = x0;  // bottom left - x
+        //vertices[1] = y0;  // bottom left - y
+
+        //vertices[2] = x1;   // bottom right - x
+        //vertices[3] = y0;  // bottom right - y
+
+        //vertices[4] = x1;   // top right - x
+        //vertices[5] = y1;   // top right - y
+
+        //vertices[6] = x0;  // top left - x
+        //vertices[7] = y1;   // top left - y
+        
+        //vertices[0] = new Vector2(x0, y0);
+        //vertices[1] = new Vector2(x1, y0);
+        //vertices[2] = new Vector2(x1, y1);
+        //vertices[3] = new Vector2(x0, y1);
+        
+        vertices.Add(new Vector2(x0, y0));
+        vertices.Add(new Vector2(x1, y0));
+        vertices.Add(new Vector2(x1, y1));
+        vertices.Add(new Vector2(x0, y1));
+    }
+    */
 
     protected override void OnLoad() {
         base.OnLoad();

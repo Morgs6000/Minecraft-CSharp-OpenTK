@@ -13,17 +13,16 @@ public class RubyDung : GameWindow {
     private static void Main(string[] args) {
         Console.WriteLine("Hello, World!");
 
-        new RubyDung(1024, 768, "Game").Run();
+        GameWindowSettings gws = GameWindowSettings.Default;
+
+        NativeWindowSettings nws = NativeWindowSettings.Default;
+        nws.ClientSize = (1024, 768);
+        nws.Title = "Game";
+
+        new RubyDung(gws, nws).Run();
     }
 
-    public RubyDung(int widht, int height, string title)
-        : base(GameWindowSettings.Default, new NativeWindowSettings() {
-            ClientSize = (widht, height),
-            Title = title
-        }) {
-        this.width = widht;
-        this.height = height;
-
+    public RubyDung(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws) {
         CenterWindow();
     }
 
@@ -100,6 +99,7 @@ public class RubyDung : GameWindow {
         // O FileSystem::getPath(...) faz parte do repositório GitHub para que possamos encontrar arquivos em qualquer IDE/plataforma; substitua-o pelo seu próprio caminho de imagem.
         StbImage.stbi_set_flip_vertically_on_load(1);
         ImageResult image = ImageResult.FromStream(File.OpenRead("../../../src/textures/terrain.png"), ColorComponents.RedGreenBlueAlpha);
+        //ImageResult image = ImageResult.FromStream(File.OpenRead("../../../src/textures/awesomeface.png"), ColorComponents.RedGreenBlueAlpha);
 
         if(image.Data != null) {
             GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, image.Width, image.Height, 0, PixelFormat.Rgba, PixelType.UnsignedByte, image.Data);
@@ -129,9 +129,9 @@ public class RubyDung : GameWindow {
         // configura dados de vértice (e buffer(s)) e configura atributos de vértice
         float[] vertices = {
             x0, y0, 0.0f,  // bottom left
-            x0, y1, 0.0f,  // top left
+            x1, y0, 0.0f,  // bottom right
             x1, y1, 0.0f,  // top right
-            x1, y0, 0.0f   // bottom right
+            x0, y1, 0.0f   // top left
         };
 
         int[] indices = { // observe que começamos do 0!
@@ -139,19 +139,52 @@ public class RubyDung : GameWindow {
             0, 2, 3   // segundo Triângulo
         };
 
-        int tex = 0;
+        int tex = 1;
+        //int texU = 16;
+        //int texV = 0;
 
+        /*
+        float u0 = 0.0f;
+        float u1 = 1.0f;
+
+        float v0 = 0.0f;
+        float v1 = 1.0f;
+        //*/
+
+        //*
         float u0 = (float)tex / 16.0f;
-        float u1 = u0 + (1.0f / 16.0f);
-        float v0 = ((16.0f - 1.0f) - (float)tex) / 16.0f;
-        float v1 = v0 + (1.0f / 16.0f);
+        //float v0 = 0.0f;
+        //float v0 = (float)texV / 16.0f;
+        float v0 = (16.0f - 1.0f) / 16.0f;
+        //float v0 = ( (16.0f - 1.0f) - ( (float)tex / 16.0f) ) / 16.0f;
 
+        float u1 = u0 + (1.0f / 16.0f);
+        float v1 = v0 + (1.0f / 16.0f);
+        //*/
+
+        //*
         float[] texCoords = {
             u0, v0,  // bottom left
+            u1, v0,  // bottom right
+            u1, v1,  // top right
+            u0, v1,  // top left
+        };
+        //*/
+
+        /*
+        float[] texCoords = {
             u0, v1,  // top left
             u1, v1,  // top right
-            u1, v0   // bottom right
+            u1, v0,  // bottom right
+            u0, v0,  // bottom left
         };
+        */
+
+        /*
+        for(int i = 1; i < texCoords.Length; i += 2) {
+            texCoords[i] = 1.0f - texCoords[i];
+        }
+        */
 
         GL.GenVertexArrays(1, out this.VAO);
         GL.GenBuffers(1, out this.VBO);
@@ -177,6 +210,8 @@ public class RubyDung : GameWindow {
         // atributo de coordenação de textura
         GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 2 * sizeof(float), 0);
         GL.EnableVertexAttribArray(1);
+
+        //GL.VertexAttribDivisor(1, 1);
 
         // observe que isso é permitido, a chamada para glVertexAttribPointer registrou VBO como o objeto de buffer de vértice vinculado do atributo de vértice para que depois possamos desvincular com segurança
         GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
@@ -238,11 +273,9 @@ public class RubyDung : GameWindow {
 
     // glfw: sempre que o tamanho da janela for alterado (por sistema operacional ou redimensionamento do usuário), esta função de retorno de chamada é executada
     protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
-        base.OnFramebufferResize(e);
-
         this.width = e.Width;
         this.height = e.Height;
 
-        GL.Viewport(0, 0, e.Width, e.Height);
+        GL.Viewport(0, 0, this.width, this.height);
     }
 }

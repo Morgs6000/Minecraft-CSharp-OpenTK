@@ -10,19 +10,16 @@ public class RubyDung : GameWindow {
     private int height;
 
     private static void Main(string[] args) {
-        Console.WriteLine("Hello, World!");
+        GameWindowSettings gws = GameWindowSettings.Default;
 
-        new RubyDung(1024, 768, "Game").Run();
+        NativeWindowSettings nws = NativeWindowSettings.Default;
+        nws.ClientSize = (1024, 768);
+        nws.Title = "Game";
+
+        new RubyDung(gws, nws).Run();
     }
 
-    public RubyDung(int widht, int height, string title)
-        : base(GameWindowSettings.Default, new NativeWindowSettings() {
-            ClientSize = (widht, height),
-            Title = title
-        }) {
-        this.width = widht;
-        this.height = height;
-
+    public RubyDung(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws) {
         CenterWindow();
     }
 
@@ -88,9 +85,9 @@ public class RubyDung : GameWindow {
     private void Triangle() {
         // configura dados de vértice (e buffer(s)) e configura atributos de vértice
         float[] vertices = {
-            -0.5f, -0.5f, 0.0f, // left  
-             0.5f, -0.5f, 0.0f, // right 
-             0.0f,  0.5f, 0.0f  // top 
+            -0.5f, -0.5f, // left  
+             0.5f, -0.5f, // right 
+             0.0f,  0.5f  // top 
         };
 
         GL.GenVertexArrays(1, out this.VAO);
@@ -102,7 +99,7 @@ public class RubyDung : GameWindow {
         GL.BindBuffer(BufferTarget.ArrayBuffer, this.VBO);
         GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
 
-        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+        GL.VertexAttribPointer(0, 2, VertexAttribPointerType.Float, false, 0, 0);
         GL.EnableVertexAttribArray(0);
 
         // observe que isso é permitido, a chamada para glVertexAttribPointer registrou VBO como o objeto de buffer de vértice vinculado do atributo de vértice para que depois possamos desvincular com segurança
@@ -149,8 +146,6 @@ public class RubyDung : GameWindow {
 
     // glfw: sempre que o tamanho da janela for alterado (por sistema operacional ou redimensionamento do usuário), esta função de retorno de chamada é executada
     protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
-        base.OnFramebufferResize(e);
-
         this.width = e.Width;
         this.height = e.Height;
 

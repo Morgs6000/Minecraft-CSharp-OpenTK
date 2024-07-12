@@ -80,6 +80,10 @@ public class RubyDung : GameWindow {
         GL.DeleteShader(fragmentShader);
     }
 
+    private void setBool(string name, bool value) {
+        GL.Uniform1(GL.GetUniformLocation(shaderProgram, name), value ? 1 : 0);
+    }
+
     // ..:: TRIANGLE ::..
     // --------------------------------------------------
     private int VAO; // Vertex Array Object;
@@ -155,12 +159,15 @@ public class RubyDung : GameWindow {
         SwapBuffers();
     }
 
+    private bool isWireframe = false;
+
     // processar todas as entradas: consultar o GLFW se as teclas relevantes foram pressionadas/liberadas neste quadro e reagir de acordo
     private void processInput() {
         if(KeyboardState.IsKeyDown(Keys.Escape)) {
             Close();
         }
 
+        /*
         // wirefreame
         if(KeyboardState.IsKeyDown(Keys.PageUp)) {
             GL.Uniform1(GL.GetUniformLocation(this.shaderProgram, "isWireframe"), 0);
@@ -169,6 +176,16 @@ public class RubyDung : GameWindow {
         if(KeyboardState.IsKeyDown(Keys.PageDown)) {
             GL.Uniform1(GL.GetUniformLocation(this.shaderProgram, "isWireframe"), 1);
             GL.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Line);
+        }
+        */
+        if(KeyboardState.IsKeyDown(Keys.F3) && KeyboardState.IsKeyPressed(Keys.W)) {
+            // Alternar o estado ao pressionar qualquer uma das teclas
+            isWireframe = !isWireframe;
+
+            // Definir o uniforme e modo de polígono com base no estado atual
+            //GL.Uniform1(GL.GetUniformLocation(this.shaderProgram, "isWireframe"), isWireframe ? 1 : 0);
+            setBool("isWireframe", isWireframe);
+            GL.PolygonMode(MaterialFace.FrontAndBack, isWireframe ? PolygonMode.Line : PolygonMode.Fill);
         }
     }
 

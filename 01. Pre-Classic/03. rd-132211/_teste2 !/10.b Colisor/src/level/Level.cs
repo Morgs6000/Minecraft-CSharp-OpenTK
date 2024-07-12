@@ -41,19 +41,19 @@ public class Level {
     public List<AABB> getCubes(AABB aABB) {
         List<AABB> aABBs = new List<AABB>();
         int x0 = (int)aABB.x0;
-        int x1 = (int)(aABB.x1 + 1.0F);
         int y0 = (int)aABB.y0;
-        int y1 = (int)(aABB.y1 + 1.0F);
         int z0 = (int)aABB.z0;
+
+        int x1 = (int)(aABB.x1 + 1.0F);
+        int y1 = (int)(aABB.y1 + 1.0F);
         int z1 = (int)(aABB.z1 + 1.0F);
+
         if(x0 < 0) {
             x0 = 0;
         }
-
         if(y0 < 0) {
             y0 = 0;
         }
-
         if(z0 < 0) {
             z0 = 0;
         }
@@ -61,11 +61,9 @@ public class Level {
         if(x1 > this.width) {
             x1 = this.width;
         }
-
         if(y1 > this.depth) {
             y1 = this.depth;
         }
-
         if(z1 > this.height) {
             z1 = this.height;
         }

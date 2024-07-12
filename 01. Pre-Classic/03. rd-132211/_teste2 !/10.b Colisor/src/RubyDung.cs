@@ -46,7 +46,7 @@ public class RubyDung : GameWindow {
         }
 
         this.wireframe.mode(input);
-        this.player.processInput(input);
+        this.player.tick(input);
         this.player.mouse_callback(MouseState.X, MouseState.Y);
 
         base.OnUpdateFrame(args);
@@ -67,7 +67,13 @@ public class RubyDung : GameWindow {
         base.OnLoad();
     }
 
+    private void pick() {
+        this.levelRenderer.pick(this.player);
+    }
+
     protected override void OnRenderFrame(FrameEventArgs args) {
+        //this.pick();
+
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
         this.levelRenderer.render();
