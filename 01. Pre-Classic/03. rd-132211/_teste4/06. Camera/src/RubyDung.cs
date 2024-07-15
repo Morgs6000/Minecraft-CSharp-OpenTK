@@ -428,7 +428,11 @@ public class RubyDung : GameWindow {
         this.processInput();
 
         // renderizar
-        GL.ClearColor(0.5f, 0.8f, 1.0f, 0.0f);
+        //GL.ClearColor(0.5f, 0.8f, 1.0f, 0.0f);
+
+        //Vector4 color = ConvertColorToRGBA(128, 204, 255, 0);
+        GL.ClearColor(ConvertColorToRGBA(128, 204, 255, 0));
+
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
         // liga a textura
@@ -494,7 +498,7 @@ public class RubyDung : GameWindow {
         GL.Uniform4(colorLoc, new Vector4(fr, fg, fb, fa));
     }
 
-    private Vector4 ConvertColorToHex(string hex, int a) {
+    private Color4 ConvertColorToHex(string hex, int a) {
         // Verifica se o comprimento da string hex é válido
         if(hex.Length != 6) {
             throw new ArgumentException("A string hexadecimal deve ter 6 dígitos.");
@@ -509,13 +513,13 @@ public class RubyDung : GameWindow {
         return this.ConvertColorToRGBA(fr, fg, fb, fa);
     }
 
-    private Vector4 ConvertColorToRGBA(int r, int g, int b, int a) {
+    private Color4 ConvertColorToRGBA(int r, int g, int b, int a) {
         float fr = r / 255.0f;
         float fg = g / 255.0f;
         float fb = b / 255.0f;
         float fa = a / 255.0f;
 
-        return new Vector4(fr, fg, fb, fa);
+        return new Color4(fr, fg, fb, fa);
     }
 
     private void Color(string hex, int a) {

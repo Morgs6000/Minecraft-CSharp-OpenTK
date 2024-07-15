@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste2 !\\07. gerando um chunk\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste2 !\\07. gerando um chunk\\src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste2 !\\07. gerando um chunk\\src\\drawchunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\drawchunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste2 !\\07. gerando um chunk\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste2 !\\07. gerando um chunk\\src\\drawblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\drawblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste2 !\\07. gerando um chunk\\src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste2 !\\07. gerando um chunk\\src\\shaders\\shader.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -38,36 +38,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DrawChunk.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\src\\DrawChunk.cs",
               "RelativeDocumentMoniker": "src\\DrawChunk.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\src\\DrawChunk.cs",
               "RelativeToolTip": "src\\DrawChunk.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAAABYAAAAdAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAEEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T09:48:54.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DrawBlock.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\src\\DrawBlock.cs",
               "RelativeDocumentMoniker": "src\\DrawBlock.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\src\\DrawBlock.cs",
               "RelativeToolTip": "src\\DrawBlock.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJIAAAAJAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAJIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T09:27:59.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Camera.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\src\\Camera.cs",
               "RelativeDocumentMoniker": "src\\Camera.cs",
@@ -75,8 +75,7 @@
               "RelativeToolTip": "src\\Camera.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAB4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T01:27:25.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T01:27:25.336Z"
             },
             {
               "$type": "Document",
@@ -116,16 +115,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RubyDung.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\src\\RubyDung.cs",
               "RelativeDocumentMoniker": "src\\RubyDung.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste2 !\\07. Gerando um Chunk\\src\\RubyDung.cs",
               "RelativeToolTip": "src\\RubyDung.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAAjAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T00:16:31.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T00:16:31.065Z"
             }
           ]
         }

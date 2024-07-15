@@ -38,21 +38,21 @@ public class Tile {
     }
 
     private void renderFace(Tesselator t, string face) {
-        //float x0 = -0.5f;
-        //float y0 = -0.5f;
-        //float z0 = -0.5f;
+        float x0 = -0.5f;
+        float y0 = -0.5f;
+        float z0 = -0.5f;
 
-        //float x1 = 0.5f;
-        //float y1 = 0.5f;
-        //float z1 = 0.5f;
+        float x1 = 0.5f;
+        float y1 = 0.5f;
+        float z1 = 0.5f;
 
-        float x0 = -0.5f * 16.0f;
-        float y0 = -0.5f * 16.0f;
-        float z0 = -0.5f * 16.0f;
+        //float x0 = -0.5f * 16.0f;
+        //float y0 = -0.5f * 16.0f;
+        //float z0 = -0.5f * 16.0f;
 
-        float x1 = 0.5f * 16.0f;
-        float y1 = 0.5f * 16.0f;
-        float z1 = 0.5f * 16.0f;
+        //float x1 = 0.5f * 16.0f;
+        //float y1 = 0.5f * 16.0f;
+        //float z1 = 0.5f * 16.0f;
 
         //float x0 = 0.0f * 16.0f;
         //float y0 = 0.0f * 16.0f;

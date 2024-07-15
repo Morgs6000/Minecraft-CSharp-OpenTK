@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\03. gerando um retangulo\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\03. gerando um retangulo\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\03. gerando um retangulo\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\03. gerando um retangulo\\src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LevelRenderer.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\level\\LevelRenderer.cs",
               "RelativeDocumentMoniker": "src\\level\\LevelRenderer.cs",
@@ -54,12 +54,11 @@
               "RelativeToolTip": "src\\level\\LevelRenderer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T02:38:29.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T02:38:29.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Chunk.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\level\\Chunk.cs",
               "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
@@ -67,12 +66,11 @@
               "RelativeToolTip": "src\\level\\Chunk.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T02:35:59.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T02:35:59.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Tile.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\level\\Tile.cs",
               "RelativeDocumentMoniker": "src\\level\\Tile.cs",
@@ -80,18 +78,17 @@
               "RelativeToolTip": "src\\level\\Tile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T02:28:59.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T02:28:59.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Tesselator.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\level\\Tesselator.cs",
               "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\level\\Tesselator.cs",
-              "RelativeToolTip": "src\\level\\Tesselator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\level\\Tesselator.cs*",
+              "RelativeToolTip": "src\\level\\Tesselator.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T01:54:45.23Z",
               "EditorCaption": ""
@@ -122,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "shader.vert",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\shaders\\shader.vert",
               "RelativeDocumentMoniker": "src\\shaders\\shader.vert",
@@ -130,12 +127,11 @@
               "RelativeToolTip": "src\\shaders\\shader.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-11T01:07:57.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T01:07:57.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\03. Gerando um Retangulo\\src\\Program.cs",
               "RelativeDocumentMoniker": "src\\Program.cs",

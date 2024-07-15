@@ -69,9 +69,9 @@ public class Program : GameWindow {
     private void matrixProjection() {
         Matrix4 projection = Matrix4.Identity;
 
-        //projection *= CreatePerspectiveFieldOfView();
+        projection *= CreatePerspectiveFieldOfView();
         //projection *= CreatePerspectiveOffCenter();
-        projection *= CreateOrthographic();
+        //projection *= CreateOrthographic();
         //projection *= CreateOrthographicOffCenter();
 
         this.shader.setMatrix4("projection", projection);
@@ -133,17 +133,22 @@ public class Program : GameWindow {
 
     private void matrixView() {
         // Configura a matriz de visualização isométrica
-        Vector3 eye = new Vector3(-1, 1, 1) * 10; // Posição da câmera
-        Vector3 target = Vector3.Zero; // Onde a câmera está olhando
-        Vector3 up = Vector3.UnitY; // Direção "para cima" da câmera
+
+        Vector3 eye = new Vector3(1, 1, 1); // Posição da câmera
+        //Vector3 eye = new Vector3(2, 2, 2); // Posição da câmera
+
+        Vector3 target = new Vector3(0, 0, 0); // Onde a câmera está olhando
+        //Vector3 target = new Vector3(1, 1, 1); // Onde a câmera está olhando
+
+        Vector3 up = new Vector3(1, 1, 0); // Direção "para cima" da câmera
 
         Matrix4 view = Matrix4.Identity;
 
         view *= Matrix4.LookAt(eye, target, up);
 
-        //view *= Matrix4.CreateTranslation(0.0f, 0.0f, -10.0f);
+        view *= Matrix4.CreateTranslation(0.0f, 0.0f, -1.0f);
 
-        view *= Matrix4.CreateScale(10.0f);
+        //view *= Matrix4.CreateScale(10.0f);
 
         this.shader.setMatrix4("view", view);
     }

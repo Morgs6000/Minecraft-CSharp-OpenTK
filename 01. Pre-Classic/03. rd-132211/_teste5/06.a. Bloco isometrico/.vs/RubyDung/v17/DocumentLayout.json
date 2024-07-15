@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\06.a. bloco isometrico\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\06.a. bloco isometrico\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\06.a. bloco isometrico\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDD26BA1-8AA3-49BE-8229-4795774E94B5}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste5\\06.a. bloco isometrico\\src\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Chunk.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\06.a. Bloco isometrico\\src\\level\\Chunk.cs",
               "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
@@ -92,21 +92,23 @@
               "RelativeDocumentMoniker": "src\\level\\Tile.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\06.a. Bloco isometrico\\src\\level\\Tile.cs",
               "RelativeToolTip": "src\\level\\Tile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T02:28:59.75Z"
+              "WhenOpened": "2024-07-11T02:28:59.75Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Tesselator.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\06.a. Bloco isometrico\\src\\level\\Tesselator.cs",
               "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\06.a. Bloco isometrico\\src\\level\\Tesselator.cs",
               "RelativeToolTip": "src\\level\\Tesselator.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAgwEgAAAA2AAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEgAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T01:54:45.23Z"
+              "WhenOpened": "2024-07-11T01:54:45.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -152,7 +154,7 @@
               "RelativeDocumentMoniker": "src\\Program.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste5\\06.a. Bloco isometrico\\src\\Program.cs",
               "RelativeToolTip": "src\\Program.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAgwJEAAAAIAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAgwIAAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T00:55:44.819Z",
               "EditorCaption": ""
