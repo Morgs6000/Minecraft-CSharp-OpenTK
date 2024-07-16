@@ -54,8 +54,7 @@
               "RelativeToolTip": "src\\shaders\\gui.frag",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-05T23:49:57.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T23:49:57.19Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "src\\shaders\\gui.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-05T23:49:42.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T23:49:42.596Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "src\\Shader.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T23:46:55.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T23:46:55.559Z"
             },
             {
               "$type": "Document",
@@ -93,8 +90,7 @@
               "RelativeToolTip": "src\\shaders\\shader.frag",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-05T23:46:20.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T23:46:20.808Z"
             },
             {
               "$type": "Document",
@@ -106,8 +102,7 @@
               "RelativeToolTip": "src\\shaders\\shader.vert",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-05T23:46:18.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T23:46:18.584Z"
             },
             {
               "$type": "Document",
@@ -119,8 +114,7 @@
               "RelativeToolTip": "src\\Camera.cs",
               "ViewState": "AQIAAIUAAAAAAAAAAAAIwLYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:00:16.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T20:00:16.107Z"
             },
             {
               "$type": "Document",
@@ -132,8 +126,7 @@
               "RelativeToolTip": "src\\Texture.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T19:52:15.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T19:52:15.759Z"
             },
             {
               "$type": "Document",
@@ -143,7 +136,7 @@
               "RelativeDocumentMoniker": "src\\RubyDung.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Inventario\\10.b\\src\\RubyDung.cs",
               "RelativeToolTip": "src\\RubyDung.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAFMAAAAIAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T19:51:21.272Z",
               "EditorCaption": ""

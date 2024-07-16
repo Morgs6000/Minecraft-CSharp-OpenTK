@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\_testes\\blocos\\07.b_03\\src\\colorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BEE7854-2A62-4DA4-A2F0-A89FF02BFC72}|RubyDung.csproj|solutionrelative:src\\colorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,6 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Camera.cs",
+              "RelativeDocumentMoniker": "src\\Camera.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\Camera.cs",
+              "RelativeToolTip": "src\\Camera.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAALAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T15:36:07.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RubyDung.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\RubyDung.cs",
+              "RelativeDocumentMoniker": "src\\RubyDung.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\RubyDung.cs",
+              "RelativeToolTip": "src\\RubyDung.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T15:36:02.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ColorConverter.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\ColorConverter.cs",
               "RelativeDocumentMoniker": "src\\ColorConverter.cs",
@@ -39,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BlockLeaves.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\BlockLeaves.cs",
               "RelativeDocumentMoniker": "src\\level\\block\\BlockLeaves.cs",
@@ -47,12 +81,11 @@
               "RelativeToolTip": "src\\level\\block\\BlockLeaves.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAAAEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T01:09:42.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-13T01:09:42.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BlockGrass.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\_testes\\Blocos\\07.b_03\\src\\level\\block\\BlockGrass.cs",
               "RelativeDocumentMoniker": "src\\level\\block\\BlockGrass.cs",
