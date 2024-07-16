@@ -32,6 +32,8 @@ public class LevelRenderer {
                     int y1 = (y + 1) * 16;
                     int z1 = (z + 1) * 16;
 
+                    //Console.WriteLine($"chunk: {x}, {y}, {z}");
+
                     this.chunks[(x + y * this.xChunks) * this.zChunks + z] = new Chunk(level, x0, y0, z0, x1, y1, z1);
                     this.chunks[(x + y * this.xChunks) * this.zChunks + z].rebuild();
                 }

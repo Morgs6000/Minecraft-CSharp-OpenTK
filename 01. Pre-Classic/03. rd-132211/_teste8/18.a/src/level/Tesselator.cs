@@ -23,6 +23,10 @@ public class Tesselator {
     private int TBO; // Texture Buffer Object
 
     public void flush() {
+        //Console.WriteLine($"vertices: {this.vertexBuffer.Count}");
+        //Console.WriteLine($"indices: {this.indiceBuffer.Count}");
+        //Console.WriteLine($"texCoods: {this.texCoordBuffer.Count}\n");
+
         // Vertex Array Object
         GL.GenVertexArrays(1, out VAO);
 
