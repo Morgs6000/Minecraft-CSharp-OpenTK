@@ -65,7 +65,7 @@ public class Camera {
 
         this.eye += x * Vector3.Normalize(Vector3.Cross(-this.target, this.up)) * velocity;
         this.eye += y * this.up * velocity;
-        this.eye += z * Vector3.Normalize(new Vector3(this.target.X, 0.0f, this.target.Y)) * velocity;
+         this.eye += z * Vector3.Normalize(new Vector3(this.target.X, 0.0f, this.target.Z)) * velocity;
     }
 
     public void ProcessMouseMovement(float xoffset, float yoffset) {

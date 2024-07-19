@@ -53,7 +53,7 @@ public class RubyDung : GameWindow {
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
-        GL.ClearColor(Color.Hex("7FCCFF", 255));
+        GL.ClearColor(Color.Hex("7FCCFF"));
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
         this.shader.use();
