@@ -43,7 +43,6 @@ public class RubyDung : GameWindow {
 
     private int paintTexture = 1;
     private Shader shaderGui;
-    Tesselator t;
 
     private void drawGuiLoad() {
         this.shaderGui = new Shader("vertexShader.glsl", "fragmentShader.glsl");
@@ -51,13 +50,28 @@ public class RubyDung : GameWindow {
         this.texture = new Texture("terrain.png");
     }
 
+    private void setupOrthoCamera() {
+        Matrix4 projection = Matrix4.Identity;
+
+        //projection *= Matrix4.CreateOrthographic((float)this.width, (float)this.height, 0.3f, 1000.0f);
+
+        //projection *= Matrix4.CreateOrthographicOffCenter(0.0f, (float)this.width, 0.0f, (float)this.height, 0.3f, 1000.0f);
+
+        projection *= Matrix4.CreateOrthographicOffCenter(0.0f, (float)this.width, 0.0f, (float)this.height, 100.0f, 300.0f);
+
+        //projection *= Matrix4.CreateOrthographicOffCenter(0.0f, (float)this.width, 0.0f, (float)this.height, 100.0f, 1000.0f);
+
+        this.shaderGui.setMat4("projection", projection);
+
+        Matrix4 view = Matrix4.Identity;
+        //view *= Matrix4.CreateTranslation(0.0f, 0.0f, -200.0f);
+        this.shaderGui.setMat4("view", view);
+    }
+
     private void drawGui() {
         this.shaderGui.use();
 
-        Matrix4 projection = Matrix4.Identity;
-        //projection *= Matrix4.CreateOrthographic((float)this.width, (float)this.height, 0.3f, 1000.0f);
-        projection *= Matrix4.CreateOrthographicOffCenter(0.0f, (float)this.width, 0.0f, (float)this.height, 0.3f, 1000.0f);
-        this.shaderGui.setMat4("projection", projection);
+        this.setupOrthoCamera();
 
         Matrix4 view = Matrix4.Identity;
         view *= Matrix4.CreateTranslation(1.5f, -0.5f, -0.5f);
@@ -66,17 +80,45 @@ public class RubyDung : GameWindow {
         //view *= Matrix4.CreateRotationY(45.0f);
         //view *= Matrix4.CreateRotationX(30.0f);
 
-        view *= Matrix4.CreateTranslation(0.0f, 0.0f, -10.0f);
+        //view *= Matrix4.CreateTranslation(0.0f, 0.0f, -10.0f);
 
         view *= Matrix4.CreateScale(48.0f, 48.0f, 48.0f);
         view *= Matrix4.CreateTranslation((float)(this.width - 48), (float)(this.height - 48), 0.0f);
+
+        view *= Matrix4.CreateTranslation(0.0f, 0.0f, -200.0f);
+
         this.shaderGui.setMat4("view", view);
 
         this.texture.bind();
 
-        t = new Tesselator();
+        Tesselator t = new Tesselator();
+
         t.init();
         Tile.tiles[this.paintTexture].render(t, this.level, -2, 0, 0);
+        //t.flush();
+
+        //t.bind();
+
+        int wc = this.width / 2;
+        int hc = this.height / 2;
+
+        //t.init();
+
+        //t.vertex((float)(wc + 1), (float)(hc - 8), 0.0f);
+        //t.vertex((float)(wc - 0), (float)(hc - 8), 0.0f);
+        //t.vertex((float)(wc - 0), (float)(hc + 9), 0.0f);
+        //t.vertex((float)(wc + 1), (float)(hc + 9), 0.0f);
+
+        //t.vertex((float)(wc + 9), (float)(hc - 0), 0.0f);
+        //t.vertex((float)(wc - 8), (float)(hc - 0), 0.0f);
+        //t.vertex((float)(wc - 8), (float)(hc + 1), 0.0f);
+        //t.vertex((float)(wc + 9), (float)(hc + 1), 0.0f);
+
+        //t.vertex(0.0f, 0.0f, 0.0f);
+        //t.vertex(1.0f, 0.0f, 0.0f);
+        //t.vertex(1.0f, 1.0f, 0.0f);
+        //t.vertex(0.0f, 1.0f, 0.0f);
+
         t.flush();
 
         t.bind();

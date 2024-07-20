@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RubyDung
-build_property.ProjectDir = D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\02\
+build_property.ProjectDir = D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\02. GUI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
