@@ -11,7 +11,7 @@ public class Chunk {
     public int y1;
     public int z1;
 
-    private Texture texture;
+    private Texture texture = new Texture("terrain.png");
     private Tesselator t = new Tesselator();
 
     public Chunk(Level level, int x0, int y0, int z0, int x1, int y1, int z1) {
@@ -27,6 +27,10 @@ public class Chunk {
     }
 
     public void rebuild() {
+        this.texture.bind();
+
+        t.init();
+
         for(int x = this.x0; x < this.x1; x++) {
             for(int y = this.y0; y < this.y1; y++) {
                 for(int z = this.z0; z < this.z1; z++) {

@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\level\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste7\\11. gerando um mundo [fail]\\src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Tile.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tile.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Tile.cs",
+              "RelativeToolTip": "src\\level\\Tile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T21:32:16.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Level.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Level.cs",
+              "RelativeDocumentMoniker": "src\\level\\Level.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Level.cs",
+              "RelativeToolTip": "src\\level\\Level.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T21:28:17.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Chunk.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Chunk.cs",
+              "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Chunk.cs",
+              "RelativeToolTip": "src\\level\\Chunk.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T21:27:36.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Color.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\Color.cs",
               "RelativeDocumentMoniker": "src\\Color.cs",
@@ -47,20 +98,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Tesselator.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Tesselator.cs",
               "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\level\\Tesselator.cs",
               "RelativeToolTip": "src\\level\\Tesselator.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAuwIEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-16T12:46:35.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Shader.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\Shader.cs",
               "RelativeDocumentMoniker": "src\\Shader.cs",
@@ -72,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Wireframe.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\Wireframe.cs",
               "RelativeDocumentMoniker": "src\\Wireframe.cs",
@@ -84,13 +135,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "RubyDung.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\RubyDung.cs",
               "RelativeDocumentMoniker": "src\\RubyDung.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste7\\11. Gerando um Mundo [fail]\\src\\RubyDung.cs",
               "RelativeToolTip": "src\\RubyDung.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADcAAAAwAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAEIAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T18:09:03.582Z",
               "EditorCaption": ""

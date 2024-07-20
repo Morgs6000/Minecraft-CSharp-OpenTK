@@ -25,142 +25,76 @@ public class Tile {
         float u1 = u0 + (1.0f / 16.0f);
         float v1 = v0 + (1.0f / 16.0f);
 
-        // ..:: x0 ::..
+        // x0
         if(!level.isSolidTile(x - 1, y, z)) {
-            t.vertex(x0, y0, z0); // bottom left  // 0
-            t.vertex(x0, y0, z1); // bottom right // 1
-            t.vertex(x0, y1, z1); // top right    // 2
-            t.vertex(x0, y1, z0); // top left     // 3
-
-            // primeiro Triângulo
-            t.indice(0); // bottom left 
-            t.indice(1); // bottom right
-            t.indice(2); // top right 
-
-            // segundo Triângulo
-            t.indice(0); // bottom left 
-            t.indice(2); // top right
-            t.indice(3); // top left
-
-            t.tex(u0, v0); // bottom left 
-            t.tex(u1, v0); // bottom right
-            t.tex(u1, v1); // top right
-            t.tex(u0, v1); // top left
+            t.tex(u0, v0);
+            t.vertex(x0, y0, z0);
+            t.tex(u1, v0);
+            t.vertex(x0, y0, z1);
+            t.tex(u1, v1);
+            t.vertex(x0, y1, z1);
+            t.tex(u0, v1);
+            t.vertex(x0, y1, z0);
         }
 
-        // ..:: x1 ::..
+        // x1
         if(!level.isSolidTile(x + 1, y, z)) {
-            t.vertex(x1, y0, z1); // bottom left  // 0
-            t.vertex(x1, y0, z0); // bottom right // 1
-            t.vertex(x1, y1, z0); // top right    // 2
-            t.vertex(x1, y1, z1); // top left     // 3
-
-            // primeiro Triângulo
-            t.indice(0); // bottom left 
-            t.indice(1); // bottom right
-            t.indice(2); // top right 
-
-            // segundo Triângulo
-            t.indice(0); // bottom left 
-            t.indice(2); // top right
-            t.indice(3); // top left
-
-            t.tex(u0, v0); // bottom left 
-            t.tex(u1, v0); // bottom right
-            t.tex(u1, v1); // top right
-            t.tex(u0, v1); // top left
+            t.tex(u0, v0);
+            t.vertex(x1, y0, z1);
+            t.tex(u1, v0);
+            t.vertex(x1, y0, z0);
+            t.tex(u1, v1);
+            t.vertex(x1, y1, z0);
+            t.tex(u0, v1);
+            t.vertex(x1, y1, z1);
         }
 
-        // ..:: y0 ::..
+        // y0
         if(!level.isSolidTile(x, y - 1, z)) {
-            t.vertex(x0, y0, z0); // bottom left  // 0
-            t.vertex(x1, y0, z0); // bottom right // 1
-            t.vertex(x1, y0, z1); // top right    // 2
-            t.vertex(x0, y0, z1); // top left     // 3
-
-            // primeiro Triângulo
-            t.indice(0); // bottom left 
-            t.indice(1); // bottom right
-            t.indice(2); // top right 
-
-            // segundo Triângulo
-            t.indice(0); // bottom left 
-            t.indice(2); // top right
-            t.indice(3); // top left
-
-            t.tex(u0, v0); // bottom left 
-            t.tex(u1, v0); // bottom right
-            t.tex(u1, v1); // top right
-            t.tex(u0, v1); // top left
+            t.tex(u0, v0);
+            t.vertex(x0, y0, z0);
+            t.tex(u1, v0);
+            t.vertex(x1, y0, z0);
+            t.tex(u1, v1);
+            t.vertex(x1, y0, z1);
+            t.tex(u0, v1);
+            t.vertex(x0, y0, z1);
         }
 
-        // ..:: y1 ::..
+        // y1
         if(!level.isSolidTile(x, y + 1, z)) {
-            t.vertex(x0, y1, z1); // bottom left  // 0
-            t.vertex(x1, y1, z1); // bottom right // 1
-            t.vertex(x1, y1, z0); // top right    // 2
-            t.vertex(x0, y1, z0); // top left     // 3
-
-            // primeiro Triângulo
-            t.indice(0); // bottom left 
-            t.indice(1); // bottom right
-            t.indice(2); // top right 
-
-            // segundo Triângulo
-            t.indice(0); // bottom left 
-            t.indice(2); // top right
-            t.indice(3); // top left
-
-            t.tex(u0, v0); // bottom left 
-            t.tex(u1, v0); // bottom right
-            t.tex(u1, v1); // top right
-            t.tex(u0, v1); // top left
+            t.tex(u0, v0);
+            t.vertex(x0, y1, z1);
+            t.tex(u1, v0);
+            t.vertex(x1, y1, z1);
+            t.tex(u1, v1);
+            t.vertex(x1, y1, z0);
+            t.tex(u0, v1);
+            t.vertex(x0, y1, z0);
         }
 
-        // ..:: z1 ::..
+        // z0
         if(!level.isSolidTile(x, y, z - 1)) {
-            t.vertex(x1, y0, z0); // bottom left  // 0
-            t.vertex(x0, y0, z0); // bottom right // 1
-            t.vertex(x0, y1, z0); // top right    // 2
-            t.vertex(x1, y1, z0); // top left     // 3
-
-            // primeiro Triângulo
-            t.indice(0); // bottom left 
-            t.indice(1); // bottom right
-            t.indice(2); // top right 
-
-            // segundo Triângulo
-            t.indice(0); // bottom left 
-            t.indice(2); // top right
-            t.indice(3); // top left
-
-            t.tex(u0, v0); // bottom left 
-            t.tex(u1, v0); // bottom right
-            t.tex(u1, v1); // top right
-            t.tex(u0, v1); // top left
+            t.tex(u0, v0);
+            t.vertex(x1, y0, z0);
+            t.tex(u1, v0);
+            t.vertex(x0, y0, z0);
+            t.tex(u1, v1);
+            t.vertex(x0, y1, z0);
+            t.tex(u0, v1);
+            t.vertex(x1, y1, z0);
         }
 
-        // ..:: z1 ::..
+        // z1
         if(!level.isSolidTile(x, y, z + 1)) {
-            t.vertex(x0, y0, z1); // bottom left  // 0
-            t.vertex(x1, y0, z1); // bottom right // 1
-            t.vertex(x1, y1, z1); // top right    // 2
-            t.vertex(x0, y1, z1); // top left     // 3
-
-            // primeiro Triângulo
-            t.indice(0); // bottom left 
-            t.indice(1); // bottom right
-            t.indice(2); // top right 
-
-            // segundo Triângulo
-            t.indice(0); // bottom left 
-            t.indice(2); // top right
-            t.indice(3); // top left
-
-            t.tex(u0, v0); // bottom left 
-            t.tex(u1, v0); // bottom right
-            t.tex(u1, v1); // top right
-            t.tex(u0, v1); // top left
+            t.tex(u0, v0);
+            t.vertex(x0, y0, z1);
+            t.tex(u1, v0);
+            t.vertex(x1, y0, z1);
+            t.tex(u1, v1);
+            t.vertex(x1, y1, z1);
+            t.tex(u0, v1);
+            t.vertex(x0, y1, z1);
         }
     }
 }

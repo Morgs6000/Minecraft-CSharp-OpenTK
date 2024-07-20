@@ -11,7 +11,7 @@ public class RubyDung : GameWindow {
     private int height;
 
     private Shader shader;
-    private Texture texture;
+    //private Texture texture;
 
     private Level level;
     private LevelRenderer levelRenderer;
@@ -44,23 +44,27 @@ public class RubyDung : GameWindow {
 
         this.shader = new Shader("vertexShader.glsl", "fragmentShader.glsl");
 
-        this.texture = new Texture("terrain.png");
+        //this.texture = new Texture("terrain.png");
 
-        this.level = new Level(256, 16, 256);
+        this.level = new Level(16 * 3, 16 * 3, 16 * 3);
         this.levelRenderer = new LevelRenderer(this.level);
 
         this.CursorState = CursorState.Grabbed;
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
-        GL.ClearColor(Color.Hex("7FCCFF", 255));
+        float fr = 0.5f;
+        float fg = 0.8f;
+        float fb = 1.0f;
+
+        GL.ClearColor(fr, fg, fb, 0.0f);
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
         this.shader.use();
 
         this.matrix.matrix(this.widht, this.height, this.shader);
 
-        this.texture.bind();
+        //this.texture.bind();
 
         this.levelRenderer.render();
 

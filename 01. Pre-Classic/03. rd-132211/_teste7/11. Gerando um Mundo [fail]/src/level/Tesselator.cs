@@ -10,8 +10,11 @@ public class Tesselator {
     private float[] texCoordBuffer = new float[200000];
 
     private int vertices = 0;
-    private int indices = 0;
-    private int texCoords = 0;
+
+    private float u;
+    private float v;
+
+    private bool hasTexture = false;
 
     private int VAO; // Vertex Array Object
     private int VBO; // Vertex Buffer Object
@@ -26,7 +29,7 @@ public class Tesselator {
 
         this.clearBind();
 
-        //GL.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Line);
+        this.clear();
     }
 
     private void setVAO() {
@@ -70,6 +73,20 @@ public class Tesselator {
         GL.BindVertexArray(0);
     }
 
+    private void clear() {
+        Array.Clear(this.vertexBuffer, 0, this.vertexBuffer.Length);
+        Array.Clear(this.indiceBuffer, 0, this.indiceBuffer.Length);
+        Array.Clear(this.texCoordBuffer, 0, this.texCoordBuffer.Length);
+
+        this.vertices = 0;
+    }
+
+    public void init() {
+        this.clear();
+
+        this.hasTexture = false;
+    }
+
     public void bind() {
         GL.BindVertexArray(this.VAO);
 
@@ -78,24 +95,39 @@ public class Tesselator {
         GL.DrawElements(PrimitiveType.Triangles, this.indiceBuffer.Length, DrawElementsType.UnsignedInt, 0);
     }
 
+    public void tex(float u, float v) {
+        this.hasTexture = true;
+
+        this.u = u;
+        this.v = v;
+    }
+
     public void vertex(float x, float y, float z) {
         this.vertexBuffer[this.vertices * 3 + 0] = x;
         this.vertexBuffer[this.vertices * 3 + 1] = y;
         this.vertexBuffer[this.vertices * 3 + 2] = z;
 
+        if(this.hasTexture) {
+            this.texCoordBuffer[this.vertices * 2 + 0] = this.u;
+            this.texCoordBuffer[this.vertices * 2 + 1] = this.v;
+        }
+
         this.vertices++;
-    }
 
-    public void indice(int i) {
-        this.indiceBuffer[this.indices * 1 + 0] = i + this.vertices - 4;
+        if(this.vertices % 4 == 0) {
+            int indices = this.vertices - 4;
 
-        this.indices++;
-    }
+            this.indiceBuffer[indices * 6 + 0] = 0 + indices;
+            this.indiceBuffer[indices * 6 + 1] = 1 + indices;
+            this.indiceBuffer[indices * 6 + 2] = 2 + indices;
 
-    public void tex(float u, float v) {
-        this.texCoordBuffer[this.texCoords * 2 + 0] = u;
-        this.texCoordBuffer[this.texCoords * 2 + 1] = v;
+            this.indiceBuffer[indices * 6 + 3] = 0 + indices;
+            this.indiceBuffer[indices * 6 + 4] = 2 + indices;
+            this.indiceBuffer[indices * 6 + 5] = 3 + indices;
+        }
 
-        this.texCoords++;
+        if(this.vertices == 100000) {
+            this.flush();
+        }
     }
 }
