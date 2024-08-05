@@ -1,0 +1,6 @@
+2023-03-18 15:44 -    commands.__init__ - INFO - == MCP v5.0 ==
+2023-03-18 15:44 -    commands.__init__ - DEBUG - OS : win32
+2023-03-18 15:44 -    commands.runmc - DEBUG - runmc: 'java.exe -Xincgc -Xms1024M -Xmx1024M -cp "../lib/;../lib/*;../bin/minecraft;../jars/bin/minecraft.jar;../jars/bin/jinput.jar;../jars/bin/lwjgl.jar;../jars/bin/lwjgl_util.jar" -Djava.library.path=../jars/bin/natives Start'
+2023-03-18 15:44 -    commands.runmc - ERROR - Unrecognized option: -Xincgc
+2023-03-18 15:44 -    commands.runmc - ERROR - Error: Could not create the Java Virtual Machine.
+2023-03-18 15:44 -    commands.runmc - ERROR - Error: A fatal exception has occurred. Program will exit.

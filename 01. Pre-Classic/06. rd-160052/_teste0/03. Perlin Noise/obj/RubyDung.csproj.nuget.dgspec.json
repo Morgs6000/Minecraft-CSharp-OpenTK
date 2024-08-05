@@ -57,6 +57,10 @@
             "StbImageSharp": {
               "target": "Package",
               "version": "[2.27.14, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             }
           },
           "imports": [

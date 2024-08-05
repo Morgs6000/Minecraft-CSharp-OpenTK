@@ -490,3 +490,6 @@ D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-1600
 D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\03. Perlin Noise\obj\Debug\net8.0\RubyDung.pdb
 D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\03. Perlin Noise\obj\Debug\net8.0\RubyDung.genruntimeconfig.cache
 D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\03. Perlin Noise\obj\Debug\net8.0\ref\RubyDung.dll
+D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\03. Perlin Noise\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\03. Perlin Noise\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\GitHub\Meus Repositórios\Minecraft-CSharp-OpenTK\01. Pre-Classic\06. rd-160052\_teste0\03. Perlin Noise\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
