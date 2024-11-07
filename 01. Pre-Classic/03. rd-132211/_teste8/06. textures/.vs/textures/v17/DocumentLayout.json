@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste8\\06. textures\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste8\\06. textures\\src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste8\\06. textures\\src\\shaders\\fragmentshader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\shaders\\fragmentshader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste8\\06. textures\\src\\shaders\\vertexshader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\shaders\\vertexshader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste8\\06. textures\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\03. rd-132211\\_teste8\\06. textures\\src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Shader.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\src\\Shader.cs",
               "RelativeDocumentMoniker": "src\\Shader.cs",
@@ -38,44 +38,43 @@
               "RelativeToolTip": "src\\Shader.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T20:01:33.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-15T20:01:33.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "fragmentShader.glsl",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\src\\shaders\\fragmentShader.glsl",
               "RelativeDocumentMoniker": "src\\shaders\\fragmentShader.glsl",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\src\\shaders\\fragmentShader.glsl",
               "RelativeToolTip": "src\\shaders\\fragmentShader.glsl",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-07-15T19:52:58.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "vertexShader.glsl",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\src\\shaders\\vertexShader.glsl",
               "RelativeDocumentMoniker": "src\\shaders\\vertexShader.glsl",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\src\\shaders\\vertexShader.glsl",
               "RelativeToolTip": "src\\shaders\\vertexShader.glsl",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-07-15T19:52:10.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RubyDung.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\src\\RubyDung.cs",
               "RelativeDocumentMoniker": "src\\RubyDung.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\06. textures\\src\\RubyDung.cs",
               "RelativeToolTip": "src\\RubyDung.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAHwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T19:51:58.557Z",
               "EditorCaption": ""

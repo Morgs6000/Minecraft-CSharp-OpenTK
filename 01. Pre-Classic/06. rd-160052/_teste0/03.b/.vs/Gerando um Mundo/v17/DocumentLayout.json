@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03.b\\src\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\tile\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\tile\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\shaders\\vertexshader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03.b\\src\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Textures.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\Textures.cs",
               "RelativeDocumentMoniker": "src\\Textures.cs",
@@ -78,12 +78,11 @@
               "RelativeToolTip": "src\\Textures.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T08:54:17.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T08:54:17.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Texture.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\Texture.cs",
               "RelativeDocumentMoniker": "src\\Texture.cs",
@@ -95,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PerlinNoiseFilter.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\PerlinNoiseFilter.cs",
               "RelativeDocumentMoniker": "src\\level\\PerlinNoiseFilter.cs",
@@ -107,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "fragmentShader.glsl",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\shaders\\fragmentShader.glsl",
               "RelativeDocumentMoniker": "src\\shaders\\fragmentShader.glsl",
@@ -119,19 +118,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Matrix.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\Matrix.cs",
               "RelativeDocumentMoniker": "src\\Matrix.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\Matrix.cs",
               "RelativeToolTip": "src\\Matrix.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFcAAAAXAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADQAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T00:20:16.045Z"
+              "WhenOpened": "2024-07-20T00:20:16.045Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "vertexShader.glsl",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\shaders\\vertexShader.glsl",
               "RelativeDocumentMoniker": "src\\shaders\\vertexShader.glsl",
@@ -143,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Level.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\Level.cs",
               "RelativeDocumentMoniker": "src\\level\\Level.cs",
@@ -155,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Chunk.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\Chunk.cs",
               "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
@@ -179,20 +179,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Tile.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\tile\\Tile.cs",
               "RelativeDocumentMoniker": "src\\level\\tile\\Tile.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\tile\\Tile.cs",
               "RelativeToolTip": "src\\level\\tile\\Tile.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAEAAAAAIAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADwAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T17:42:50.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Wireframe.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\Wireframe.cs",
               "RelativeDocumentMoniker": "src\\Wireframe.cs",
@@ -216,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RubyDung.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\RubyDung.cs",
               "RelativeDocumentMoniker": "src\\RubyDung.cs",
@@ -228,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GrassTile.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03.b\\src\\level\\tile\\GrassTile.cs",
               "RelativeDocumentMoniker": "src\\level\\tile\\GrassTile.cs",

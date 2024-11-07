@@ -3,20 +3,20 @@
 public class Tile {
     public static Tile tile = new Tile();
 
-    private int tex = 0;
+    private string textureName = "Clay Basalt";
 
-    public void render(Tesselator t) {
+    public void SetTexture(string name) {
+        textureName = name;
+    }
+
+    public void render(Tesselator t, TextureAtlas atlas) {
         float x0 = -0.5f;
         float y0 = -0.5f;
 
         float x1 = 0.5f;
         float y1 = 0.5f;
 
-        float u0 = (float)this.tex / 16.0f;
-        float v0 = (16.0f - 1.0f) / 16.0f;
-
-        float u1 = u0 + (1.0f / 16.0f);
-        float v1 = v0 + (1.0f / 16.0f);
+        var (u0, v0, u1, v1) = atlas.GetTextureCoordinates(textureName);
 
         t.tex(u0, v0);
         t.vertex(x0, y0);

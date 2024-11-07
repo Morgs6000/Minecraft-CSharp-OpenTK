@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03. Perlin Noise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03. perlin noise\\src\\level\\perlinnoisefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\perlinnoisefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03. perlin noise\\src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\rubydung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03. perlin noise\\src\\level\\perlinnoisefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|solutionrelative:src\\level\\perlinnoisefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8276DCD2-2B79-436E-83B5-CF84192AFAD1}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\01. pre-classic\\06. rd-160052\\_teste0\\03. perlin noise\\src\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
@@ -78,13 +78,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PerlinNoiseFilter.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03. Perlin Noise\\src\\level\\PerlinNoiseFilter.cs",
               "RelativeDocumentMoniker": "src\\level\\PerlinNoiseFilter.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03. Perlin Noise\\src\\level\\PerlinNoiseFilter.cs",
               "RelativeToolTip": "src\\level\\PerlinNoiseFilter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T09:16:49.812Z",
               "EditorCaption": ""
@@ -199,13 +199,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RubyDung.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03. Perlin Noise\\src\\RubyDung.cs",
               "RelativeDocumentMoniker": "src\\RubyDung.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\06. rd-160052\\_teste0\\03. Perlin Noise\\src\\RubyDung.cs",
               "RelativeToolTip": "src\\RubyDung.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAG8AAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T18:09:03.582Z",
               "EditorCaption": ""

@@ -88,22 +88,37 @@ public class RubyDung : GameWindow {
         //this.texture = new Texture("terrain.png");
 
         string texturesPath = "../../../src/textures/blocks";
-        string[] textureFiles = Directory.GetFiles(texturesPath, "*.png");
+        string[] textureFiles = Directory.GetFiles(texturesPath, "*.png", SearchOption.AllDirectories);
 
         int atlasWidth = 256; // Largura do atlas
         int atlasHeight = 256; // Altura do atlas
 
         textureAtlas = new TextureAtlas(atlasWidth, atlasHeight); // Dimensões do atlas (ajuste conforme necessário)
 
+        int x = 0, y = 0;
+        int rowHeight = 0;
+
         foreach(var filePath in textureFiles) {
             using(var stream = File.OpenRead(filePath)) {
                 var image = ImageResult.FromStream(stream, ColorComponents.RedGreenBlueAlpha);
+                string textureName = Path.GetFileNameWithoutExtension(filePath);
                 int textureWidth = image.Width;
                 int textureHeight = image.Height;
 
-                if(!textureAtlas.AddTexture(image.Data, textureWidth, textureHeight)) {
-                    throw new Exception("O atlas de texturas está cheio. Não há espaço suficiente para adicionar mais texturas.");
+                if(x + textureWidth > atlasWidth) // Verifica se há espaço suficiente na linha atual
+                {
+                    x = 0;
+                    y += rowHeight;
+                    rowHeight = 0;
+                    if(y + textureHeight > atlasHeight) // Verifica se há espaço suficiente na coluna
+                    {
+                        throw new Exception("O atlas de texturas está cheio. Não há espaço suficiente para adicionar mais texturas.");
+                    }
                 }
+
+                textureAtlas.AddTexture(textureName, image.Data, textureWidth, textureHeight, x, y);
+                x += textureWidth; // Avança para a próxima posição
+                rowHeight = Math.Max(rowHeight, textureHeight); // Mantém a altura da linha atual
             }
         }
 

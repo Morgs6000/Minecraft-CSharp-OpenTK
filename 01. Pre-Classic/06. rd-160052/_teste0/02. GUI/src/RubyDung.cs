@@ -47,7 +47,7 @@ public class RubyDung : GameWindow {
     private void drawGuiLoad() {
         this.shaderGui = new Shader("vertexShader.glsl", "fragmentShader.glsl");
 
-        this.texture = new Texture("terrain.png");
+        //this.texture = new Texture("terrain.png");
     }
 
     private void setupOrthoCamera() {
@@ -76,9 +76,13 @@ public class RubyDung : GameWindow {
         Matrix4 view = Matrix4.Identity;
         view *= Matrix4.CreateTranslation(1.5f, -0.5f, -0.5f);
 
-        view *= Matrix4.LookAt(new Vector3(1.0f, 1.0f, 1.0f), new Vector3(0.0f, 0.0f, 0.0f), new Vector3(0.0f, 1.0f, 0.0f));
-        //view *= Matrix4.CreateRotationY(45.0f);
-        //view *= Matrix4.CreateRotationX(30.0f);
+        //view *= Matrix4.LookAt(new Vector3(1.0f, 1.0f, 1.0f), new Vector3(0.0f, 0.0f, 0.0f), new Vector3(0.0f, 1.0f, 0.0f));
+
+        //view *= Matrix4.CreateRotationY(MathHelper.DegreesToRadians(45.0f));
+        view *= Matrix4.CreateFromAxisAngle(new Vector3(0.0f, 1.0f, 0.0f), MathHelper.DegreesToRadians(45.0f));
+
+        //view *= Matrix4.CreateRotationX(MathHelper.DegreesToRadians(30.0f));
+        view *= Matrix4.CreateFromAxisAngle(new Vector3(1.0f, 0.0f, 0.0f), MathHelper.DegreesToRadians(30.0f));
 
         //view *= Matrix4.CreateTranslation(0.0f, 0.0f, -10.0f);
 

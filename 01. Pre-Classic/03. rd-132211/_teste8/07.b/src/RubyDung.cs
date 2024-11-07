@@ -127,10 +127,10 @@ public class RubyDung : GameWindow {
         textureId = textureAtlas.CreateTexture(); // Cria a textura do OpenGL a partir do atlas
         */
         string texturesPath = "../../../src/textures/blocks";
-        string[] textureFiles = Directory.GetFiles(texturesPath, "*.png");
+        string[] textureFiles = Directory.GetFiles(texturesPath, "*.png", SearchOption.AllDirectories);
         int textureSize = 16; // Supondo que todas as texturas são de 16x16 pixels
-        int atlasWidth = 256; // Largura do atlas
-        int atlasHeight = 256; // Altura do atlas
+        int atlasWidth = 512; // Largura do atlas
+        int atlasHeight = 512; // Altura do atlas
 
         textureAtlas = new TextureAtlas(atlasWidth, atlasHeight); // Dimensões do atlas (ajuste conforme necessário)
 

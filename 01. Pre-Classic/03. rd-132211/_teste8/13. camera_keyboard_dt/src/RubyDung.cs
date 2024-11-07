@@ -129,7 +129,7 @@ public class RubyDung : GameWindow {
                 y++;
             }
             if(this.KeyboardState.IsKeyDown(Keys.LeftShift)) {
-                z--;
+                y--;
             }
 
             this.eye += x * Vector3.Normalize(Vector3.Cross(-this.target, this.up)) * speed;
