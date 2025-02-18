@@ -17,8 +17,8 @@ Gerando Camadas
 
 Gerando uma Chunk
 ![Image](https://github.com/user-attachments/assets/1177d147-6aa7-491a-93ac-f25c1edf9fa7)
-![Image](https://github.com/user-attachments/assets/b46e172d-f2ae-48bb-b339-3d41d6cb6d0d)
 ![Image](https://github.com/user-attachments/assets/f4d19992-60ff-4b56-b4b3-df31852fb696)
+![Image](https://github.com/user-attachments/assets/b46e172d-f2ae-48bb-b339-3d41d6cb6d0d)
 
 Gerando um Bloco
 ![Image](https://github.com/user-attachments/assets/ec0bbdd3-8940-432f-b8b7-d9676fdf3c65)
