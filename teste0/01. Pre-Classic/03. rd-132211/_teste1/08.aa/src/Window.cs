@@ -14,17 +14,6 @@ public class Window : GameWindow {
     private Shader shader;
     private Texture texture;
     private LevelRenderer levelRenderer;
-    
-    private List<float> vertexBuffer = new List<float>();
-    private List<int> indiceBuffer = new List<int>();
-    private List<float> texCoordBuffer = new List<float>();
-
-    private int vertices = 0;
-
-    private int VertexArrayObject;
-    private int VertexBufferObject;
-    private int ElementBufferObject;
-    private int TextureBufferObject;
 
     private bool wireframeMode = false;
 
@@ -56,8 +45,9 @@ public class Window : GameWindow {
         }
 
         if(!KeyboardState.IsKeyDown(Keys.F3)) {
-            ProcessInput(args);
-            MouseCallback();
+            //ProcessInput(args);
+            //MouseCallback();
+            MouseProcessInput(args);
         }
         else {
             if(KeyboardState.IsKeyPressed(Keys.W)) {
@@ -67,7 +57,7 @@ public class Window : GameWindow {
     }
 
     private void ProcessInput(FrameEventArgs args) {
-        float speed = 1.5f;
+        float speed = 4.317f;
 
         float x = 0.0f;
         float y = 0.0f;
@@ -98,9 +88,37 @@ public class Window : GameWindow {
         eye += z * Vector3.Normalize(new Vector3(target.X, 0.0f, target.Z)) * speed * (float)args.Time;
     }
 
+    private void MouseProcessInput(FrameEventArgs args) {
+        float scrollSensitivity = 2.0f;
+        float dragSensitivity = 0.2f;
+
+        // Movimento para frente e para trás com o scroll do mouse
+        float scrollDelta = MouseState.ScrollDelta.Y;
+        eye += target * scrollDelta * scrollSensitivity;
+
+        // Movimento para a esquerda, direita, cima e baixo arrastando o mouse com o botão esquerdo pressionado
+        if(MouseState.IsButtonDown(MouseButton.Left) || MouseState.IsButtonDown(MouseButton.Middle)) {
+            float deltaX = MouseState.X - lastPos.X;
+            float deltaY = MouseState.Y - lastPos.Y;
+
+            eye += Vector3.Normalize(Vector3.Cross(target, up)) * deltaX * dragSensitivity;
+            eye -= up * deltaY * dragSensitivity;
+        }
+
+        // Girar a câmera arrastando o mouse com o botão direito pressionado
+        if(MouseState.IsButtonDown(MouseButton.Right)) {
+            MouseCallback();
+        }
+        else {
+            firstMouse = true;
+        }
+
+        lastPos = new Vector2(MouseState.X, MouseState.Y);
+    }
+
     private void MouseCallback() {
         float sensitivity = 0.2f;
-
+        
         if(firstMouse) {
             lastPos = new Vector2(MouseState.X, MouseState.Y);
             firstMouse = false;
@@ -145,13 +163,14 @@ public class Window : GameWindow {
         shader = new Shader("../../../src/shaders/Vertex.glsl", "../../../src/shaders/Fragment.glsl");
         texture = new Texture("../../../src/textures/terrain.png");
 
-        LoadTile(0, 0, 0);
-        LoadBlock();
+        levelRenderer = new LevelRenderer();
 
         GL.Enable(EnableCap.DepthTest);
         GL.Enable(EnableCap.CullFace);
 
-        CursorState = CursorState.Grabbed;
+        //CursorState = CursorState.Grabbed;
+
+        MouseCallback();
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
@@ -162,7 +181,7 @@ public class Window : GameWindow {
         shader.Render();
         texture.Render();
 
-        RenderBlock();
+        levelRenderer.Render();
 
         Matrix4 view = Matrix4.Identity;
         view *= Matrix4.CreateTranslation(0.0f, 0.0f, -10.0f);
@@ -182,149 +201,5 @@ public class Window : GameWindow {
         height = e.Height;
 
         GL.Viewport(0, 0, e.Width, e.Height);
-    }
-
-    public void LoadBlock() {
-        VertexArrayObject = GL.GenVertexArray();
-        GL.BindVertexArray(VertexArrayObject);
-
-        VertexBufferObject = GL.GenBuffer();
-        GL.BindBuffer(BufferTarget.ArrayBuffer, VertexBufferObject);
-        GL.BufferData(BufferTarget.ArrayBuffer, vertexBuffer.Count * sizeof(float), vertexBuffer.ToArray(), BufferUsageHint.StaticDraw);
-
-        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 0, 0);
-        GL.EnableVertexAttribArray(0);
-
-        ElementBufferObject = GL.GenBuffer();
-        GL.BindBuffer(BufferTarget.ElementArrayBuffer, ElementBufferObject);
-        GL.BufferData(BufferTarget.ElementArrayBuffer, indiceBuffer.Count * sizeof(int), indiceBuffer.ToArray(), BufferUsageHint.StaticDraw);
-
-        TextureBufferObject = GL.GenBuffer();
-        GL.BindBuffer(BufferTarget.ArrayBuffer, TextureBufferObject);
-        GL.BufferData(BufferTarget.ArrayBuffer, texCoordBuffer.Count * sizeof(float), texCoordBuffer.ToArray(), BufferUsageHint.StaticDraw);
-
-        GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 0, 0);
-        GL.EnableVertexAttribArray(1);
-    }
-
-    public void RenderBlock() {
-        GL.BindVertexArray(VertexArrayObject);
-        GL.DrawElements(PrimitiveType.Triangles, indiceBuffer.Count, DrawElementsType.UnsignedInt, 0);
-    }
-
-    public void Vertex(float x, float y, float z) {
-        vertexBuffer.Add(x);
-        vertexBuffer.Add(y);
-        vertexBuffer.Add(z);
-    }
-
-    public void Indice() {
-        indiceBuffer.Add(0 + vertices);
-        indiceBuffer.Add(1 + vertices);
-        indiceBuffer.Add(2 + vertices);
-
-        indiceBuffer.Add(0 + vertices);
-        indiceBuffer.Add(2 + vertices);
-        indiceBuffer.Add(3 + vertices);
-
-        vertices += 4;
-    }
-
-    public void Tex(float u, float v) {
-        texCoordBuffer.Add(u);
-        texCoordBuffer.Add(v);
-    }
-
-    public void LoadTile(int x, int y, int z) {
-        float x0 = (float)x + 0.0f;
-        float y0 = (float)y + 0.0f;
-        float z0 = (float)z + 0.0f;
-
-        float x1 = (float)x + 1.0f;
-        float y1 = (float)y + 1.0f;
-        float z1 = (float)z + 1.0f;
-
-        float u0 = (float)0 / 16.0f;
-        float u1 = u0 + (1.0f / 16.0f);
-        float v0 = (16.0f - 1.0f) / 16.0f;
-        float v1 = v0 + (1.0f / 16.0f);
-
-        //x0
-        Vertex(x0, y0, z0);
-        Vertex(x0, y0, z1);
-        Vertex(x0, y1, z1);
-        Vertex(x0, y1, z0);
-
-        Indice();
-
-        Tex(u0, v0);
-        Tex(u1, v0);
-        Tex(u1, v1);
-        Tex(u0, v1);
-
-        //x1
-        Vertex(x1, y0, z1);
-        Vertex(x1, y0, z0);
-        Vertex(x1, y1, z0);
-        Vertex(x1, y1, z1);
-
-        Indice();
-
-        Tex(u0, v0);
-        Tex(u1, v0);
-        Tex(u1, v1);
-        Tex(u0, v1);
-
-        //y0
-        Vertex(x0, y0, z0);
-        Vertex(x1, y0, z0);
-        Vertex(x1, y0, z1);
-        Vertex(x0, y0, z1);
-
-        Indice();
-
-        Tex(u0, v0);
-        Tex(u1, v0);
-        Tex(u1, v1);
-        Tex(u0, v1);
-
-        //y1
-        Vertex(x0, y1, z1);
-        Vertex(x1, y1, z1);
-        Vertex(x1, y1, z0);
-        Vertex(x0, y1, z0);
-
-        Indice();
-
-        Tex(u0, v0);
-        Tex(u1, v0);
-        Tex(u1, v1);
-        Tex(u0, v1);
-
-        //z0
-        Vertex(x1, y0, z0);
-        Vertex(x0, y0, z0);
-        Vertex(x0, y1, z0);
-        Vertex(x1, y1, z0);
-
-        Indice();
-
-        Tex(u0, v0);
-        Tex(u1, v0);
-        Tex(u1, v1);
-        Tex(u0, v1);
-
-        //z1
-        Vertex(x0, y0, z1);
-        Vertex(x1, y0, z1);
-        Vertex(x1, y1, z1);
-        Vertex(x0, y1, z1);
-
-        Indice();
-
-        Tex(u0, v0);
-        Tex(u1, v0);
-        Tex(u1, v1);
-        Tex(u0, v1);
     }
 }

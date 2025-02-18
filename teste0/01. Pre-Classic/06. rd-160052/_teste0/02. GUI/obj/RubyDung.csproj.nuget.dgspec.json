@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj": {}
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj": {
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj",
+        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj",
         "projectName": "RubyDung",
-        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj",
+        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\RubyDung.csproj",
         "packagesPath": "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\obj\\",
+        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -61,7 +61,8 @@ public class Window : GameWindow {
         levelRenderer.Render();
 
         Matrix4 view = Matrix4.Identity;
-        view *= Matrix4.CreateRotationY(MathHelper.DegreesToRadians((float)GLFW.GetTime() * 100));
+        view *= Matrix4.CreateRotationY(MathHelper.DegreesToRadians(45.0f));
+        //view *= Matrix4.CreateRotationY(MathHelper.DegreesToRadians((float)GLFW.GetTime() * 100));
         view *= Matrix4.CreateRotationX(MathHelper.DegreesToRadians(30.0f));
         view *= Matrix4.CreateTranslation(0.0f, 0.0f, -3.0f);
         shader.SetMatrix4("view", view);
