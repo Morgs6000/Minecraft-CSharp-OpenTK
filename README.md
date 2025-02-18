@@ -21,8 +21,8 @@ Gerando uma Chunk
 ![Image](https://github.com/user-attachments/assets/b46e172d-f2ae-48bb-b339-3d41d6cb6d0d)
 
 Gerando um Bloco
-![Image](https://github.com/user-attachments/assets/ec0bbdd3-8940-432f-b8b7-d9676fdf3c65)
 ![Image](https://github.com/user-attachments/assets/90100421-fd1d-4d8d-a4e4-12e5b259a846)
+![Image](https://github.com/user-attachments/assets/ec0bbdd3-8940-432f-b8b7-d9676fdf3c65)
 
 Recortando um Tile da Textura
 ![Image](https://github.com/user-attachments/assets/116071de-dba1-4158-b410-80905653f143)
