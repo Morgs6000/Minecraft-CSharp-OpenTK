@@ -14,13 +14,13 @@ public class Window : GameWindow {
     private Shader shader;
     private Texture texture;
     private Level level;
-    private Chunk chunk;
+    private LevelRenderer levelRenderer;
+    private Camera camera;
 
-    private bool wireframe_mode = false;
+    private bool movementMode = true;
+    private bool wireframeMode = false;
 
-    private Camera camera = new Camera();
-
-    private bool paused = false;
+    
 
     public Window(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws) {
         width = ClientSize.X;
@@ -32,61 +32,49 @@ public class Window : GameWindow {
     protected override void OnUpdateFrame(FrameEventArgs args) {
         base.OnUpdateFrame(args);
 
-        // Pausar o Jogo
-        if(KeyboardState.IsKeyPressed(Keys.Escape)) {
-            //Close();
-            if(!camera.movement_mode) {
-                paused = true;
-
-                CursorState = CursorState.Normal;
-                MousePosition = new Vector2(width / 2, height / 2);
-
-                Console.WriteLine("O mouse esta solto");
-            }
+        if(KeyboardState.IsKeyDown(Keys.Escape)) {
+            Close();
         }
 
         if(!KeyboardState.IsKeyDown(Keys.F3)) {
-            // Movimentação
-            if(!camera.movement_mode) {
-                camera.ProcessInput(args, KeyboardState);
-
-                if(!paused) {
-                    camera.MouseCallback(MouseState);
-                }
+            if(!movementMode) {
+                camera.ProcessInput(this, args);
+                camera.MouseCallback(this);
             }
             else {
-                camera.MouseProcessInput(MouseState);
+                camera.MouseProcessInput(this, args);
             }
         }
         else {
-            // Modo Wireframe
-            if(KeyboardState.IsKeyPressed(Keys.W)) {
-                wireframe_mode = !wireframe_mode;
-
-                shader.GetBool("wireframe_mode", wireframe_mode);
-
-                GL.PolygonMode(MaterialFace.FrontAndBack, wireframe_mode ? PolygonMode.Line : PolygonMode.Fill);
-
-                Console.WriteLine($"O modo Wireframe {(wireframe_mode ? "está ligado" : "está desligado")}");
-            }
-            // Modo de Movimentação
             if(KeyboardState.IsKeyPressed(Keys.M)) {
-                camera.MovementMode(this, width, height);
+                MovementMode();
+            }
+            if(KeyboardState.IsKeyPressed(Keys.W)) {
+                WireframeMode();
             }
         }
     }
 
-    protected override void OnMouseDown(MouseButtonEventArgs e) {
-        base.OnMouseDown(e);
+    private void MovementMode() {
+        movementMode = !movementMode;
 
-        if(!camera.movement_mode) {
-            if(paused && e.Button == MouseButton.Left) {
-                paused = false;
-                camera.firstMouse = true;
-                CursorState = CursorState.Grabbed;
-                Console.WriteLine("O mouse esta preso");
-            }
+        CursorState = movementMode ? CursorState.Normal : CursorState.Grabbed;
+
+        if(movementMode) {
+            MousePosition = new Vector2(width / 2, height / 2);
         }
+
+        Console.WriteLine($"Modo de Movimentação {(movementMode ? "com o teclado e mouse" : "com o mouse")}");
+    }
+
+    private void WireframeMode() {
+        wireframeMode = !wireframeMode;
+
+        shader.GetBool("wireframeMode", wireframeMode);
+
+        GL.PolygonMode(TriangleFace.FrontAndBack, wireframeMode ? PolygonMode.Line : PolygonMode.Fill);
+
+        Console.WriteLine($"O modo Wireframe {(wireframeMode ? "está ligado." : "está desligado.")}");
     }
 
     protected override void OnLoad() {
@@ -95,26 +83,23 @@ public class Window : GameWindow {
         GL.ClearColor(0.5f, 0.8f, 1.0f, 0.0f);
 
         shader = new Shader("../../../src/shaders/Vertex.glsl", "../../../src/shaders/Fragment.glsl");
-        shader.Use();
-
         texture = new Texture("../../../src/textures/terrain.png");
-        texture.Use();
 
         level = new Level(16, 16, 16);
-        chunk = new Chunk(level, 0, 0, 0, 16, 16, 16);
-        chunk.rebuild(shader);
+        levelRenderer = new LevelRenderer(level);
+        levelRenderer.Load();
+
+        camera = new Camera();
 
         GL.Enable(EnableCap.DepthTest);
         GL.Enable(EnableCap.CullFace);
 
         //CursorState = CursorState.Grabbed;
-        CursorState = camera.movement_mode ? CursorState.Normal : CursorState.Grabbed;
+        CursorState = movementMode ? CursorState.Normal : CursorState.Grabbed;
 
-        if(camera.movement_mode) {
-            MousePosition = new Vector2(width / 2, height / 2);
+        if(movementMode) {
+            camera.MouseCallback(this);
         }
-
-        Console.WriteLine($"firstMouse = {camera._firstMouse}");
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
@@ -122,12 +107,12 @@ public class Window : GameWindow {
 
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
-        shader.Use();
-        texture.Use();
+        shader.Render();
+        texture.Render();
 
-        chunk.Use();
+        levelRenderer.Render();
 
-        camera.Use(shader, width, height);
+        camera.Render(shader, width, height);
 
         SwapBuffers();
     }

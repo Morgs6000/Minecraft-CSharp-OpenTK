@@ -6,108 +6,90 @@ using OpenTK.Windowing.GraphicsLibraryFramework;
 namespace RubyDung.src;
 
 public class Camera {
-    public bool movement_mode = true;
-
-    //private KeyboardState keyboardState;
-
     private Vector3 eye = new Vector3(0.0f, 0.0f, -3.0f);
     private Vector3 target = new Vector3(0.0f, 0.0f, 1.0f);
     private Vector3 up = new Vector3(0.0f, 1.0f, 0.0f);
 
     private Vector2 lastPos;
 
-    private float pitch;        // xRot
-    private float yaw = -90.0f; // yRot
+    private float pitch;        //xRot
+    private float yaw = -90.0f; //yRot
 
-    public bool _firstMouse = true;
-
-    public bool firstMouse {
-        get => _firstMouse;
-        set {
-            if(_firstMouse != value) { // Verifica se o valor está mudando
-                _firstMouse = value;
-                Console.WriteLine($"firstMouse = {value}");
-            }
-        }
-    }
+    private bool firstMouse = true;
 
     private float fov = 60.0f;
 
-    private bool rightMouseButtonPressed = false;
-    private bool leftMouseButtonPressed = false;
-
-    public Camera() {
-        
-    }
-
-    public void ProcessInput(FrameEventArgs args, KeyboardState keyboardState) {
+    public void ProcessInput(GameWindow window, FrameEventArgs args) {
         float speed = 4.317f;
 
-        if(keyboardState.IsKeyDown(Keys.W)) {
-            eye += Vector3.Normalize(new Vector3(target.X, 0.0f, target.Z)) * speed * (float)args.Time; // Forward 
+        float x = 0.0f;
+        float y = 0.0f;
+        float z = 0.0f;
+
+        if(window.KeyboardState.IsKeyDown(Keys.W)) {
+            z++;
         }
-        if(keyboardState.IsKeyDown(Keys.S)) {
-            eye -= Vector3.Normalize(new Vector3(target.X, 0.0f, target.Z)) * speed * (float)args.Time; // Backwards 
+        if(window.KeyboardState.IsKeyDown(Keys.S)) {
+            z--;
         }
-        if(keyboardState.IsKeyDown(Keys.A)) {
-            eye -= Vector3.Normalize(Vector3.Cross(target, up)) * speed * (float)args.Time; // Left
+        if(window.KeyboardState.IsKeyDown(Keys.A)) {
+            x--;
         }
-        if(keyboardState.IsKeyDown(Keys.D)) {
-            eye += Vector3.Normalize(Vector3.Cross(target, up)) * speed * (float)args.Time; // Right
+        if(window.KeyboardState.IsKeyDown(Keys.D)) {
+            x++;
         }
 
-        if(keyboardState.IsKeyDown(Keys.Space)) {
-            eye += up * speed * (float)args.Time; // Up 
+        if(window.KeyboardState.IsKeyDown(Keys.Space)) {
+            y++;
         }
-        if(keyboardState.IsKeyDown(Keys.LeftShift)) {
-            eye -= up * speed * (float)args.Time; // Down 
+        if(window.KeyboardState.IsKeyDown(Keys.LeftShift)) {
+            y--;
         }
+
+        eye += x * Vector3.Normalize(Vector3.Cross(target, up)) * speed * (float)args.Time;
+        eye += y * up * speed * (float)args.Time;
+        eye += z * Vector3.Normalize(new Vector3(target.X, 0.0f, target.Z)) * speed * (float)args.Time;
     }
 
-    public void MouseProcessInput(MouseState mouseState) {
-        float scrollOffset = mouseState.ScrollDelta.Y;
+    public void MouseProcessInput(GameWindow window, FrameEventArgs args) {
         float scrollSensitivity = 2.0f;
+        float dragSensitivity = 0.2f;
 
-        if(scrollOffset != 0) {
-            eye += target * scrollOffset * scrollSensitivity;
+        // Movimento para frente e para trás com o scroll do mouse
+        float scrollDelta = window.MouseState.ScrollDelta.Y;
+        eye += target * scrollDelta * scrollSensitivity;
+
+        // Movimento para a esquerda, direita, cima e baixo arrastando o mouse com o botão esquerdo pressionado
+        if(window.MouseState.IsButtonDown(MouseButton.Left) || window.MouseState.IsButtonDown(MouseButton.Middle)) {
+            float deltaX = window.MouseState.X - lastPos.X;
+            float deltaY = window.MouseState.Y - lastPos.Y;
+
+            eye -= Vector3.Normalize(Vector3.Cross(target, up)) * deltaX * dragSensitivity;
+            eye += up * deltaY * dragSensitivity;
         }
 
-        if(mouseState.IsButtonDown(MouseButton.Right)) {
-            if(!rightMouseButtonPressed) {
-                rightMouseButtonPressed = true;
-                firstMouse = true;
-            }
-
-            MouseCallback(mouseState);
-        }
-        else {
-            rightMouseButtonPressed = false;
-        }
-
-        if(mouseState.IsButtonDown(MouseButton.Left) || mouseState.IsButtonDown(MouseButton.Middle)) {
-            if(!leftMouseButtonPressed) {
-                leftMouseButtonPressed = true;
-                firstMouse = true;
-            }
-
-            CameraCallback(mouseState);
+        // Girar a câmera arrastando o mouse com o botão direito pressionado
+        if(window.MouseState.IsButtonDown(MouseButton.Right)) {
+            MouseCallback(window);
         }
         else {
-            leftMouseButtonPressed = false;
+            firstMouse = true;
         }
+
+        lastPos = new Vector2(window.MouseState.X, window.MouseState.Y);
     }
 
-    public void MouseCallback(MouseState mouseState) {
+    public void MouseCallback(GameWindow window) {
         float sensitivity = 0.2f;
 
         if(firstMouse) {
-            lastPos = new Vector2(mouseState.X, mouseState.Y);
+            lastPos = new Vector2(window.MouseState.X, window.MouseState.Y);
             firstMouse = false;
         }
         else {
-            float deltaX = mouseState.X - lastPos.X;
-            float deltaY = mouseState.Y - lastPos.Y;
-            lastPos = new Vector2(mouseState.X, mouseState.Y);
+            float deltaX = window.MouseState.X - lastPos.X;
+            float deltaY = window.MouseState.Y - lastPos.Y;
+            lastPos = new Vector2(window.MouseState.X, window.MouseState.Y);
 
             yaw += deltaX * sensitivity;
             pitch -= deltaY * sensitivity;
@@ -126,27 +108,7 @@ public class Camera {
         target = Vector3.Normalize(target);
     }
 
-    public void CameraCallback(MouseState mouseState) {
-        float sensitivity = 0.2f;
-
-        if(firstMouse) {
-            lastPos = new Vector2(mouseState.X, mouseState.Y);
-            firstMouse = false;
-        }
-        else {
-            float deltaX = mouseState.X - lastPos.X;
-            float deltaY = mouseState.Y - lastPos.Y;
-            lastPos = new Vector2(mouseState.X, mouseState.Y);
-
-            Vector3 right = Vector3.Normalize(Vector3.Cross(target, this.up));
-            Vector3 up = Vector3.Normalize(Vector3.Cross(right, target));
-
-            eye -= right * deltaX * sensitivity;
-            eye += up * deltaY * sensitivity;
-        }
-    }
-
-    public void Use(Shader shader, float width, float height) {
+    public void Render(Shader shader, float width, float height) {
         Matrix4 view = Matrix4.Identity;
         view *= Matrix4.CreateTranslation(0.0f, 0.0f, -10.0f);
         view *= Matrix4.LookAt(eye, eye + target, up);
@@ -154,17 +116,5 @@ public class Camera {
 
         Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(fov), width / height, 0.05f, 1000.0f);
         shader.SetMatrix4("projection", projection);
-    }
-
-    public void MovementMode(GameWindow gameWindow, float width, float height) {
-        movement_mode = !movement_mode;
-
-        gameWindow.CursorState = movement_mode ? CursorState.Normal : CursorState.Grabbed;
-
-        if(movement_mode) {
-            gameWindow.MousePosition = new Vector2(width / 2, height / 2);
-        }
-
-        Console.WriteLine($"Modo de Movimentação {(movement_mode ? "com o teclado e mouse" : "com o mouse")}");
     }
 }

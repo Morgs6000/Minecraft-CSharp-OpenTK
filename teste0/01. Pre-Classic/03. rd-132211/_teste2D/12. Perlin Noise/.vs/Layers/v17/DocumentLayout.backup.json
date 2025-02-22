@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2d\\12. perlin noise\\src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2d\\12. perlin noise\\src\\level\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2d\\12. perlin noise\\src\\level\\levelrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\levelrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2d\\12. perlin noise\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2d\\12. perlin noise\\src\\level\\perlinnoisefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\perlinnoisefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2d\\12. perlin noise\\src\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2d\\12. perlin noise\\src\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PerlinNoiseFilter.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\PerlinNoiseFilter.cs",
+              "RelativeDocumentMoniker": "src\\level\\PerlinNoiseFilter.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\PerlinNoiseFilter.cs",
+              "RelativeToolTip": "src\\level\\PerlinNoiseFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T18:11:53.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\Player.cs",
+              "RelativeDocumentMoniker": "src\\Player.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\Player.cs",
+              "RelativeToolTip": "src\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T18:00:52.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LevelRenderer.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\LevelRenderer.cs",
+              "RelativeDocumentMoniker": "src\\level\\LevelRenderer.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\LevelRenderer.cs",
+              "RelativeToolTip": "src\\level\\LevelRenderer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:46:53.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Window.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\Window.cs",
+              "RelativeDocumentMoniker": "src\\Window.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\Window.cs",
+              "RelativeToolTip": "src\\Window.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:46:14.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Chunk.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\Chunk.cs",
+              "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\Chunk.cs",
+              "RelativeToolTip": "src\\level\\Chunk.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwCIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:44:51.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\Tile.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tile.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\Tile.cs",
+              "RelativeToolTip": "src\\level\\Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:44:27.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Level.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\Level.cs",
+              "RelativeDocumentMoniker": "src\\level\\Level.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2D\\12. Perlin Noise\\src\\level\\Level.cs",
+              "RelativeToolTip": "src\\level\\Level.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwDQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:42:51.537Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

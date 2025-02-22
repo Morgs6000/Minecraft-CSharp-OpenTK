@@ -1,35 +1,36 @@
 ﻿using OpenTK.Graphics.OpenGL4;
 using OpenTK.Mathematics;
+using System.Reflection.Metadata;
 
 namespace RubyDung.src;
 
 public class Shader {
-    private int Handle;
+    private int handle;
 
     public Shader(string vertexPath, string fragmentPath) {
-        string VertexShaderSource = File.ReadAllText(vertexPath);
-        string FragmentShaderSource = File.ReadAllText(fragmentPath);
+        string vertexShaderSource = File.ReadAllText(vertexPath);
+        string fragmentShaderSource = File.ReadAllText(fragmentPath);
 
-        var VertexShader = GL.CreateShader(ShaderType.VertexShader);
-        GL.ShaderSource(VertexShader, VertexShaderSource);
+        var vertexShader = GL.CreateShader(ShaderType.VertexShader);
+        GL.ShaderSource(vertexShader, vertexShaderSource);
 
-        var FragmentShader = GL.CreateShader(ShaderType.FragmentShader);
-        GL.ShaderSource(FragmentShader, FragmentShaderSource);
+        var fragmentShader = GL.CreateShader(ShaderType.FragmentShader);
+        GL.ShaderSource(fragmentShader, fragmentShaderSource);
 
-        CompileShader(VertexShader);
-        CompileShader(FragmentShader);
+        CompileShader(vertexShader);
+        CompileShader(fragmentShader);
 
-        Handle = GL.CreateProgram();
+        handle = GL.CreateProgram();
 
-        GL.AttachShader(Handle, VertexShader);
-        GL.AttachShader(Handle, FragmentShader);
+        GL.AttachShader(handle, vertexShader);
+        GL.AttachShader(handle, fragmentShader);
 
-        LinkProgram(Handle);
+        LinkProgram(handle);
 
-        GL.DetachShader(Handle, VertexShader);
-        GL.DetachShader(Handle, FragmentShader);
-        GL.DeleteShader(VertexShader);
-        GL.DeleteShader(FragmentShader);
+        GL.DetachShader(handle, vertexShader);
+        GL.DetachShader(handle, fragmentShader);
+        GL.DeleteShader(vertexShader);
+        GL.DeleteShader(fragmentShader);
     }
 
     private void CompileShader(int shader) {
@@ -53,16 +54,16 @@ public class Shader {
     }
 
     public void Render() {
-        GL.UseProgram(Handle);
+        GL.UseProgram(handle);
     }
 
-    public void GetBool(string name, bool value) {
-        int location = GL.GetUniformLocation(Handle, name);
+    public void SetBool(string name, bool value) {
+        int location = GL.GetUniformLocation(handle, name);
         GL.Uniform1(location, value ? 1 : 0);
     }
 
     public void SetMatrix4(string name, Matrix4 matrix) {
-        int location = GL.GetUniformLocation(Handle, name);
+        int location = GL.GetUniformLocation(handle, name);
         GL.UniformMatrix4(location, true, ref matrix);
     }
 }

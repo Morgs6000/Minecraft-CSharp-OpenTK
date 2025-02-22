@@ -24,7 +24,7 @@ public class Level {
         }
     }
 
-    public bool isTile(int x, int y, int z) {
+    public bool IsTile(int x, int y, int z) {
         if(x >= 0 && y >= 0 && z >= 0 && x < width && y < height && z < depth) {
             return blocks[(y * depth + z) * width + x] == 1;
         }
@@ -33,7 +33,7 @@ public class Level {
         }
     }
 
-    public bool isSolidTile(int x, int y, int z) {
-        return isTile(x, y, z);
+    public bool IsSolidTile(int x, int y, int z) {
+        return IsTile(x, y, z);
     }
 }

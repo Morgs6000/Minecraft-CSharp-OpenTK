@@ -28,6 +28,8 @@ public class Chunk {
     }
 
     public void Load() {
+        tesselator.Init();
+
         for(int x = x0; x < x1; x++) {
             for(int y = y0; y < y1; y++) {
                 for(int z = z0; z < z1; z++) {

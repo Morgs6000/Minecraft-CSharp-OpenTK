@@ -8,13 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="src\phys\**" />
-    <EmbeddedResource Remove="src\phys\**" />
-    <None Remove="src\phys\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="OpenTK" Version="4.9.3" />
+    <PackageReference Include="StbImageSharp" Version="2.30.15" />
   </ItemGroup>
 
 </Project>

@@ -1,25 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\",
+  "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk-2\\_teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk-2\\_teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\vertex2.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\shaders\\vertex2.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk-2\\_teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk-2\\_teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk-2\\_teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\vertex2.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\shaders\\vertex2.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02a\\src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,65 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Vertex2.glsl",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex2.glsl",
-              "RelativeDocumentMoniker": "src\\shaders\\Vertex2.glsl",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex2.glsl",
-              "RelativeToolTip": "src\\shaders\\Vertex2.glsl",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T19:05:50.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Tesselator.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\level\\Tesselator.cs",
-              "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\level\\Tesselator.cs",
-              "RelativeToolTip": "src\\level\\Tesselator.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAAE8AAAAYAAAA",
+              "Title": "Chunk.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\level\\Chunk.cs",
+              "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\level\\Chunk.cs",
+              "RelativeToolTip": "src\\level\\Chunk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T17:42:53.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Vertex.glsl",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex.glsl",
-              "RelativeDocumentMoniker": "src\\shaders\\Vertex.glsl",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex.glsl",
-              "RelativeToolTip": "src\\shaders\\Vertex.glsl",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-14T17:35:50.556Z"
+              "WhenOpened": "2025-02-21T13:11:07.994Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Camera.cs",
-              "RelativeDocumentMoniker": "src\\Camera.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Camera.cs",
-              "RelativeToolTip": "src\\Camera.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAAAHgAAAAAAAAA",
+              "Title": "Vertex2.glsl",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex2.glsl",
+              "RelativeDocumentMoniker": "src\\shaders\\Vertex2.glsl",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex2.glsl",
+              "RelativeToolTip": "src\\shaders\\Vertex2.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T19:05:50.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tesselator.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\level\\Tesselator.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\level\\Tesselator.cs",
+              "RelativeToolTip": "src\\level\\Tesselator.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAFwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T17:33:33.866Z"
+              "WhenOpened": "2025-02-14T17:42:53.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vertex.glsl",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex.glsl",
+              "RelativeDocumentMoniker": "src\\shaders\\Vertex.glsl",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\shaders\\Vertex.glsl",
+              "RelativeToolTip": "src\\shaders\\Vertex.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-14T17:35:50.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Camera.cs",
+              "RelativeDocumentMoniker": "src\\Camera.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Camera.cs",
+              "RelativeToolTip": "src\\Camera.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T17:33:33.866Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Window.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Window.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Window.cs",
               "RelativeDocumentMoniker": "src\\Window.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Window.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02a\\src\\Window.cs",
               "RelativeToolTip": "src\\Window.cs",
-              "ViewState": "AQIAALIAAAAAAAAAAAAAAOgAAAAAAAAA",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAANoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T17:29:53.07Z",
               "EditorCaption": ""

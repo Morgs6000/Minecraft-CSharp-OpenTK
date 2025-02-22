@@ -2,14 +2,15 @@
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
+using RubyDung.src.level;
 
 namespace RubyDung.src;
 
 public class Window : GameWindow {
-    private Rectangle rectangle;
     private Shader shader;
+    private LevelRenderer levelRenderer;
 
-    private bool isWireframe = false;
+    private bool wireframeMode = false;
 
     public Window(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws) {
         CenterWindow();
@@ -18,32 +19,29 @@ public class Window : GameWindow {
     protected override void OnUpdateFrame(FrameEventArgs args) {
         base.OnUpdateFrame(args);
 
-        // Fechar janela
         if(KeyboardState.IsKeyDown(Keys.Escape)) {
             Close();
         }
 
-        // Wireframe
         if(KeyboardState.IsKeyDown(Keys.F3) && KeyboardState.IsKeyPressed(Keys.W)) {
-            isWireframe = !isWireframe;
+            wireframeMode = !wireframeMode;
 
-            shader.GetBool("isWireframe", isWireframe);
+            shader.GetBool("wireframeMode", wireframeMode);
 
-            GL.PolygonMode(MaterialFace.FrontAndBack, isWireframe ? PolygonMode.Line : PolygonMode.Fill);
+            GL.PolygonMode(TriangleFace.FrontAndBack, wireframeMode ? PolygonMode.Line : PolygonMode.Fill);
 
-            Console.WriteLine($"O modo Wireframe {(isWireframe ? "está ligado" : "está desligado")}");
+            Console.WriteLine($"O modo Wireframe {(wireframeMode ? "está ligado." : "está desligado.")}");
         }
     }
 
     protected override void OnLoad() {
         base.OnLoad();
 
-        GL.ClearColor(0.5f, 0.8f, 1.0f, 0.0f);
-
-        rectangle = new Rectangle();
+        GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
         shader = new Shader("../../../src/shaders/Vertex.glsl", "../../../src/shaders/Fragment.glsl");
-        shader.Use();
+
+        levelRenderer = new LevelRenderer();
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
@@ -51,9 +49,9 @@ public class Window : GameWindow {
 
         GL.Clear(ClearBufferMask.ColorBufferBit);
 
-        shader.Use();
+        shader.Render();
 
-        rectangle.Use();
+        levelRenderer.Render();
 
         SwapBuffers();
     }

@@ -193,6 +193,15 @@
           }
         }
       },
+      "StbImageSharp/2.30.15": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/StbImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/StbImageSharp.dll": {}
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
@@ -396,6 +405,19 @@
         "opentk.windowing.graphicslibraryframework.nuspec"
       ]
     },
+    "StbImageSharp/2.30.15": {
+      "sha512": "7QqbupVhz2kcFUPTgMw4iHR9rYDHGundzzee19Mwmd1typ2Lnv8EVJcLJxlkeBM2+4ex0NwsMtdbGSJctp1XCQ==",
+      "type": "package",
+      "path": "stbimagesharp/2.30.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net471/StbImageSharp.dll",
+        "lib/netstandard2.0/StbImageSharp.dll",
+        "stbimagesharp.2.30.15.nupkg.sha512",
+        "stbimagesharp.nuspec"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "type": "package",
@@ -424,7 +446,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "OpenTK >= 4.9.3"
+      "OpenTK >= 4.9.3",
+      "StbImageSharp >= 2.30.15"
     ]
   },
   "packageFolders": {
@@ -434,11 +457,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\03. Retangulo\\RubyDung.csproj",
+      "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\03. Retangulo\\RubyDung.csproj",
       "projectName": "RubyDung",
-      "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\03. Retangulo\\RubyDung.csproj",
+      "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\03. Retangulo\\RubyDung.csproj",
       "packagesPath": "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\03. Retangulo\\obj\\",
+      "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK-2\\_teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\03. Retangulo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -480,6 +503,10 @@
           "OpenTK": {
             "target": "Package",
             "version": "[4.9.3, )"
+          },
+          "StbImageSharp": {
+            "target": "Package",
+            "version": "[2.30.15, )"
           }
         },
         "imports": [

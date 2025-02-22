@@ -9,6 +9,11 @@ public class Tesselator {
 
     private int vertices = 0;
 
+    private float u;
+    private float v;
+
+    private bool hasTextrue = false;
+
     private int VertexArrayObject;
     private int VertexBufferObject;
     private int ElementBufferObject;
@@ -29,12 +34,14 @@ public class Tesselator {
         GL.BindBuffer(BufferTarget.ElementArrayBuffer, ElementBufferObject);
         GL.BufferData(BufferTarget.ElementArrayBuffer, indiceBuffer.Count * sizeof(int), indiceBuffer.ToArray(), BufferUsageHint.StaticDraw);
 
-        TextureBufferObject = GL.GenBuffer();
-        GL.BindBuffer(BufferTarget.ArrayBuffer, TextureBufferObject);
-        GL.BufferData(BufferTarget.ArrayBuffer, texCoordBuffer.Count * sizeof(float), texCoordBuffer.ToArray(), BufferUsageHint.StaticDraw);
+        if(hasTextrue) {
+            TextureBufferObject = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, TextureBufferObject);
+            GL.BufferData(BufferTarget.ArrayBuffer, texCoordBuffer.Count * sizeof(float), texCoordBuffer.ToArray(), BufferUsageHint.StaticDraw);
 
-        GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 0, 0);
-        GL.EnableVertexAttribArray(1);
+            GL.VertexAttribPointer(1, 2, VertexAttribPointerType.Float, false, 0, 0);
+            GL.EnableVertexAttribArray(1);
+        }
     }
 
     public void Render() {
@@ -52,12 +59,19 @@ public class Tesselator {
 
     public void Init() {
         this.Clear();
+
+        hasTextrue = false;
     }
 
     public void Vertex(float x, float y, float z) {
         vertexBuffer.Add(x);
         vertexBuffer.Add(y);
         vertexBuffer.Add(z);
+
+        if(hasTextrue) {
+            texCoordBuffer.Add(u);
+            texCoordBuffer.Add(v);
+        }
     }
 
     public void Indice() {
@@ -73,8 +87,10 @@ public class Tesselator {
     }
 
     public void Tex(float u, float v) {
-        texCoordBuffer.Add(u);
-        texCoordBuffer.Add(v);
+        hasTextrue = true;
+
+        this.u = u;
+        this.v = v;
     }
 
     public void VertexUV(float x, float y, float z, float u, float v) {

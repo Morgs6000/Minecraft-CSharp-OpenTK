@@ -11,7 +11,7 @@ public class Chunk {
     public readonly int y1;
     public readonly int z1;
 
-    private static Tesselator t = new Tesselator();
+    private Tesselator tesselator = new Tesselator();
 
     public Chunk(Level level, int x0, int y0, int z0, int x1, int y1, int z1) {
         this.level = level;
@@ -25,28 +25,28 @@ public class Chunk {
         this.z1 = z1;
     }
 
-    public void rebuild(Shader shader) {
+    public void Load() {
         for(int x = x0; x < x1; x++) {
             for(int y = y0; y < y1; y++) {
                 for(int z = z0; z < z1; z++) {
-                    if(this.level.isTile(x, y, z)) {
+                    if(this.level.IsTile(x, y, z)) {
                         bool tex = y != level.height * 2 / 3;
 
                         if(!tex) {
-                            Tile.rock.render(t, level, x, y, z);
+                            Tile.rock.Load(tesselator, level, x, y, z);
                         }
                         else {
-                            Tile.grass.render(t, level, x, y, z);
+                            Tile.grass.Load(tesselator, level, x, y, z);
                         }
                     }
                 }
             }
         }
-
-        t.flush(shader);
+        
+        tesselator.Load();
     }
 
-    public void Use() {
-        t.Use();
+    public void Render() {
+        tesselator.Render();
     }
 }

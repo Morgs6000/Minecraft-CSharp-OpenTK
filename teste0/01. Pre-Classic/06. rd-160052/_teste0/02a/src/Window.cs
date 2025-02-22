@@ -207,10 +207,17 @@ public class Window : GameWindow {
         //tesselator2.VertexUV((float)(wc + 1), (float)(hc + 9), 0.0f, 0.0f, 1.0f);
         //tesselator2.Indice();
 
+        /*
         tesselator2.VertexUV(0.4f, 0.0f, 0.0f, 0.0f, 0.0f);
         tesselator2.VertexUV(0.6f, 0.0f, 0.0f, 1.0f, 0.0f);
         tesselator2.VertexUV(0.6f, 1.0f, 0.0f, 1.0f, 1.0f);
         tesselator2.VertexUV(0.4f, 1.0f, 0.0f, 0.0f, 1.0f);
+        tesselator2.Indice();
+        */
+        tesselator2.Vertex(0.4f, 0.0f, 0.0f);
+        tesselator2.Vertex(0.6f, 0.0f, 0.0f);
+        tesselator2.Vertex(0.6f, 1.0f, 0.0f);
+        tesselator2.Vertex(0.4f, 1.0f, 0.0f);
         tesselator2.Indice();
 
         //tesselator2.VertexUV((float)(wc + 9), (float)(hc - 0), 0.0f, 0.0f, 0.0f);

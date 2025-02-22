@@ -3,32 +3,32 @@
 namespace RubyDung.src;
 
 public class Shader {
-    private int Handle;
+    private int handle;
 
     public Shader(string vertexPath, string fragmentPath) {
-        string VertexShaderSource = File.ReadAllText(vertexPath);
-        string FragmentShaderSource = File.ReadAllText(fragmentPath);
+        string vertexShaderSource = File.ReadAllText(vertexPath);
+        string fragmentShaderSource = File.ReadAllText(fragmentPath);
 
-        var VertexShader = GL.CreateShader(ShaderType.VertexShader);
-        GL.ShaderSource(VertexShader, VertexShaderSource);
+        var vertexShader = GL.CreateShader(ShaderType.VertexShader);
+        GL.ShaderSource(vertexShader, vertexShaderSource);
 
-        var FragmentShader = GL.CreateShader(ShaderType.FragmentShader);
-        GL.ShaderSource(FragmentShader, FragmentShaderSource);
+        var fragmentShader = GL.CreateShader(ShaderType.FragmentShader);
+        GL.ShaderSource(fragmentShader, fragmentShaderSource);
 
-        CompileShader(VertexShader);
-        CompileShader(FragmentShader);
+        CompileShader(vertexShader);
+        CompileShader(fragmentShader);
 
-        Handle = GL.CreateProgram();
+        handle = GL.CreateProgram();
 
-        GL.AttachShader(Handle, VertexShader);
-        GL.AttachShader(Handle, FragmentShader);
+        GL.AttachShader(handle, vertexShader);
+        GL.AttachShader(handle, fragmentShader);
 
-        LinkProgram(Handle);
+        LinkProgram(handle);
 
-        GL.DetachShader(Handle, VertexShader);
-        GL.DetachShader(Handle, FragmentShader);
-        GL.DeleteShader(VertexShader);
-        GL.DeleteShader(FragmentShader);
+        GL.DetachShader(handle, vertexShader);
+        GL.DetachShader(handle, fragmentShader);
+        GL.DeleteShader(vertexShader);
+        GL.DeleteShader(fragmentShader);
     }
 
     private void CompileShader(int shader) {
@@ -51,7 +51,7 @@ public class Shader {
         }
     }
 
-    public void Use() {
-        GL.UseProgram(Handle);
+    public void Render() {
+        GL.UseProgram(handle);
     }
 }
