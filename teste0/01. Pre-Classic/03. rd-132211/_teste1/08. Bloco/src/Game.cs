@@ -3,6 +3,7 @@ using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
+using System.Reflection.Emit;
 
 namespace RubyDung.src;
 
@@ -35,6 +36,9 @@ public class Game : GameWindow {
         if(!movement) {
             player.MouseCallback(this);
         }
+
+        GL.Enable(EnableCap.DepthTest);
+        GL.Enable(EnableCap.CullFace);
     }
 
     protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
@@ -72,7 +76,7 @@ public class Game : GameWindow {
     protected override void OnRenderFrame(FrameEventArgs args) {
         base.OnRenderFrame(args);
 
-        GL.Clear(ClearBufferMask.ColorBufferBit);
+        GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
         shader.Render();
 
@@ -234,16 +238,90 @@ public class Tile {
     public static Tile tile = new Tile();
 
     public void Load(Tesselator t) {
+        float x0 = 0.0f;
+        float y0 = 0.0f;
+        float z0 = 0.0f;
+
+        float x1 = 1.0f;
+        float y1 = 1.0f;
+        float z1 = 1.0f;
+
         float u0 = (float)0 / 16.0f;
         float v0 = (16.0f - 1.0f) / 16.0f;
 
         float u1 = u0 + (1.0f / 16.0f);
         float v1 = v0 + (1.0f / 16.0f);
 
-        t.Vertex(-0.5f, -0.5f,  0.0f);
-        t.Vertex( 0.5f, -0.5f,  0.0f);
-        t.Vertex( 0.5f,  0.5f,  0.0f);
-        t.Vertex(-0.5f,  0.5f,  0.0f);
+        // x0
+        t.Vertex(x0, y0, z0);
+        t.Vertex(x0, y0, z1);
+        t.Vertex(x0, y1, z1);
+        t.Vertex(x0, y1, z0);
+
+        t.Indice();
+
+        t.Tex(u0, v0);
+        t.Tex(u1, v0);
+        t.Tex(u1, v1);
+        t.Tex(u0, v1);
+
+        // x1
+        t.Vertex(x1, y0, z1);
+        t.Vertex(x1, y0, z0);
+        t.Vertex(x1, y1, z0);
+        t.Vertex(x1, y1, z1);
+
+        t.Indice();
+
+        t.Tex(u0, v0);
+        t.Tex(u1, v0);
+        t.Tex(u1, v1);
+        t.Tex(u0, v1);
+
+        // y0
+        t.Vertex(x0, y0, z0);
+        t.Vertex(x1, y0, z0);
+        t.Vertex(x1, y0, z1);
+        t.Vertex(x0, y0, z1);
+
+        t.Indice();
+
+        t.Tex(u0, v0);
+        t.Tex(u1, v0);
+        t.Tex(u1, v1);
+        t.Tex(u0, v1);
+
+        // y1
+        t.Vertex(x0, y1, z1);
+        t.Vertex(x1, y1, z1);
+        t.Vertex(x1, y1, z0);
+        t.Vertex(x0, y1, z0);
+
+        t.Indice();
+
+        t.Tex(u0, v0);
+        t.Tex(u1, v0);
+        t.Tex(u1, v1);
+        t.Tex(u0, v1);
+
+        // z0
+        t.Vertex(x1, y0, z0);
+        t.Vertex(x0, y0, z0);
+        t.Vertex(x0, y1, z0);
+        t.Vertex(x1, y1, z0);
+
+        t.Indice();
+
+        t.Tex(u0, v0);
+        t.Tex(u1, v0);
+        t.Tex(u1, v1);
+        t.Tex(u0, v1);
+
+        // z1
+        t.Vertex(x0, y0, z1);
+        t.Vertex(x1, y0, z1);
+        t.Vertex(x1, y1, z1);
+        t.Vertex(x0, y1, z1);
 
         t.Indice();
 
@@ -258,6 +336,8 @@ public class Tesselator {
     private List<float> vertexBuffer = new List<float>();
     private List<int> indiceBuffer = new List<int>();
     private List<float> texCoordBuffer = new List<float>();
+
+    private int vertices = 0;
 
     private int vertexArrayObject;
     private int vertexBufferObject;
@@ -303,13 +383,15 @@ public class Tesselator {
     }
 
     public void Indice() {
-        indiceBuffer.Add(0);
-        indiceBuffer.Add(1);
-        indiceBuffer.Add(2);
+        indiceBuffer.Add(0 + vertices);
+        indiceBuffer.Add(1 + vertices);
+        indiceBuffer.Add(2 + vertices);
 
-        indiceBuffer.Add(0);
-        indiceBuffer.Add(2);
-        indiceBuffer.Add(3);
+        indiceBuffer.Add(0 + vertices);
+        indiceBuffer.Add(2 + vertices);
+        indiceBuffer.Add(3 + vertices);
+
+        vertices += 4;
     }
 
     public void Tex(float u, float v) {
