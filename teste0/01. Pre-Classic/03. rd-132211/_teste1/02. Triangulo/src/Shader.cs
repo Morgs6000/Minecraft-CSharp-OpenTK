@@ -6,24 +6,28 @@ public class Shader {
     private int handle;
 
     public Shader(string vertexPath, string fragmentPath) {
+        // Carregar o código-fonte dos arquivos de shader.
         string vertexShaderSource = File.ReadAllText(vertexPath);
         string fragmentShaderSource = File.ReadAllText(fragmentPath);
 
-        var vertexShader = GL.CreateShader(ShaderType.VertexShader);
+        // Gerar os shaders e vincular o código-fonte aos sombreadores.
+        int vertexShader = GL.CreateShader(ShaderType.VertexShader);
         GL.ShaderSource(vertexShader, vertexShaderSource);
 
-        var fragmentShader = GL.CreateShader(ShaderType.FragmentShader);
+        int fragmentShader = GL.CreateShader(ShaderType.FragmentShader);
         GL.ShaderSource(fragmentShader, fragmentShaderSource);
 
+        // Compilar os shaders e verificar se há erros.
         CompileShader(vertexShader);
         CompileShader(fragmentShader);
 
+        // Vincular os shaders ao programa.
         handle = GL.CreateProgram();
 
         GL.AttachShader(handle, vertexShader);
         GL.AttachShader(handle, fragmentShader);
 
-        LinkProgram(handle);
+        LinkProgram();
 
         GL.DetachShader(handle, vertexShader);
         GL.DetachShader(handle, fragmentShader);
@@ -41,12 +45,12 @@ public class Shader {
         }
     }
 
-    private void LinkProgram(int program) {
-        GL.LinkProgram(program);
+    private void LinkProgram() {
+        GL.LinkProgram(handle);
 
-        GL.GetProgram(program, GetProgramParameterName.LinkStatus, out int success);
-        if(success == 0) {
-            string infoLog = GL.GetProgramInfoLog(program);
+        GL.GetProgram(handle, GetProgramParameterName.LinkStatus, out int sucess);
+        if(sucess == 0) {
+            string infoLog = GL.GetProgramInfoLog(handle);
             Console.WriteLine(infoLog);
         }
     }
