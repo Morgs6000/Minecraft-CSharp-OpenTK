@@ -8,15 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="src\level\**" />
-    <Compile Remove="src\phys\**" />
-    <EmbeddedResource Remove="src\level\**" />
-    <EmbeddedResource Remove="src\phys\**" />
-    <None Remove="src\level\**" />
-    <None Remove="src\phys\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="OpenTK" Version="4.9.3" />
   </ItemGroup>
 

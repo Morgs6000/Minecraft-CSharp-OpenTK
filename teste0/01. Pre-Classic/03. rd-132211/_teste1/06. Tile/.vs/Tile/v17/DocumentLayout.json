@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\06. Tile\\",
+  "WorkspaceRootPath": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\06. Tile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste1\\06. tile\\src\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2\\06. tile\\src\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2\\06. tile\\src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\03. rd-132211\\_teste2\\06. tile\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\06. Tile\\src\\level\\Tile.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tile.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\06. Tile\\src\\level\\Tile.cs",
+              "RelativeToolTip": "src\\level\\Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T14:47:33.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tesselator.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\06. Tile\\src\\level\\Tesselator.cs",
+              "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\06. Tile\\src\\level\\Tesselator.cs",
+              "RelativeToolTip": "src\\level\\Tesselator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T14:47:24.262Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Game.cs",
-              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\06. Tile\\src\\Game.cs",
+              "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\06. Tile\\src\\Game.cs",
               "RelativeDocumentMoniker": "src\\Game.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\06. Tile\\src\\Game.cs",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste2\\06. Tile\\src\\Game.cs",
               "RelativeToolTip": "src\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T12:29:40.023Z",
               "EditorCaption": ""

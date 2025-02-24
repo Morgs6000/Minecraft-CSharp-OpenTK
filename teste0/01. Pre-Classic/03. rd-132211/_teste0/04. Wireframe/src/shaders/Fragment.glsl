@@ -1,10 +1,10 @@
 #version 330 core
 out vec4 FragColor;
 
-uniform bool wireframeMode;
+uniform bool wireframe;
 
 void main() {
-    if(!wireframeMode) {
+    if(!wireframe) {
         FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);
     }
     else {

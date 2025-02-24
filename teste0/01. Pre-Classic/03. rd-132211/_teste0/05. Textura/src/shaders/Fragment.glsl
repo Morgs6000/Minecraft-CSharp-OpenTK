@@ -1,12 +1,13 @@
 #version 330 core
 out vec4 FragColor;
+
 in vec2 texCoord;
 
-uniform bool wireframeMode;
+uniform bool wireframe;
 uniform sampler2D texture0;
 
 void main() {
-    if(!wireframeMode) {
+    if(!wireframe) {
         FragColor = texture(texture0, texCoord);
     }
     else {

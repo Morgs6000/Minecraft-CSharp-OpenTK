@@ -1,35 +1,40 @@
 ﻿using OpenTK.Graphics.OpenGL4;
 using OpenTK.Mathematics;
+using System.Reflection.Metadata;
 
 namespace RubyDung.src;
 
 public class Shader {
-    private int Handle;
+    private int handle;
 
     public Shader(string vertexPath, string fragmentPath) {
-        string VertexShaderSource = File.ReadAllText(vertexPath);
-        string FragmentShaderSource = File.ReadAllText(fragmentPath);
+        // Carregar o código-fonte dos arquivos de shader.
+        string vertexShaderSource = File.ReadAllText(vertexPath);
+        string fragmentShaderSource = File.ReadAllText(fragmentPath);
 
-        var VertexShader = GL.CreateShader(ShaderType.VertexShader);
-        GL.ShaderSource(VertexShader, VertexShaderSource);
+        // Gerar os shaders e vincular o código-fonte aos sombreadores.
+        int vertexShader = GL.CreateShader(ShaderType.VertexShader);
+        GL.ShaderSource(vertexShader, vertexShaderSource);
 
-        var FragmentShader = GL.CreateShader(ShaderType.FragmentShader);
-        GL.ShaderSource(FragmentShader, FragmentShaderSource);
+        int fragmentShader = GL.CreateShader(ShaderType.FragmentShader);
+        GL.ShaderSource(fragmentShader, fragmentShaderSource);
 
-        CompileShader(VertexShader);
-        CompileShader(FragmentShader);
+        // Compilar os shaders e verificar se há erros.
+        CompileShader(vertexShader);
+        CompileShader(fragmentShader);
 
-        Handle = GL.CreateProgram();
+        // Vincular os shaders ao programa.
+        handle = GL.CreateProgram();
 
-        GL.AttachShader(Handle, VertexShader);
-        GL.AttachShader(Handle, FragmentShader);
+        GL.AttachShader(handle, vertexShader);
+        GL.AttachShader(handle, fragmentShader);
 
-        LinkProgram(Handle);
+        LinkProgram();
 
-        GL.DetachShader(Handle, VertexShader);
-        GL.DetachShader(Handle, FragmentShader);
-        GL.DeleteShader(VertexShader);
-        GL.DeleteShader(FragmentShader);
+        GL.DetachShader(handle, vertexShader);
+        GL.DetachShader(handle, fragmentShader);
+        GL.DeleteShader(vertexShader);
+        GL.DeleteShader(fragmentShader);
     }
 
     private void CompileShader(int shader) {
@@ -42,27 +47,27 @@ public class Shader {
         }
     }
 
-    private void LinkProgram(int program) {
-        GL.LinkProgram(program);
+    private void LinkProgram() {
+        GL.LinkProgram(handle);
 
-        GL.GetProgram(program, GetProgramParameterName.LinkStatus, out int success);
-        if(success == 0) {
-            string infoLog = GL.GetProgramInfoLog(program);
+        GL.GetProgram(handle, GetProgramParameterName.LinkStatus, out int sucess);
+        if(sucess == 0) {
+            string infoLog = GL.GetProgramInfoLog(handle);
             Console.WriteLine(infoLog);
         }
     }
 
     public void Render() {
-        GL.UseProgram(Handle);
+        GL.UseProgram(handle);
     }
 
-    public void GetBool(string name, bool value) {
-        int location = GL.GetUniformLocation(Handle, name);
+    public void SetBool(string name, bool value) {
+        int location = GL.GetUniformLocation(handle, name);
         GL.Uniform1(location, value ? 1 : 0);
     }
 
     public void SetMatrix4(string name, Matrix4 matrix) {
-        int location = GL.GetUniformLocation(Handle, name);
+        int location = GL.GetUniformLocation(handle, name);
         GL.UniformMatrix4(location, true, ref matrix);
     }
 }
