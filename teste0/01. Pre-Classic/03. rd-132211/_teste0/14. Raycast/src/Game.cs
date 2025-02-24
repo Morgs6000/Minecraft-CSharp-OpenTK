@@ -27,7 +27,7 @@ public class Game : GameWindow {
         shader = new Shader("../../../src/shaders/Vertex.glsl", "../../../src/shaders/Fragment.glsl");
 
         texture = new Texture("../../../src/textures/terrain.png");
-        
+
         level = new Level(256, 64, 256);
         levelRenderer = new LevelRenderer(level);
         levelRenderer.Load();
@@ -66,7 +66,7 @@ public class Game : GameWindow {
                 player.MouseCallback(this);
 
                 aabb.CheckCollision();
-                raycast.CheckRaycast(10.0f);
+                raycast.CheckRaycast();
             }
             else {
                 player.MouseProcessInput(this);
@@ -93,9 +93,21 @@ public class Game : GameWindow {
 
         levelRenderer.Render();
 
-        player.Render(shader, ClientSize.X, ClientSize.Y);
+        player.Render(shader);
+        SetupCamera();
 
         SwapBuffers();
+    }
+
+    private void SetupCamera() {
+        float fovy = MathHelper.DegreesToRadians(70.0f);
+        float aspect = (float)ClientSize.X / (float)ClientSize.Y;
+        float depthNear = 0.05f;
+        float depthFar = 1000.0f;
+
+        Matrix4 projection = Matrix4.Identity;
+        projection *= Matrix4.CreatePerspectiveFieldOfView(fovy, aspect, depthNear, depthFar);
+        shader.SetMatrix4("projection", projection);
     }
 
     /* ..:: Wireframe ::.. */
@@ -130,89 +142,76 @@ public class Game : GameWindow {
 }
 
 public class Raycast {
-    private Player player;
     private Level level;
+    private Player player;
+
+    private Vector3 origin;
+    private Vector3 direction;
 
     public Raycast(Player player, Level level) {
         this.player = player;
         this.level = level;
     }
 
-    public void CheckRaycast(float maxDistance) {
-        Vector3 rayOrigin = player.GetEye();
-        Vector3 rayDirection = player.GetTarget();
+    // Método para verificar colisões ao longo de um raio
+    public void CheckRaycast() {
+        origin = player.position;
+        direction = player.direction;
 
-        float stepSize = 0.1f; // Tamanho do passo para o raycasting
-        Vector3 currentPos = rayOrigin;
+        // Normaliza a direção do raio
+        direction = Vector3.Normalize(direction);
 
+        // Posição atual ao longo do raio
+        Vector3 currentPosition = origin;
+
+        // Tamanho do passo (ajuste conforme necessário)
+        float stepSize = 0.1f;
+
+        // Distância máxima do raio
+        float maxDistance = 10.0f;
+
+        // Itera ao longo do raio
         for(float distance = 0; distance < maxDistance; distance += stepSize) {
-            currentPos += rayDirection * stepSize;
+            // Atualiza a posição atual
+            currentPosition += direction * stepSize;
 
-            int x = (int)Math.Floor(currentPos.X);
-            int y = (int)Math.Floor(currentPos.Y);
-            int z = (int)Math.Floor(currentPos.Z);
-
-            if(level.IsSolidTile(x, y, z)) {
-                //byte blockType = level.blocks[(y * depth + z) * width + x];
-                //string blockName = blockType == 1 ? "Pedra" : "Grama"; // 1 = Pedra, 0 = Grama
-
-                // Calcula a face do bloco que foi atingida
-                string face = GetBlockFace(currentPos, x, y, z, rayDirection);
-
-                Console.WriteLine($"Bloco encontrado na posição: ({x}, {y}, {z}), Face: {face}");
-                //return; // Sai da função após encontrar o primeiro bloco
+            // Verifica se a posição atual colide com um bloco sólido
+            if(IsSolidBlock(currentPosition, out Vector3i blockPosition)) {
+                // Printa a posição do bloco no console
+                Console.WriteLine($"Bloco colidido: ({blockPosition.X}, {blockPosition.Y}, {blockPosition.Z})");
+                return; // Sai do método após encontrar uma colisão
             }
         }
 
-        Console.WriteLine("Nenhum bloco encontrado na direção do jogador.");
+        //Console.WriteLine("Nenhum bloco colidido.");
     }
 
-    private string GetBlockFace(Vector3 hitPos, int blockX, int blockY, int blockZ, Vector3 rayDirection) {
-        // Calcula a posição relativa do ponto de colisão dentro do bloco
-        float localX = hitPos.X - blockX;
-        float localY = hitPos.Y - blockY;
-        float localZ = hitPos.Z - blockZ;
+    // Verifica se há um bloco sólido na posição dada
+    private bool IsSolidBlock(Vector3 position, out Vector3i blockPosition) {
+        blockPosition = new Vector3i(
+            (int)Math.Floor(position.X),
+            (int)Math.Floor(position.Y),
+            (int)Math.Floor(position.Z)
+        );
 
-        // Determina a face com base na direção do raio
-        float deltaX = Math.Abs(localX - 0.5f); // Distância do centro do bloco no eixo X
-        float deltaY = Math.Abs(localY - 0.5f); // Distância do centro do bloco no eixo Y
-        float deltaZ = Math.Abs(localZ - 0.5f); // Distância do centro do bloco no eixo Z
-
-        // Verifica qual eixo teve a maior contribuição para a colisão
-        if(deltaX > deltaY && deltaX > deltaZ) {
-            // Colisão no eixo X
-            return rayDirection.X > 0 ? "X+" : "X-";
-        }
-        else if(deltaY > deltaX && deltaY > deltaZ) {
-            // Colisão no eixo Y
-            return rayDirection.Y > 0 ? "Y+" : "Y-";
-        }
-        else {
-            // Colisão no eixo Z
-            return rayDirection.Z > 0 ? "Z+" : "Z-";
-        }
+        return level.IsSolidTile(blockPosition.X, blockPosition.Y, blockPosition.Z);
     }
 }
 
 public class AABB {
-    // Dimensões do jogador (AABB)
-    private float playerWidth = 0.3f;  // Largura do jogador
-    private float playerHeight = 0.9f; // Altura do jogador
-
-    // Limites do jogador (AABB)
-    private Vector3 playerMin; // Canto mínimo do jogador
-    private Vector3 playerMax; // Canto máximo do jogador
-
-    private Vector3 blockMin; // Canto mínimo do bloco
-    private Vector3 blockMax; // Canto máximo do bloco
-
-    // Calcula a profundidade da colisão em cada eixo
-    private float overlapX;
-    private float overlapY;
-    private float overlapZ;
-
     private Player player;
     private Level level;
+
+    private float x0;
+    private float y0;
+    private float z0;
+
+    private float x1;
+    private float y1;
+    private float z1;
+
+    private Vector3 blockPos;
+    private Vector3 playerPos;
 
     public AABB(Player player, Level level) {
         this.player = player;
@@ -220,82 +219,113 @@ public class AABB {
     }
 
     public void CheckCollision() {
+        PlayerPos();
+        GetCubes();
+    }
+
+    private void PlayerPos() {
         // Limites do jogador (AABB)
-        playerMin = player.GetEye() - new Vector3(playerWidth, playerHeight, playerWidth); // Canto mínimo do jogador
-        playerMax = player.GetEye() + new Vector3(playerWidth, playerHeight, playerWidth); // Canto máximo do jogador
+        x0 = player.position.X - player.width;
+        y0 = player.position.Y - player.height;
+        z0 = player.position.Z - player.width;
 
+        x1 = player.position.X + player.width;
+        y1 = player.position.Y + player.height;
+        z1 = player.position.Z + player.width;
+    }
+
+    private void GetCubes() {
         // Verifica colisão com blocos próximos ao jogador
-        for(int x = (int)playerMin.X; x <= (int)playerMax.X; x++) {
-            for(int y = (int)playerMin.Y; y <= (int)playerMax.Y; y++) {
-                for(int z = (int)playerMin.Z; z <= (int)playerMax.Z; z++) {
+        for(int x = (int)x0; x <= (int)x1; x++) {
+            for(int y = (int)y0; y <= (int)y1; y++) {
+                for(int z = (int)z0; z <= (int)z1; z++) {
                     if(level.IsSolidTile(x, y, z)) {
-                        blockMin = new Vector3(x, y, z); // Canto mínimo do bloco
-                        blockMax = new Vector3(x + 1, y + 1, z + 1); // Canto máximo do bloco
+                        blockPos = new Vector3(x, y, z);
 
-                        // Verifica se há sobreposição entre o jogador e o bloco
-                        bool collisionX = playerMax.X > blockMin.X && playerMin.X < blockMax.X;
-                        bool collisionY = playerMax.Y > blockMin.Y && playerMin.Y < blockMax.Y;
-                        bool collisionZ = playerMax.Z > blockMin.Z && playerMin.Z < blockMax.Z;
-
-                        // Se houver colisão em todos os eixos, então há uma colisão real
-                        if(collisionX && collisionY && collisionZ) {
-                            Console.WriteLine($"Colisão detectada com bloco em: {x}, {y}, {z}");
-
-                            // Calcula a profundidade da colisão em cada eixo
-                            overlapX = Math.Min(playerMax.X - blockMin.X, blockMax.X - playerMin.X);
-                            overlapY = Math.Min(playerMax.Y - blockMin.Y, blockMax.Y - playerMin.Y);
-                            overlapZ = Math.Min(playerMax.Z - blockMin.Z, blockMax.Z - playerMin.Z);
-
-                            // Determina o eixo com a menor sobreposição (eixo principal da colisão)
-                            ClipXCollide();
-                            ClipYCollide();
-                            ClipZCollide();
-                        }
+                        ClipCollide();
                     }
                 }
             }
         }
     }
 
+    private bool Intersects() {
+        // Verifica se há sobreposição entre o jogador e o bloco
+        bool collisionX = x1 > blockPos.X && x0 < (blockPos.X + 1);
+        bool collisionY = y1 > blockPos.Y && y0 < (blockPos.Y + 1);
+        bool collisionZ = z1 > blockPos.Z && z0 < (blockPos.Z + 1);
+
+        return collisionX && collisionY && collisionZ;
+    }
+
+    private void ClipCollide() {
+        // Se houver colisão em todos os eixos, então há uma colisão real
+        if(Intersects()) {
+            //Console.WriteLine($"Posição do jogador: {player.position.ToString("F1")}");
+            //Console.WriteLine($"Colisão detectada com bloco em: {blockPos}");
+
+            // Calcula a profundidade da colisão em cada eixo
+            float overlapX = Math.Min(x1 - blockPos.X, (blockPos.X + 1) - x0);
+            float overlapY = Math.Min(y1 - blockPos.Y, (blockPos.Y + 1) - y0);
+            float overlapZ = Math.Min(z1 - blockPos.Z, (blockPos.Z + 1) - z0);
+
+            // Usa uma variável local para armazenar a nova posição do jogador
+            playerPos = player.position;
+
+            // Determina o eixo com a menor sobreposição (eixo principal da colisão)
+            if(overlapX < overlapY && overlapX < overlapZ) {
+                ClipXCollide();
+            }
+            if(overlapY < overlapX && overlapY < overlapZ) {
+                ClipYCollide();
+            }
+            if(overlapZ < overlapX && overlapZ < overlapY) {
+                ClipZCollide();
+            }
+
+            // Atribui a nova posição ao jogador
+            player.position = playerPos;
+        }
+    }
+
     private void ClipXCollide() {
-        if(overlapX < overlapY && overlapX < overlapZ) {
-            // Colisão no eixo X
-            if(playerMax.X > blockMin.X && playerMin.X < blockMin.X) {
-                Console.WriteLine("Colisão com a face X0 (esquerda) do bloco.");
-                player.SetEyeX(blockMin.X - playerWidth); // Resposta à colisão
-            }
-            else if(playerMin.X < blockMax.X && playerMax.X > blockMax.X) {
-                Console.WriteLine("Colisão com a face X1 (direita) do bloco.");
-                player.SetEyeX(blockMax.X + playerWidth); // Resposta à colisão
-            }
+        // Colisão no eixo X
+        if(x1 > blockPos.X && x0 < blockPos.X) {
+            //Console.WriteLine("Colisão com a face x0 (esquerda) do bloco.");
+            playerPos.X = blockPos.X - player.width;
+        }
+        else if(x0 < (blockPos.X + 1) && x1 > (blockPos.X + 1)) {
+            //Console.WriteLine("Colisão com a face x1 (direita) do bloco.");
+            playerPos.X = (blockPos.X + 1) + player.width;
         }
     }
 
     private void ClipYCollide() {
-        if(overlapY < overlapX && overlapY < overlapZ) {
-            // Colisão no eixo Y
-            if(playerMax.Y > blockMin.Y && playerMin.Y < blockMin.Y) {
-                Console.WriteLine("Colisão com a face Y0 (inferior) do bloco.");
-                player.SetEyeY(blockMin.Y - playerHeight); // Resposta à colisão
-            }
-            else if(playerMin.Y < blockMax.Y && playerMax.Y > blockMax.Y) {
-                Console.WriteLine("Colisão com a face Y1 (superior) do bloco.");
-                player.SetEyeY(blockMax.Y + playerHeight); // Resposta à colisão
-            }
+        // Colisão no eixo Y
+        if(y1 > blockPos.Y && y0 < blockPos.Y) {
+            //Console.WriteLine("Colisão com a face y0 (inferior) do bloco.");
+            playerPos.Y = blockPos.Y - player.height;
+
+            player.velocity.Y = 0.0f; // pro jogador não atravessar o teto?
+        }
+        else if(y0 < (blockPos.Y + 1) && y1 > (blockPos.Y + 1)) {
+            //Console.WriteLine("Colisão com a face y1 (superior) do bloco.");
+            playerPos.Y = (blockPos.Y + 1) + player.height;
+
+            player.velocity.Y = 0.0f;
+            player.onGround = true;
         }
     }
 
     private void ClipZCollide() {
-        if(overlapZ < overlapX && overlapZ < overlapY) {
-            // Colisão no eixo Z
-            if(playerMax.Z > blockMin.Z && playerMin.Z < blockMin.Z) {
-                Console.WriteLine("Colisão com a face Z0 (frontal) do bloco.");
-                player.SetEyeZ(blockMin.Z - playerWidth); // Resposta à colisão
-            }
-            else if(playerMin.Z < blockMax.Z && playerMax.Z > blockMax.Z) {
-                Console.WriteLine("Colisão com a face Z1 (traseira) do bloco.");
-                player.SetEyeZ(blockMax.Z + playerWidth); // Resposta à colisão
-            }
+        // Colisão no eixo Z
+        if(z1 > blockPos.Z && z0 < blockPos.Z) {
+            //Console.WriteLine("Colisão com a face z0 (traseira) do bloco.");
+            playerPos.Z = blockPos.Z - player.width;
+        }
+        else if(z0 < (blockPos.Z + 1) && z1 > (blockPos.Z + 1)) {
+            //Console.WriteLine("Colisão com a face z1 (frontal) do bloco.");
+            playerPos.Z = (blockPos.Z + 1) + player.width;
         }
     }
 }
@@ -440,6 +470,20 @@ public class Chunk {
 public class Player {
     private Level level;
 
+    private float walking = 4.317f;
+
+    public float width = 0.3f;
+    public float height = 0.9f;
+
+    // Variáveis para gravidade
+    private float falling = -77.71f;
+    private float jumping = 1.2522f;
+
+    public Vector3 velocity;
+
+    public bool onGround = false;
+
+    // Variáveis para o mouse
     private Vector3 eye = new Vector3(0.0f, 0.0f, 0.0f);
     private Vector3 target = new Vector3(0.0f, 0.0f, 1.0f);
     private Vector3 up = new Vector3(0.0f, 1.0f, 0.0f);
@@ -448,10 +492,9 @@ public class Player {
 
     private float pitch;        //xRot
     private float yaw = -90.0f; //yRot
+    //private float roll;         //zRot
 
     private bool firstMouse = true;
-
-    private float fov = 60.0f;
 
     public Player(Level level) {
         this.level = level;
@@ -459,28 +502,22 @@ public class Player {
         ResetPos();
     }
 
-    public Vector3 GetEye() {
-        return eye;
+    public Vector3 position {
+        get {
+            return eye;
+        }
+        set {
+            eye = value;
+        }
     }
 
-    public void SetEye(Vector3 eye) {
-        this.eye = eye;
-    }
-
-    public void SetEyeX(float x) {
-        this.eye.X = x;
-    }
-
-    public void SetEyeY(float y) {
-        this.eye.Y = y;
-    }
-
-    public void SetEyeZ(float z) {
-        this.eye.Z = z;
-    }
-
-    public Vector3 GetTarget() {
-        return target;
+    public Vector3 direction {
+        get {
+            return target;
+        }
+        set {
+            target = value;
+        }
     }
 
     private void ResetPos() {
@@ -494,11 +531,11 @@ public class Player {
     }
 
     private void SetPos(float x, float y, float z) {
-        eye = new Vector3(x, y, z);
+        position = new Vector3(x, y, z);
     }
 
     public void ProcessInput(GameWindow window, FrameEventArgs args) {
-        float speed = 4.317f;
+        float speed = walking;
 
         float x = 0.0f;
         float y = 0.0f;
@@ -517,18 +554,40 @@ public class Player {
             x++;
         }
 
+        /*
         if(window.KeyboardState.IsKeyDown(Keys.Space)) {
             y++;
         }
         if(window.KeyboardState.IsKeyDown(Keys.LeftShift)) {
             y--;
         }
+        //*/
 
-        eye += x * Vector3.Normalize(Vector3.Cross(target, up)) * speed * (float)args.Time;
-        eye += y * up * speed * (float)args.Time;
-        eye += z * Vector3.Normalize(new Vector3(target.X, 0.0f, target.Z)) * speed * (float)args.Time;
+        //*
+        if(window.KeyboardState.IsKeyDown(Keys.Space) && onGround) {            
+            onGround = false;
+
+            velocity.Y = MathF.Sqrt(jumping * -2.0f * falling);
+            //velocity.Y = jumping;
+        }
+        if(!onGround) {
+            velocity.Y += falling * (float)args.Time;
+            //position += Vector3.UnitY * velocity.Y * (float)args.Time;
+            //Console.WriteLine($"Posição do jogador: {position.ToString("F0")}");
+
+            //if(onGround && velocity.Y < 0) {
+                //velocity.Y = -2.0f;
+            //}
+        }
+        //*/
+
+        position += x * Vector3.Normalize(Vector3.Cross(target, up)) * speed * (float)args.Time;
+        //position += y * up * speed * (float)args.Time;
+        position += Vector3.UnitY * velocity.Y * (float)args.Time;
+        position += z * Vector3.Normalize(new Vector3(target.X, 0.0f, target.Z)) * speed * (float)args.Time;
 
         if(window.KeyboardState.IsKeyPressed(Keys.R)) {
+            onGround = false;
             ResetPos();
         }
     }
@@ -590,14 +649,11 @@ public class Player {
         lastPos = new Vector2(window.MouseState.X, window.MouseState.Y);
     }
 
-    public void Render(Shader shader, int width, int height) {
+    public void Render(Shader shader) {
         Matrix4 view = Matrix4.Identity;
         //view *= Matrix4.CreateTranslation(0.0f, 0.0f, 0.0f);
         view *= Matrix4.LookAt(eye, eye + target, up);
         shader.SetMatrix4("view", view);
-
-        Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(fov), (float)width / (float)height, 0.05f, 1000.0f);
-        shader.SetMatrix4("projection", projection);
     }
 }
 
