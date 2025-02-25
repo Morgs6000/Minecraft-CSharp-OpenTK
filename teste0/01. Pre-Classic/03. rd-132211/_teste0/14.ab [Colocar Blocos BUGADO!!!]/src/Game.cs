@@ -168,50 +168,48 @@ public class Raycast {
         if(Cast()) {
             // Se o botão esquerdo do mouse for pressionado, remove o bloco
             if(window.MouseState.IsButtonPressed(MouseButton.Left)) {
-                level.SetTile((int)blockPos.X, (int)blockPos.Y, (int)blockPos.Z, 0); // Remove o bloco
-
-                // Calcula a chunk que contém o bloco
-                int chunkX = (int)blockPos.X / 16;
-                int chunkY = (int)blockPos.Y / 16;
-                int chunkZ = (int)blockPos.Z / 16;
-
-                // Recarrega apenas a chunk afetada
-                levelRenderer.ChunkReloadNeighbors(chunkX, chunkY, chunkZ);
-
-                Console.WriteLine($"Bloco removido: ({blockPos})");
-                Console.WriteLine($"Chunk recarregada: ({chunkX}, {chunkY}, {chunkZ})");
+                SetBlock((int)blockPos.X, (int)blockPos.Y, (int)blockPos.Z, 0);
             }
-
             // Se o botão direito do mouse for pressionado, coloca um bloco
             if(window.MouseState.IsButtonPressed(MouseButton.Right)) {
-                // Calcula a posição do novo bloco
-                Vector3 newBlockPos = new Vector3(
-                    blockPos.X + (int)hitNormal.X,
-                    blockPos.Y + (int)hitNormal.Y,
-                    blockPos.Z + (int)hitNormal.Z
-                );
-
-                // Verifica se a posição do novo bloco está dentro dos limites do mundo
-                if(newBlockPos.X >= 0 && newBlockPos.X < level.width &&
-                   newBlockPos.Y >= 0 && newBlockPos.Y < level.height &&
-                   newBlockPos.Z >= 0 && newBlockPos.Z < level.depth
-                ) {
-                    // Coloca o bloco (por exemplo, bloco de grama com valor 1)
-                    level.SetTile((int)newBlockPos.X, (int)newBlockPos.Y, (int)newBlockPos.Z, 1);
-
-                    // Calcula a chunk que contém o novo bloco
-                    int chunkX = (int)newBlockPos.X / 16;
-                    int chunkY = (int)newBlockPos.Y / 16;
-                    int chunkZ = (int)newBlockPos.Z / 16;
-
-                    // Recarrega a chunk atual e suas vizinhas, se necessário
-                    levelRenderer.ChunkReloadNeighbors(chunkX, chunkY, chunkZ);
-
-                    Console.WriteLine($"Bloco colocado: ({newBlockPos})");
-                    Console.WriteLine($"Chunk recarregada: ({chunkX}, {chunkY}, {chunkZ})");
-                }
+                Place();
             }
         }
+    }
+
+    private void Place() {
+        // Calcula a posição do novo bloco
+        Vector3 newBlockPos = new Vector3(
+            blockPos.X + (int)hitNormal.X,
+            blockPos.Y + (int)hitNormal.Y,
+            blockPos.Z + (int)hitNormal.Z
+        );
+
+        // Verifica se a posição do novo bloco está dentro dos limites do mundo
+        if(newBlockPos.X >= 0 && newBlockPos.X < level.width &&
+           newBlockPos.Y >= 0 && newBlockPos.Y < level.height &&
+           newBlockPos.Z >= 0 && newBlockPos.Z < level.depth
+        ) {
+            SetBlock((int)newBlockPos.X, (int)newBlockPos.Y, (int)newBlockPos.Z, 1);
+        }
+        else {
+            Console.WriteLine("Posição do novo bloco fora dos limites do mundo.");
+        }
+    }
+
+    private void SetBlock(int x, int y, int z, byte id) {
+        level.SetTile(x, y, z, id);
+
+        // Calcula a chunk que contém o bloco
+        int chunkX = x / 16;
+        int chunkY = y / 16;
+        int chunkZ = z / 16;
+
+        // Recarrega a chunk atual e suas vizinhas, se necessário
+        levelRenderer.ChunkReloadNeighbors(chunkX, chunkY, chunkZ);
+
+        Console.WriteLine($"Bloco alterado: ({x}, {y}, {z})");
+        Console.WriteLine($"Chunk recarregada: ({chunkX}, {chunkY}, {chunkZ})");
     }
 
     private bool Cast() {
@@ -229,7 +227,7 @@ public class Raycast {
         float stepSize = 0.1f;
 
         // Distância máxima do raio
-        float maxDistance = 10.0f;
+        float maxDistance = 5.0f;
 
         // Itera ao longo do raio
         for(float distance = 0; distance < maxDistance; distance += stepSize) {
@@ -239,7 +237,7 @@ public class Raycast {
             // Verifica se a posição atual colide com um bloco sólido
             if(IsSolidBlock(currentPosition)) {
                 // Printa a posição do bloco no console
-                //Console.WriteLine($"Bloco colidido: ({blockPos})");
+                Console.WriteLine($"Bloco colidido: {blockPos}");
 
                 // Calcula a normal da face colidida
                 hitNormal = CalculateHitNormal(currentPosition);
@@ -253,7 +251,7 @@ public class Raycast {
         }
 
         //Console.WriteLine("Nenhum bloco colidido.");
-        blockPos = Vector3.Zero;
+        //blockPos = Vector3.Zero;
         return false;
     }
 
@@ -279,29 +277,31 @@ public class Raycast {
         // Vetor do centro do bloco para o ponto de colisão
         Vector3 toHit = hitPosition - blockPosition;
 
+        float epsilon = 0.01f; // Ajuste conforme necessário
+
         // Determina a face colidida com base na direção do raio
-        if(toHit.X < 0.01f) {
-            Console.WriteLine("x0");
+        if(toHit.X < epsilon) {
+            Console.WriteLine($"Posição do Bloco: {blockPos}; Face: x0 (esquerda)");
             return -Vector3.UnitX; // Face esquerda
         }
-        if(toHit.X > 0.99f) {
-            Console.WriteLine("x1");
+        if(toHit.X > 1.0f - epsilon) {
+            Console.WriteLine($"Posição do Bloco: {blockPos}; Face: x1 (direita)");
             return Vector3.UnitX; // Face direita
         }
-        if(toHit.Y < 0.01f) {
-            Console.WriteLine("y0");
+        if(toHit.Y < epsilon) {
+            Console.WriteLine($"Posição do Bloco: {blockPos}; Face: y0 (inferior)");
             return -Vector3.UnitY; // Face inferior
         }
-        if(toHit.Y > 0.99f) {
-            Console.WriteLine("y1");
+        if(toHit.Y > 1.0f - epsilon) {
+            Console.WriteLine($"Posição do Bloco: {blockPos}; Face: y1 (superior)");
             return Vector3.UnitY; // Face superior
         }
-        if(toHit.Z < 0.01f) {
-            Console.WriteLine("z0");
+        if(toHit.Z < epsilon) {
+            Console.WriteLine($"Posição do Bloco: {blockPos}; Face: z0 (traseira)");
             return -Vector3.UnitZ; // Face traseira
         }
-        if(toHit.Z > 0.99f) {
-            Console.WriteLine("z1");
+        if(toHit.Z > 1.0f - epsilon) {
+            Console.WriteLine($"Posição do Bloco: {blockPos}; Face: z1 (frontal)");
             return Vector3.UnitZ; // Face frontal
         }
 
@@ -721,20 +721,20 @@ public class Player {
         //*/
 
         //*
-        if(window.KeyboardState.IsKeyDown(Keys.Space) && onGround) {            
+        if(window.KeyboardState.IsKeyDown(Keys.Space) && onGround) {
             onGround = false;
 
             velocity.Y = MathF.Sqrt(jumping * -2.0f * falling);
             //velocity.Y = jumping;
         }
         //if(!onGround) {
-            velocity.Y += falling * (float)args.Time;
-            position += Vector3.UnitY * velocity.Y * (float)args.Time;
-            //Console.WriteLine($"Posição do jogador: {position.ToString("F0")}");
+        velocity.Y += falling * (float)args.Time;
+        position += Vector3.UnitY * velocity.Y * (float)args.Time;
+        //Console.WriteLine($"Posição do jogador: {position.ToString("F0")}");
 
-            if(onGround && velocity.Y < 0) {
-                velocity.Y = -2.0f;
-            }
+        if(onGround && velocity.Y < 0) {
+            velocity.Y = -2.0f;
+        }
         //}
         //*/
 

@@ -11,20 +11,20 @@
       "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tile\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02. gui\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02. gui\\src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tesselator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02. gui\\src\\level\\tile\\grasstile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tile\\grasstile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02. gui\\src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02. gui\\src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02. gui\\src\\level\\tile\\grasstile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|solutionrelative:src\\level\\tile\\grasstile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DA322DE-D134-44F5-AE56-CE41D27D462C}|RubyDung.csproj|d:\\github\\meus reposit\u00F3rios\\minecraft-csharp-opentk\\teste0\\01. pre-classic\\06. rd-160052\\_teste0\\02. gui\\src\\shaders\\vertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -42,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Chunk.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\level\\Chunk.cs",
               "RelativeDocumentMoniker": "src\\level\\Chunk.cs",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GrassTile.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\level\\tile\\GrassTile.cs",
               "RelativeDocumentMoniker": "src\\level\\tile\\GrassTile.cs",
@@ -72,19 +72,20 @@
               "RelativeDocumentMoniker": "src\\level\\tile\\Tile.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\level\\tile\\Tile.cs",
               "RelativeToolTip": "src\\level\\tile\\Tile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAAAAAA",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:59:53.23Z"
+              "WhenOpened": "2025-02-15T10:59:53.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Tesselator.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\level\\Tesselator.cs",
               "RelativeDocumentMoniker": "src\\level\\Tesselator.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\level\\Tesselator.cs",
               "RelativeToolTip": "src\\level\\Tesselator.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAE0AAAAFAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T17:42:53.456Z"
             },
@@ -102,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Camera.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\Camera.cs",
               "RelativeDocumentMoniker": "src\\Camera.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\Camera.cs",
               "RelativeToolTip": "src\\Camera.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAAAHgAAAAAAAAA",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T17:33:33.866Z"
             },
@@ -120,7 +121,7 @@
               "RelativeDocumentMoniker": "src\\Window.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\Window.cs",
               "RelativeToolTip": "src\\Window.cs",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAAAKUAAAAEAAAA",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAMUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T17:29:53.07Z",
               "EditorCaption": ""

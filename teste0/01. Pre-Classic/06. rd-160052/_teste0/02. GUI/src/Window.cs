@@ -193,14 +193,18 @@ public class Window : GameWindow {
     }
 
     private void DrawGUIRender() {
-        shaderGUI.Render();
-        texture.Render();
-        tesselator.Render();
+        //shaderGUI.Render();
+        //texture.Render();
+        //tesselator.Render();
     }
 
     private void DrawGUIUpdate() {
         tesselator.Init();
         Tile.tiles[paintTexture].Load(tesselator, level, -2, 0, 0);
         tesselator.Load();
+
+        shaderGUI.Render();
+        texture.Render();
+        tesselator.Render();
     }
 }

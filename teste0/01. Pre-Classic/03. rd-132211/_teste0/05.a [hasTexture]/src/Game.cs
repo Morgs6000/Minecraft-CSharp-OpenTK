@@ -99,7 +99,7 @@ public class Tesselator {
         0.0f, 1.0f   // top left
     };
 
-    private bool hasTexture = false;
+    private bool hasTexture = true;
 
     private int vertexArrayObject;
     private int vertexBufferObject;
