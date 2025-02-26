@@ -193,9 +193,9 @@ public class Window : GameWindow {
     }
 
     private void DrawGUIRender() {
-        //shaderGUI.Render();
-        //texture.Render();
-        //tesselator.Render();
+        shaderGUI.Render();
+        texture.Render();
+        tesselator.Render();
     }
 
     private void DrawGUIUpdate() {

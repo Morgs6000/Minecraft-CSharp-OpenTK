@@ -27,7 +27,8 @@ public class Game : GameWindow {
 
         texture = new Texture("../../../src/textures/terrain.png");
 
-        level = new Level(256, 64, 256);
+        //level = new Level(256, 64, 256);
+        level = new Level(16, 16, 16);
         levelRenderer = new LevelRenderer(level);
         levelRenderer.Load();
 
@@ -230,24 +231,24 @@ public class AABB {
 
     private void ClipXCollide() {
         // Colisão no eixo X
-        if(x1 > blockPos.X && x0 < blockPos.X) {
-            //Console.WriteLine("Colisão com a face x0 (esquerda) do bloco.");
+        if(x0 < blockPos.X && x1 > blockPos.X) {
+            Console.WriteLine("Colisão com a face x0 (esquerda) do bloco.");
             playerPos.X = blockPos.X - player.width;
         }
-        else if(x0 < (blockPos.X + 1) && x1 > (blockPos.X + 1)) {
-            //Console.WriteLine("Colisão com a face x1 (direita) do bloco.");
+        if(x0 < (blockPos.X + 1) && x1 > (blockPos.X + 1)) {
+            Console.WriteLine("Colisão com a face x1 (direita) do bloco.");
             playerPos.X = (blockPos.X + 1) + player.width;
         }
     }
 
     private void ClipYCollide() {
         // Colisão no eixo Y
-        if(y1 > blockPos.Y && y0 < blockPos.Y) {
-            //Console.WriteLine("Colisão com a face y0 (inferior) do bloco.");
+        if(y0 < blockPos.Y && y1 > blockPos.Y) {
+            Console.WriteLine("Colisão com a face y0 (inferior) do bloco.");
             playerPos.Y = blockPos.Y - player.height;
         }
-        else if(y0 < (blockPos.Y + 1) && y1 > (blockPos.Y + 1)) {
-            //Console.WriteLine("Colisão com a face y1 (superior) do bloco.");
+        if(y0 < (blockPos.Y + 1) && y1 > (blockPos.Y + 1)) {
+            Console.WriteLine("Colisão com a face y1 (superior) do bloco.");
             playerPos.Y = (blockPos.Y + 1) + player.height;
 
             player.onGround = true;
@@ -256,12 +257,12 @@ public class AABB {
 
     private void ClipZCollide() {
         // Colisão no eixo Z
-        if(z1 > blockPos.Z && z0 < blockPos.Z) {
-            //Console.WriteLine("Colisão com a face z0 (traseira) do bloco.");
+        if(z0 < blockPos.Z && z1 > blockPos.Z) {
+            Console.WriteLine("Colisão com a face z0 (traseira) do bloco.");
             playerPos.Z = blockPos.Z - player.width;
         }
-        else if(z0 < (blockPos.Z + 1) && z1 > (blockPos.Z + 1)) {
-            //Console.WriteLine("Colisão com a face z1 (frontal) do bloco.");
+        if(z0 < (blockPos.Z + 1) && z1 > (blockPos.Z + 1)) {
+            Console.WriteLine("Colisão com a face z1 (frontal) do bloco.");
             playerPos.Z = (blockPos.Z + 1) + player.width;
         }
     }
@@ -480,6 +481,16 @@ public class Player {
             x++;
         }
 
+        /*
+        if(window.KeyboardState.IsKeyDown(Keys.Space)) {
+            y++;
+        }
+        if(window.KeyboardState.IsKeyDown(Keys.LeftShift)) {
+            y--;
+        }
+        //*/
+        
+        //*
         if(window.KeyboardState.IsKeyDown(Keys.Space) && onGround) {
             //y++;
             onGround = false;
@@ -495,10 +506,7 @@ public class Player {
                 velocity.Y = -2.0f;
             }
         //}
-
-        if(window.KeyboardState.IsKeyDown(Keys.LeftShift)) {
-            //y--;
-        }
+        //*/
 
         position += x * Vector3.Normalize(Vector3.Cross(target, up)) * speed * (float)args.Time;
         position += y * up * speed * (float)args.Time;

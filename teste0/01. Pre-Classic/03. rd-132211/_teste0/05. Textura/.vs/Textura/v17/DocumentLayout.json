@@ -36,9 +36,10 @@
               "RelativeDocumentMoniker": "src\\shaders\\Fragment.glsl",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste0\\05. Textura\\src\\shaders\\Fragment.glsl",
               "RelativeToolTip": "src\\shaders\\Fragment.glsl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-23T12:06:58.863Z"
+              "WhenOpened": "2025-02-23T12:06:58.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,9 +49,10 @@
               "RelativeDocumentMoniker": "src\\shaders\\Vertex.glsl",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste0\\05. Textura\\src\\shaders\\Vertex.glsl",
               "RelativeToolTip": "src\\shaders\\Vertex.glsl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-23T12:06:58.123Z"
+              "WhenOpened": "2025-02-23T12:06:58.123Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,7 +62,7 @@
               "RelativeDocumentMoniker": "src\\Texture.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste0\\05. Textura\\src\\Texture.cs",
               "RelativeToolTip": "src\\Texture.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAB3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T12:06:23.788Z",
               "EditorCaption": ""
@@ -73,7 +75,7 @@
               "RelativeDocumentMoniker": "src\\Game.cs",
               "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste0\\05. Textura\\src\\Game.cs",
               "RelativeToolTip": "src\\Game.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAABgAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T12:04:25.177Z",
               "EditorCaption": ""

@@ -74,8 +74,7 @@
               "RelativeToolTip": "src\\level\\tile\\Tile.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:59:53.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T10:59:53.23Z"
             },
             {
               "$type": "Document",
@@ -119,9 +118,9 @@
               "Title": "Window.cs",
               "DocumentMoniker": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\Window.cs",
               "RelativeDocumentMoniker": "src\\Window.cs",
-              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\Window.cs*",
-              "RelativeToolTip": "src\\Window.cs*",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAAALIAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\GitHub\\Meus Reposit\u00F3rios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\06. rd-160052\\_teste0\\02. GUI\\src\\Window.cs",
+              "RelativeToolTip": "src\\Window.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAADwv8MAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T17:29:53.07Z",
               "EditorCaption": ""

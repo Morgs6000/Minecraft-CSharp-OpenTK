@@ -35,6 +35,6 @@ public class Game : GameWindow {
     protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
         base.OnFramebufferResize(e);
 
-        GL.Viewport(0, 0, e.Width, e.Height);
+        GL.Viewport(0, 0, ClientSize.X, ClientSize.Y);
     }
 }
