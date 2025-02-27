@@ -16,60 +16,78 @@ public class Game : GameWindow {
 
     private bool wireframe = false;
 
+    // Construtor da classe Game
     public Game(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws) {
         CenterWindow();
     }
 
+    // Método chamado quando a janela é carregada
     protected override void OnLoad() {
         base.OnLoad();
 
+        // Define a cor de fundo da tela
         GL.ClearColor(0.5f, 0.8f, 1.0f, 0.0f);
 
+        // Carrega os shaders e a textura
         shader = new Shader("src/shaders/shader_vertex.glsl", "src/shaders/shader_fragment.glsl");
         texture = new Texture("src/textures/terrain.png");
 
+        // Cria o nível e o renderizador do nível
         level = new Level(256, 64, 256);
         levelRenderer = new LevelRenderer(shader, level);
         levelRenderer.OnLoad();
 
+        // Cria o jogador
         player = new Player(level);
         player.OnLoad(this);
 
+        // Habilita o teste de profundidade e o culling de faces
         GL.Enable(EnableCap.DepthTest);
         GL.Enable(EnableCap.CullFace);
 
+        // Cria o sistema de colisão (AABB)
         aabb = new AABB(player, level);
     }
 
+    // Método chamado a cada frame para atualizar a lógica do jogo
     protected override void OnUpdateFrame(FrameEventArgs args) {
         base.OnUpdateFrame(args);
 
+        // Fecha o jogo se a tecla ESC for pressionada
         if(KeyboardState.IsKeyPressed(Keys.Escape)) {
             Close();
         }
 
+        // Alterna o modo wireframe se F3 + W forem pressionados
         if(KeyboardState.IsKeyDown(Keys.F3)) {
             if(KeyboardState.IsKeyPressed(Keys.W)) {
                 Wireframe();
             }
         }
         else {
+            // Atualiza a lógica do jogador
             player.OnUpdateFrame(this);
         }
 
+        // Verifica colisões
         aabb.CheckCollision();
     }
 
+    // Método chamado a cada frame para renderizar a cena
     protected override void OnRenderFrame(FrameEventArgs args) {
         base.OnRenderFrame(args);
 
+        // Limpa o buffer de cor e profundidade
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
+        // Renderiza o shader e a textura
         shader.OnRenderFrame();
         texture.OnRenderFrame();
 
+        // Renderiza o nível
         levelRenderer.OnRenderFrame();
 
+        // Define a matriz de modelo, visão e projeção
         Matrix4 model = Matrix4.Identity;
         shader.SetMatrix4("model", model);
 
@@ -82,15 +100,19 @@ public class Game : GameWindow {
         projection *= player.GetCreatePerspectiveFieldOfView(ClientSize);
         shader.SetMatrix4("projection", projection);
 
+        // Troca os buffers para exibir a cena renderizada
         SwapBuffers();
     }
 
+    // Método chamado quando o tamanho da janela é alterado
     protected override void OnFramebufferResize(FramebufferResizeEventArgs e) {
         base.OnFramebufferResize(e);
 
+        // Ajusta o viewport para o novo tamanho da janela
         GL.Viewport(0, 0, ClientSize.X, ClientSize.Y);
     }
 
+    // Alterna entre o modo wireframe e o modo de preenchimento
     private void Wireframe() {
         wireframe = !wireframe;
         shader.SetBool("wireframe", wireframe);
@@ -99,6 +121,7 @@ public class Game : GameWindow {
     }
 }
 
+// Classe para lidar com colisões AABB (Axis-Aligned Bounding Box)
 public class AABB {
     private Player player;
     private Level level;
@@ -118,11 +141,13 @@ public class AABB {
         this.level = level;
     }
 
+    // Verifica colisões entre o jogador e os blocos do nível
     public void CheckCollision() {
         PlayerPos();
         GetCubes();
     }
 
+    // Calcula a posição do jogador em relação ao mundo
     private void PlayerPos() {
         x0 = player.position.X - (player.widht / 2);
         y0 = player.position.Y - (player.height / 2);
@@ -133,6 +158,7 @@ public class AABB {
         z1 = player.position.Z + (player.widht / 2);
     }
 
+    // Obtém os blocos que podem estar colidindo com o jogador
     private void GetCubes() {
         for(int x = (int)x0; x <= (int)x1; x++) {
             for(int y = (int)y0; y <= (int)y1; y++) {
@@ -147,6 +173,7 @@ public class AABB {
         }
     }
 
+    // Resolve a colisão entre o jogador e o bloco
     private void ClipCollide() {
         if(Intersects()) {
             float overlapX = Math.Min(x1 - blockPos.X, (blockPos.X + 1) - x0);
@@ -165,6 +192,7 @@ public class AABB {
         }
     }
 
+    // Verifica se há interseção entre o jogador e o bloco
     private bool Intersects() {
         bool collisionX = x1 > blockPos.X && x0 < (blockPos.X + 1);
         bool collisionY = y1 > blockPos.Y && y0 < (blockPos.Y + 1);
@@ -173,6 +201,7 @@ public class AABB {
         return collisionX && collisionY && collisionZ;
     }
 
+    // Resolve a colisão no eixo X
     private void ClipXCollide() {
         if(x0 < blockPos.X && x1 > blockPos.X) {
             player.position.X = blockPos.X - (player.widht / 2);
@@ -182,6 +211,7 @@ public class AABB {
         }
     }
 
+    // Resolve a colisão no eixo Y
     private void ClipYCollide() {
         if(y0 < blockPos.Y && y1 > blockPos.Y) {
             player.position.Y = blockPos.Y - (player.height / 2);
@@ -193,6 +223,7 @@ public class AABB {
         }
     }
 
+    // Resolve a colisão no eixo Z
     private void ClipZCollide() {
         if(z0 < blockPos.Z && z1 > blockPos.Z) {
             player.position.Z = blockPos.Z - (player.widht / 2);
@@ -203,6 +234,7 @@ public class AABB {
     }
 }
 
+// Classe responsável por renderizar o nível
 public class LevelRenderer {
     private Level level;
 
@@ -221,6 +253,7 @@ public class LevelRenderer {
 
         chunks = new Chunk[xChunks * yChunks * zChunks];
 
+        // Divide o nível em chunks para renderização eficiente
         for(int x = 0; x < xChunks; x++) {
             for(int y = 0; y < yChunks; y++) {
                 for(int z = 0; z < zChunks; z++) {
@@ -238,12 +271,14 @@ public class LevelRenderer {
         }
     }
 
+    // Carrega todos os chunks
     public void OnLoad() {
         for(int i = 0; i < chunks.Length; i++) {
             chunks[i].OnLoad();
         }
     }
 
+    // Renderiza todos os chunks
     public void OnRenderFrame() {
         for(int i = 0; i < chunks.Length; i++) {
             chunks[i].OnRenderFrame();
@@ -251,6 +286,7 @@ public class LevelRenderer {
     }
 }
 
+// Classe que representa o nível do jogo
 public class Level {
     public readonly int width;
     public readonly int height;
@@ -267,6 +303,7 @@ public class Level {
         blocks = new byte[w * h * d];
         lightDepths = new int[w * d];
 
+        // Preenche o nível com blocos (1 para sólido, 0 para ar)
         for(int x = 0; x < w; x++) {
             for(int y = 0; y < h; y++) {
                 for(int z = 0; z < d; z++) {
@@ -277,6 +314,7 @@ public class Level {
         }
     }
 
+    // Verifica se há um bloco na posição (x, y, z)
     public bool IsTile(int x, int y, int z) {
         if(x >= 0 && y >= 0 && z >= 0 && x < width && y < height && z < depth) {
             return blocks[(y * depth + z) * width + x] == 1;
@@ -286,10 +324,12 @@ public class Level {
         }
     }
 
+    // Verifica se o bloco na posição (x, y, z) é sólido
     public bool IsSolidTile(int x, int y, int z) {
         return IsTile(x, y, z);
     }
 
+    // Obtém o brilho do bloco na posição (x, y, z)
     public float GetBrightness(int x, int y, int z) {
         float dark = 0.8f;
         float light = 1.0f;
@@ -303,6 +343,7 @@ public class Level {
     }
 }
 
+// Classe que representa um chunk do nível
 public class Chunk {
     public readonly Level level;
 
@@ -329,6 +370,7 @@ public class Chunk {
         this.z1 = z1;
     }
 
+    // Carrega os blocos do chunk
     public void OnLoad() {
         for(int x = x0; x < x1; x++) {
             for(int y = y0; y < y1; y++) {
@@ -350,11 +392,13 @@ public class Chunk {
         t.OnLoad();
     }
 
+    // Renderiza o chunk
     public void OnRenderFrame() {
         t.OnRenderFrame();
     }
 }
 
+// Classe que representa o jogador
 public class Player {
     private Level level;
 
@@ -400,10 +444,12 @@ public class Player {
         ResetPos();
     }
 
+    // Configura o estado do cursor quando o jogador é carregado
     public void OnLoad(GameWindow window) {
         window.CursorState = CursorState.Grabbed;
     }
 
+    // Atualiza a lógica do jogador a cada frame
     public void OnUpdateFrame(GameWindow window) {
         KeyboardState keyboardState = window.KeyboardState;
         MouseState mouseState = window.MouseState;
@@ -418,6 +464,7 @@ public class Player {
         }
     }
 
+    // Reseta a posição do jogador para uma posição aleatória
     private void ResetPos() {
         Random random = new Random();
 
@@ -428,16 +475,19 @@ public class Player {
         SetPos(x, y, z);
     }
 
+    // Define a posição do jogador
     private void SetPos(float x, float y, float z) {
         position = new Vector3(x, y, z);
     }
 
+    // Calcula o tempo decorrido desde o último frame
     private void Time() {
         float currentFrame = (float)GLFW.GetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
     }
 
+    // Processa as entradas do teclado para mover o jogador
     private void ProcessInput(KeyboardState keyboardState) {
         float speed = walking * deltaTime;
 
@@ -472,6 +522,7 @@ public class Player {
         position += z * speed * Vector3.Normalize(new Vector3(direction.X, 0.0f, direction.Z));
     }
 
+    // Aplica a gravidade ao jogador
     public void Gravity(KeyboardState keyboardState) {
         if(keyboardState.IsKeyDown(Keys.Space) && onGround) {
             onGround = false;
@@ -486,6 +537,7 @@ public class Player {
         }
     }
 
+    // Atualiza a direção da câmera com base no movimento do mouse
     private void MouseCallBack(MouseState mouseState) {
         if(fistMouse) {
             lastPos = new Vector2(mouseState.X, mouseState.Y);
@@ -513,6 +565,7 @@ public class Player {
         direction   = Vector3.Normalize(direction);
     }
 
+    // Retorna a matriz de visão (LookAt) da câmera
     public Matrix4 GetLookAt() {
         Vector3 eye    = position;
         Vector3 target = direction;
@@ -521,6 +574,7 @@ public class Player {
         return Matrix4.LookAt(eye, eye + target, up);
     }
 
+    // Retorna a matriz de projeção da câmera
     public Matrix4 GetCreatePerspectiveFieldOfView (Vector2i clientSize) {
         float fovy      = MathHelper.DegreesToRadians(70.0f);
         float aspect    = (float)clientSize.X / (float)clientSize.Y;
@@ -531,6 +585,7 @@ public class Player {
     }
 }
 
+// Classe que representa um bloco no nível
 public class Tile {
     public static Tile rock = new Tile(0);
     public static Tile grass = new Tile(1);
@@ -541,6 +596,7 @@ public class Tile {
         this.tex = tex;
     }
     
+    // Carrega o bloco no tesselator
     public void OnLoad(Tesselator t, Level level, int x, int y, int z) {
         float x0 = (float)x + 0.0f;
         float y0 = (float)y + 0.0f;
@@ -562,6 +618,7 @@ public class Tile {
 
         float br;
 
+        // Renderiza cada face do bloco se ela estiver visível
         // x0
         if(!level.IsSolidTile(x - 1, y, z)) {
             br = level.GetBrightness(x - 1, y, z) * c3;
@@ -666,6 +723,7 @@ public class Tile {
     }
 }
 
+// Classe responsável por tesselar (gerar vértices, índices, texturas e cores) para renderização
 public class Tesselator {
     private List<float> vertexBuffer = new List<float>();
     private List<int> indiceBuffer = new List<int>();
@@ -689,6 +747,7 @@ public class Tesselator {
         this.shader = shader;
     }
 
+    // Carrega os buffers na GPU
     public void OnLoad() {
         /* ..:: Vertex Array Object ::.. */
         vertexArrayObject = GL.GenVertexArray();
@@ -731,6 +790,7 @@ public class Tesselator {
         }
     }
 
+    // Renderiza o conteúdo tesselado
     public void OnRenderFrame() {
         shader.SetBool("hasTexture", hasTexture);
         shader.SetBool("hasColor", hasColor);
@@ -739,12 +799,14 @@ public class Tesselator {
         GL.DrawElements(PrimitiveType.Triangles, indiceBuffer.Count, DrawElementsType.UnsignedInt, 0);
     }
 
+    // Adiciona um vértice ao buffer
     public void Vertex(float x, float y, float z) {
         vertexBuffer.Add(x);
         vertexBuffer.Add(y);
         vertexBuffer.Add(z);
     }
 
+    // Adiciona índices para formar triângulos
     public void Indice() {
         // primeiro triangulo
         indiceBuffer.Add(0 + vertices);
@@ -759,6 +821,7 @@ public class Tesselator {
         vertices += 4;
     }
 
+    // Adiciona coordenadas de textura ao buffer
     public void Tex(float u, float v) {
         hasTexture = true;
 
@@ -766,6 +829,7 @@ public class Tesselator {
         texCoordBuffer.Add(v);
     }
 
+    // Adiciona cores ao buffer
     public void Color(float r, float g, float b) {
         hasColor = true;
 
