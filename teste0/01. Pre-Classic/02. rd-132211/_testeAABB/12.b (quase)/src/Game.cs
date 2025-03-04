@@ -46,7 +46,7 @@ public class Game : GameWindow {
         GL.Enable(EnableCap.CullFace);
 
         // Cria o sistema de colisão (AABB)
-        aabb = new AABB(player, level);
+        aabb = new AABB(level, player);
     }
 
     // Método chamado a cada frame para atualizar a lógica do jogo
@@ -70,7 +70,7 @@ public class Game : GameWindow {
         }
 
         // Verifica colisões
-        aabb.CheckCollision();
+        aabb.OnUpdateFrame();
     }
 
     // Método chamado a cada frame para renderizar a cena
@@ -123,6 +123,9 @@ public class Game : GameWindow {
 
 // Classe para lidar com colisões AABB (Axis-Aligned Bounding Box)
 public class AABB {
+    private Level level;
+    private Player player;
+
     public float x0;
     public float y0;
     public float z0;
@@ -130,26 +133,26 @@ public class AABB {
     public float y1;
     public float z1;
 
-    private float block_x0;
-    private float block_y0;
-    private float block_z0;
-    private float block_x1;
-    private float block_y1;
-    private float block_z1;
+    private float x0_level;
+    private float y0_level;
+    private float z0_level;
+    private float x1_level;
+    private float y1_level;
+    private float z1_level;
 
-    private float player_x0;
-    private float player_y0;
-    private float player_z0;
-    private float player_x1;
-    private float player_y1;
-    private float player_z1;
+    private float x0_player;
+    private float y0_player;
+    private float z0_player;
+    private float x1_player;
+    private float y1_player;
+    private float z1_player;
 
-    private Player player;
-    private Level level;
+    private float w_player = 0.3f;
+    private float h_player = 0.9f;
 
-    public AABB(Player player, Level level) {
-        this.player = player;
+    public AABB(Level level, Player player) {
         this.level = level;
+        this.player = player;
     }
 
     public AABB(float x0, float y0, float z0, float x1, float y1, float z1) {
@@ -162,34 +165,34 @@ public class AABB {
         this.z1 = z1;
     }
     
-    private void Level_AABB(float x0, float y0, float z0, float x1, float y1, float z1) {
-        this.block_x0 = x0;
-        this.block_y0 = y0;
-        this.block_z0 = z0;
+    private void AABB_Level(float x0, float y0, float z0, float x1, float y1, float z1) {
+        this.x0_level = x0;
+        this.y0_level = y0;
+        this.z0_level = z0;
 
-        this.block_x1 = x1;
-        this.block_y1 = y1;
-        this.block_z1 = z1;
+        this.x1_level = x1;
+        this.y1_level = y1;
+        this.z1_level = z1;
     }
 
-    private void Player_AABB(float x0, float y0, float z0, float x1, float y1, float z1) {
-        this.player_x0 = x0;
-        this.player_y0 = y0;
-        this.player_z0 = z0;
+    private void AABB_Player(float x0, float y0, float z0, float x1, float y1, float z1) {
+        this.x0_player = x0;
+        this.y0_player = y0;
+        this.z0_player = z0;
 
-        this.player_x1 = x1;
-        this.player_y1 = y1;
-        this.player_z1 = z1;
+        this.x1_player = x1;
+        this.y1_player = y1;
+        this.z1_player = z1;
     }
 
     // Verifica colisões entre o jogador e os blocos do nível
-    public void CheckCollision() {
-        Player_SetPos();
-        Player_Move();
+    public void OnUpdateFrame() {
+        SetPos_Player();
+        Move_Player();
     }
 
     // Calcula a posição do jogador em relação ao mundo
-    private void Player_SetPos(/*float x, float y, float z*/) {
+    private void SetPos_Player(/*float x, float y, float z*/) {
         //player.position.X = x;
         //player.position.Y = y;
         //player.position.Z = z;
@@ -201,38 +204,20 @@ public class AABB {
         float h = 0.9f;
 
         //player_aabb = new AABB(x - w, y - h, z - w, x + w, y + h, z + w);
-        Player_AABB(x - w, y - h, z - w, x + w, y + h, z + w);
+        AABB_Player(x - w, y - h, z - w, x + w, y + h, z + w);
     }
 
-    private void Player_Move() {
+    private void Move_Player() {
         // AABB block_AABB = level.GetCubes();
-        Level_GetCubes();
+        GetCubes_Level();
 
-        //block_AABB.ClipCollide(player_aabb);
-    }
+        //block_AABB.ClipCollide(player_aabb);    
 
-    // Obtém os blocos que podem estar colidindo com o jogador
-    private void Level_GetCubes() {
-        for(int x = (int)player_x0; x <= (int)player_x1; x++) {
-            for(int y = (int)player_y0; y <= (int)player_y1; y++) {
-                for(int z = (int)player_z0; z <= (int)player_z1; z++) {
-                    if(level.IsSolidTile(x, y, z)) {
-                        //block_AABB = new AABB(x, y, z, x + 1, y + 1, z + 1);
-                        Level_AABB(x, y, z, x + 1, y + 1, z + 1);
-
-                        ClipCollide();
-                    }
-                }
-            }
-        }
-    }
-
-    // Resolve a colisão entre o jogador e o bloco
-    private void ClipCollide() {
+        // Resolve a colisão entre o jogador e o bloco
         if(Intersects()) {
-            float overlapX = Math.Min(player_x1 - block_x0, block_x1 - player_x0);
-            float overlapY = Math.Min(player_y1 - block_y0, block_y1 - player_y0);
-            float overlapZ = Math.Min(player_z1 - block_z0, block_z1 - player_z0);
+            float overlapX = Math.Min(x1_player - x0_level, x1_level - x0_player);
+            float overlapY = Math.Min(y1_player - y0_level, y1_level - y0_player);
+            float overlapZ = Math.Min(z1_player - z0_level, z1_level - z0_player);
 
             if(overlapX < overlapY && overlapX < overlapZ) {
                 ClipXCollide();
@@ -248,34 +233,34 @@ public class AABB {
 
     // Verifica se há interseção entre o jogador e o bloco
     private bool Intersects() {
-        if(player_x1 > block_x0 && player_x0 < block_x1) {
-            if(player_y1 > block_y0 && player_y0 < block_y1) {
-                if(player_z1 > block_z0 && player_z0 < block_z1) {
+        if(x1_player >= x0_level && x0_player <= x1_level) {
+            if(y1_player >= y0_level && y0_player <= y1_level) {
+                if(z1_player >= z0_level && z0_player <= z1_level) {
                     return true;
                 }
             }
         }
-
+        
         return false;
     }
 
     // Resolve a colisão no eixo X
     private void ClipXCollide() {
-        if(player_x0 < block_x0 && player_x1 > block_x0) {
-            player.position.X = block_x0 - (player.widht / 2);
+        if(x0_player < x0_level && x1_player > x0_level) {
+            player.position.X = x0_level - w_player;
         }
-        if(player_x0 < block_x1 && player_x1 > block_x1) {
-            player.position.X = block_x1 + (player.widht / 2);
+        if(x0_player < x1_level && x1_player > x1_level) {
+            player.position.X = x1_level + w_player;
         }
     }
 
     // Resolve a colisão no eixo Y
     private void ClipYCollide() {
-        if(player_y0 < block_y0 && player_y1 > block_y0) {
-            player.position.Y = block_y0 - (player.height / 2);
+        if(y0_player < y0_level && y1_player > y0_level) {
+            player.position.Y = y0_level - h_player;
         }
-        if(player_y0 < block_y1 && player_y1 > block_y1) {
-            player.position.Y = block_y1 + (player.height / 2);
+        if(y0_player < y1_level && y1_player > y1_level) {
+            player.position.Y = y1_level + h_player;
 
             player.onGround = true;
         }
@@ -283,11 +268,33 @@ public class AABB {
 
     // Resolve a colisão no eixo Z
     private void ClipZCollide() {
-        if(player_z0 < block_z0 && player_z1 > block_z0) {
-            player.position.Z = block_z0 - (player.widht / 2);
+        if(z0_player < z0_level && z1_player > z0_level) {
+            player.position.Z = z0_level - w_player;
         }
-        if(player_z0 < block_z1 && player_z1 > block_z1) {
-            player.position.Z = block_z1 + (player.widht / 2);
+        if(z0_player < z1_level && z1_player > z1_level) {
+            player.position.Z = z1_level + w_player;
+        }
+    }
+
+    // Obtém os blocos que podem estar colidindo com o jogador
+    private void GetCubes_Level() {
+        int x0 = (int)x0_player;
+        int y0 = (int)y0_player;
+        int z0 = (int)z0_player;
+
+        int x1 = (int)x1_player;
+        int y1 = (int)y1_player;
+        int z1 = (int)z1_player;
+
+        for(int x = x0; x <= x1; x++) {
+            for(int y = y0; y <= y1; y++) {
+                for(int z = z0; z <= z1; z++) {
+                    if(level.IsSolidTile(x, y, z)) {
+                        //block_AABB = new AABB(x, y, z, x + 1, y + 1, z + 1);
+                        AABB_Level(x, y, z, x + 1, y + 1, z + 1);
+                    }
+                }
+            }
         }
     }
 }
