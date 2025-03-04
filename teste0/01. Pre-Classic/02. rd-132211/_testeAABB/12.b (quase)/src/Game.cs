@@ -211,7 +211,9 @@ public class AABB {
         // AABB block_AABB = level.GetCubes();
         GetCubes_Level();
 
-        //block_AABB.ClipCollide(player_aabb);    
+        //block_AABB.ClipXCollide(player_aabb);
+        //block_AABB.ClipYCollide(player_aabb);
+        //block_AABB.ClipZCollide(player_aabb);
 
         // Resolve a colisão entre o jogador e o bloco
         if(Intersects()) {
