@@ -6,6 +6,7 @@ using OpenTK.Windowing.GraphicsLibraryFramework;
 namespace RubyDung;
 
 public class Raycast {
+    private Shader shader;
     private Player player;
     private Level level;
     private LevelRenderer levelRenderer;
@@ -20,7 +21,9 @@ public class Raycast {
 
     private int intersectFace = -1;
 
-    public Raycast(Shader shader, Player player, Level level, LevelRenderer levelRenderer) {
+    public Raycast(Player player, Level level, LevelRenderer levelRenderer) {
+        shader = new Shader("src/shaders/highlight_vertex.glsl", "src/shaders/highlight_fragment.glsl");
+
         t = new Tesselator(shader);
         this.player = player;
         this.level = level;
@@ -28,7 +31,7 @@ public class Raycast {
     }
 
     // Método para verificar colisões ao longo de um raio
-    public void CheckRaycast(GameWindow window) {
+    public void OnUpdateFrame(GameWindow window) {
         origin = player.position;
         direction = player.direction;
 
@@ -92,6 +95,10 @@ public class Raycast {
 
         GL.Enable(EnableCap.Blend);
         GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
+
+        //float alpha = (float)Math.Sin((double)Environment.TickCount / 100.0f) * 0.2f + 0.4f;
+        float alpha = (float)Math.Sin(GLFW.GetTime() * 10.0) * 0.2f + 0.4f;
+        shader.SetColorRGBA("color0", 1.0f, 0.0f, 0.0f, 1.0f);
 
         t.Init();
         Tile.rock.RenderFace(t, x, y, z, face);
@@ -221,11 +228,19 @@ public class Raycast {
         return Vector3.Zero; // Caso padrão (não deve acontecer)
     }
 
-    public void Render(Shader shader) {
-        //float alpha = (float)Math.Sin((double)Environment.TickCount / 100.0f) * 0.2f + 0.4f;
-        float alpha = (float)Math.Sin(GLFW.GetTime() * 10.0) * 0.2f + 0.4f;
-        shader.SetColor("color0", 1.0f, 1.0f, 1.0f, alpha);
-
+    public void OnRenderFrame(Vector2i clientSize) {
+        shader.OnRenderFrame();
         t.OnRenderFrame();
+
+        Matrix4 model = Matrix4.Identity;
+        shader.SetMatrix4("model", model);
+
+        Matrix4 view = Matrix4.Identity;
+        view *= player.GetLookAt();
+        shader.SetMatrix4("view", view);
+
+        Matrix4 projection = Matrix4.Identity;
+        projection *= player.GetCreatePerspectiveFieldOfView(clientSize);
+        shader.SetMatrix4("projection", projection);
     }
 }

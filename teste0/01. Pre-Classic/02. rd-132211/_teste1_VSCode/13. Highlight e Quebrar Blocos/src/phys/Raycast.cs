@@ -51,13 +51,15 @@ public class Raycast {
         GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
 
         float alpha = (float)Math.Sin(GLFW.GetTime() * 10.0) * 0.2f + 0.4f;
-        shader.SetColor("color0", 1.0f, 1.0f, 1.0f, alpha);
+        shader.SetColor("color0", 1.0f, 0.0f, 0.0f, 1.0f);
 
         t.Init();
         for(int i = 0; i < 6; i++) {
             Tile.rock.RenderFace(t, x, y, z, i);
         }
         t.OnLoad();
+
+        GL.PolygonMode(TriangleFace.FrontAndBack, PolygonMode.Line);
 
         //GL.DepthFunc(DepthFunction.Less);
     }

@@ -70,7 +70,12 @@ public class Shader {
         GL.UniformMatrix4(location, true, ref matrix);
     }
 
-    public void SetColor(string name, float r, float g, float b, float a) {
+    public void SetColorRGB(string name, float r, float g, float b) {
+        int location = GL.GetUniformLocation(program, name);
+        GL.Uniform3(location, r, g, b);
+    }
+
+    public void SetColorRGBA(string name, float r, float g, float b, float a) {
         int location = GL.GetUniformLocation(program, name);
         GL.Uniform4(location, r, g, b, a);
     }

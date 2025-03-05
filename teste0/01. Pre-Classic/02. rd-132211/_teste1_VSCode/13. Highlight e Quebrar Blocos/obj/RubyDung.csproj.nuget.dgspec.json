@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\13. Highlight e Quebrar Blocos\\RubyDung.csproj": {}
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\02. rd-132211\\_teste1_VSCode\\13. Highlight e Quebrar Blocos\\RubyDung.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\13. Highlight e Quebrar Blocos\\RubyDung.csproj": {
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\02. rd-132211\\_teste1_VSCode\\13. Highlight e Quebrar Blocos\\RubyDung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\13. Highlight e Quebrar Blocos\\RubyDung.csproj",
+        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\02. rd-132211\\_teste1_VSCode\\13. Highlight e Quebrar Blocos\\RubyDung.csproj",
         "projectName": "RubyDung",
-        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\13. Highlight e Quebrar Blocos\\RubyDung.csproj",
+        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\02. rd-132211\\_teste1_VSCode\\13. Highlight e Quebrar Blocos\\RubyDung.csproj",
         "packagesPath": "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1\\13. Highlight e Quebrar Blocos\\obj\\",
+        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\02. rd-132211\\_teste1_VSCode\\13. Highlight e Quebrar Blocos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

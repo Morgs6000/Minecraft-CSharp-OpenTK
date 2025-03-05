@@ -22,7 +22,7 @@ public class AABB {
     }
 
     // Verifica colisões entre o jogador e os blocos do nível
-    public void CheckCollision() {
+    public void OnUpdateFrame() {
         PlayerPos();
         GetCubes();
     }

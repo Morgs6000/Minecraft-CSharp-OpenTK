@@ -173,7 +173,7 @@ public class Window : GameWindow {
     }
 
     private void DrawGUILoad() {
-        shaderGUI.Render();
+        //shaderGUI.Render();
 
         SetupOrthoCamera();
 

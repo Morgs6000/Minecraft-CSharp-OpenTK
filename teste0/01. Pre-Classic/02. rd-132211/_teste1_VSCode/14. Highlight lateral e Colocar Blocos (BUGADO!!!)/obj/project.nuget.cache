@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4jzzZXz/AM0=",
+  "dgSpecHash": "5zI7vXDCP2Y=",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\03. rd-132211\\_teste1_VSCode\\14. Highlight lateral e Colocar Blocos (BUGADO!!!)\\RubyDung.csproj",
+  "projectFilePath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\02. rd-132211\\_teste1_VSCode\\14. Highlight lateral e Colocar Blocos (BUGADO!!!)\\RubyDung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk\\4.9.3\\opentk.4.9.3.nupkg.sha512",
     "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\opentk.audio.openal\\4.9.3\\opentk.audio.openal.4.9.3.nupkg.sha512",

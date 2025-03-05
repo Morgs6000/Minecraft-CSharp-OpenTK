@@ -7,8 +7,8 @@ public class Shader {
     private int shaderProgram;
 
     public Shader(string vertexShaderFile, string fragmentShaderFile) {
-        string vertexShaderSource = File.ReadAllText($"../../../src/shaders/{vertexShaderFile}");
-        string fragmentShaderSource = File.ReadAllText($"../../../src/shaders/{fragmentShaderFile}");
+        string vertexShaderSource = File.ReadAllText($"src/shaders/{vertexShaderFile}");
+        string fragmentShaderSource = File.ReadAllText($"src/shaders/{fragmentShaderFile}");
 
         int success;
         string infoLog;

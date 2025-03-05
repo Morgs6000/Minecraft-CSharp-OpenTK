@@ -63,11 +63,11 @@ public class Game : GameWindow {
         shader.SetMatrix4("model", model);
 
         Matrix4 view = Matrix4.Identity;
-        view *= player.GetLookAt();
+        view *= player.LookAt();
         shader.SetMatrix4("view", view);
 
         Matrix4 projection = Matrix4.Identity;
-        projection *= player.GetCreatePerspectiveFieldOfView(ClientSize);
+        projection *= player.CreatePerspectiveFieldOfView(ClientSize);
         shader.SetMatrix4("projection", projection);
 
         SwapBuffers();

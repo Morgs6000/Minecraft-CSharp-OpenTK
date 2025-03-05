@@ -14,6 +14,7 @@ public class Game : GameWindow {
     private Player player;
     private AABB aabb;
     private Raycast raycast;
+    private Crosshair crosshair;
 
     public Game(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws) {
         CenterWindow();
@@ -41,7 +42,8 @@ public class Game : GameWindow {
         GL.Enable(EnableCap.CullFace);
 
         aabb = new AABB(player, level);
-        raycast = new Raycast(shader, player, level, levelRenderer);
+        raycast = new Raycast(player, level, levelRenderer);
+        crosshair = new Crosshair();
     }
 
     protected override void OnUpdateFrame(FrameEventArgs args) {
@@ -52,8 +54,8 @@ public class Game : GameWindow {
         }
 
         player.OnUpdateFrame(this);
-        aabb.CheckCollision();
-        raycast.CheckRaycast(this);
+        aabb.OnUpdateFrame();
+        raycast.OnUpdateFrame(this);
     }
 
     protected override void OnRenderFrame(FrameEventArgs args) {
@@ -78,7 +80,8 @@ public class Game : GameWindow {
         projection *= player.GetCreatePerspectiveFieldOfView(ClientSize);
         shader.SetMatrix4("projection", projection);
         
-        raycast.Render(shader);
+        raycast.OnRenderFrame(ClientSize);
+        crosshair.OnRenderFrame();
 
         SwapBuffers();
     }

@@ -191,6 +191,12 @@ public class Level {
             return light;
         }
     }
+
+    public void SetTile(int x, int y, int z, int type) {
+        if(x >= 0 && y >= 0 && z >= 0 && x < width && y < height && z < depth) {
+            blocks[(y * depth + z) * width + x] = (byte)type;
+        }
+    }
 }
 
 public class Chunk {
@@ -220,6 +226,8 @@ public class Chunk {
     }
 
     public void OnLoad() {
+        t.Init();
+
         for(int x = x0; x < x1; x++) {
             for(int y = y0; y < y1; y++) {
                 for(int z = z0; z < z1; z++) {
@@ -601,6 +609,28 @@ public class Tesselator {
 
         GL.BindVertexArray(vertexArrayObject);
         GL.DrawElements(PrimitiveType.Triangles, indiceBuffer.Count, DrawElementsType.UnsignedInt, 0);
+    }
+
+    private void Clear() {
+        vertexBuffer.Clear();
+        indiceBuffer.Clear();
+        texCoordBuffer.Clear();
+        colorBuffer.Clear();
+
+        vertices = 0;
+
+        GL.DeleteVertexArray(vertexArrayObject);
+        GL.DeleteBuffer(vertexBufferObject);
+        GL.DeleteBuffer(elementBufferObject);
+        GL.DeleteBuffer(textureBufferObject);
+        GL.DeleteBuffer(colorBufferObject);
+    }
+
+    public void Init() {
+        Clear();
+
+        hasTexture = false;
+        hasColor = false;
     }
 
     public void Vertex(float x, float y, float z) {
