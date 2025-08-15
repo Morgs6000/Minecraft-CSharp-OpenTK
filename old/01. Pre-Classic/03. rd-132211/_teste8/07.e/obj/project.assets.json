@@ -443,11 +443,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\07.e\\RubyDung.csproj",
+      "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\old\\01. Pre-Classic\\03. rd-132211\\_teste8\\07.e\\RubyDung.csproj",
       "projectName": "RubyDung",
-      "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\07.e\\RubyDung.csproj",
+      "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\old\\01. Pre-Classic\\03. rd-132211\\_teste8\\07.e\\RubyDung.csproj",
       "packagesPath": "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\01. Pre-Classic\\03. rd-132211\\_teste8\\07.e\\obj\\",
+      "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\old\\01. Pre-Classic\\03. rd-132211\\_teste8\\07.e\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -480,7 +480,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -511,7 +512,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

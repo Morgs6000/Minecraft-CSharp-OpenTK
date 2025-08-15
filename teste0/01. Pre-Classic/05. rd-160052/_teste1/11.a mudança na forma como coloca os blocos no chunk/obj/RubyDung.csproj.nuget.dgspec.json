@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a\\RubyDung.csproj": {}
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a mudança na forma como coloca os blocos no chunk\\RubyDung.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a\\RubyDung.csproj": {
+    "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a mudança na forma como coloca os blocos no chunk\\RubyDung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a\\RubyDung.csproj",
+        "projectUniqueName": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a mudança na forma como coloca os blocos no chunk\\RubyDung.csproj",
         "projectName": "RubyDung",
-        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a\\RubyDung.csproj",
+        "projectPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a mudança na forma como coloca os blocos no chunk\\RubyDung.csproj",
         "packagesPath": "C:\\Users\\Morgana Stradivarius\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a\\obj\\",
+        "outputPath": "D:\\GitHub\\Meus Repositórios\\Minecraft-CSharp-OpenTK\\teste0\\01. Pre-Classic\\05. rd-160052\\_teste1\\11.a mudança na forma como coloca os blocos no chunk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
